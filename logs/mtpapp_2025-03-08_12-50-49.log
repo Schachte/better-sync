@@ -1,0 +1,88 @@
+2025/03/08 12:50:49 --- MTP Music Manager Started ---
+2025/03/08 12:50:49 OS: darwin, Architecture: arm64
+2025/03/08 12:50:49 Verbose logging: false
+2025/03/08 12:50:52 [INFO] (upload.go:1258) Automatically selected storage:  (ID: 131073)
+2025/03/08 12:50:57 [INFO] (upload.go:888) Uploading 01 GOOD_2_GO.MP3 to album folder (storage ID: 131073, folder ID: 16777650)
+2025/03/08 12:50:57 [INFO] (upload.go:943) Successfully uploaded 01 GOOD_2_GO.MP3 (object ID: 16783086) to /MUSIC/ROOTKIT_TYLOR_MAURER/GOOD_2_GO/01 GOOD_2_GO.MP3
+2025/03/08 12:50:58 [INFO] (upload.go:888) Uploading 02 GOODIEZ.MP3 to album folder (storage ID: 131073, folder ID: 16777651)
+2025/03/08 12:50:58 [INFO] (upload.go:943) Successfully uploaded 02 GOODIEZ.MP3 (object ID: 16783087) to /MUSIC/JAUZ/GOODIEZ/02 GOODIEZ.MP3
+2025/03/08 12:50:58 [INFO] (upload.go:888) Uploading 03 GRENADE.MP3 to album folder (storage ID: 131073, folder ID: 16777656)
+2025/03/08 12:50:59 [INFO] (upload.go:943) Successfully uploaded 03 GRENADE.MP3 (object ID: 16783088) to /MUSIC/QUIX/GRENADE/03 GRENADE.MP3
+2025/03/08 12:50:59 [INFO] (upload.go:888) Uploading 04 HOT_DRUM.MP3 to album folder (storage ID: 131073, folder ID: 16777657)
+2025/03/08 12:50:59 [INFO] (upload.go:943) Successfully uploaded 04 HOT_DRUM.MP3 (object ID: 16783089) to /MUSIC/JOYRYDE/HOT_DRUM/04 HOT_DRUM.MP3
+2025/03/08 12:50:59 [INFO] (upload.go:888) Uploading 05 HEADS_OR_TAILS.MP3 to album folder (storage ID: 131073, folder ID: 16777660)
+2025/03/08 12:51:00 [INFO] (upload.go:943) Successfully uploaded 05 HEADS_OR_TAILS.MP3 (object ID: 16783090) to /MUSIC/QUIX_AMBA_SHEPHERD/HEADS_OR_TAILS/05 HEADS_OR_TAILS.MP3
+2025/03/08 12:51:00 [INFO] (upload.go:888) Uploading 06 HECTIC.MP3 to album folder (storage ID: 131073, folder ID: 16777661)
+2025/03/08 12:51:00 [INFO] (upload.go:943) Successfully uploaded 06 HECTIC.MP3 (object ID: 16783091) to /MUSIC/EPHWURD_SWAGE/HECTIC/06 HECTIC.MP3
+2025/03/08 12:51:00 [INFO] (upload.go:888) Uploading 07 I_FEEL_IT.MP3 to album folder (storage ID: 131073, folder ID: 16777662)
+2025/03/08 12:51:01 [INFO] (upload.go:943) Successfully uploaded 07 I_FEEL_IT.MP3 (object ID: 16783092) to /MUSIC/AHEE_DEFUNK/I_FEEL_IT/07 I_FEEL_IT.MP3
+2025/03/08 12:51:01 [INFO] (upload.go:888) Uploading 08 IM_GONE.MP3 to album folder (storage ID: 131073, folder ID: 16777658)
+2025/03/08 12:51:02 [INFO] (upload.go:943) Successfully uploaded 08 IM_GONE.MP3 (object ID: 16783093) to /MUSIC/JOYRYDE/BRAVE/08 IM_GONE.MP3
+2025/03/08 12:51:02 [INFO] (upload.go:888) Uploading 09 IN_THE_ZONE.MP3 to album folder (storage ID: 131073, folder ID: 16777663)
+2025/03/08 12:51:02 [INFO] (upload.go:943) Successfully uploaded 09 IN_THE_ZONE.MP3 (object ID: 16783094) to /MUSIC/JAUZ_EXAMPLE/THE_WISE_AND_THE_WICKED/09 IN_THE_ZONE.MP3
+2025/03/08 12:51:02 [INFO] (upload.go:888) Uploading 10 INFECTED.MP3 to album folder (storage ID: 131073, folder ID: 16777688)
+2025/03/08 12:51:03 [INFO] (upload.go:943) Successfully uploaded 10 INFECTED.MP3 (object ID: 16783095) to /MUSIC/TIËSTO_JAUZ/INFECTED/10 INFECTED.MP3
+2025/03/08 12:51:03 [INFO] (upload.go:888) Uploading 11 LIGHTS_GO_DOWN_-_SUBTRONICS_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16777665)
+2025/03/08 12:51:03 [INFO] (upload.go:943) Successfully uploaded 11 LIGHTS_GO_DOWN_-_SUBTRONICS_REMIX.MP3 (object ID: 16783096) to /MUSIC/ZEDS_DEAD_JAUZ_SUBTRONICS/LIGHTS_GO_DOWN_(REMIXES)/11 LIGHTS_GO_DOWN_-_SUBTRONICS_REMIX.MP3
+2025/03/08 12:51:04 [INFO] (upload.go:888) Uploading 12 MADDEN.MP3 to album folder (storage ID: 131073, folder ID: 16777658)
+2025/03/08 12:51:04 [INFO] (upload.go:943) Successfully uploaded 12 MADDEN.MP3 (object ID: 16783097) to /MUSIC/JOYRYDE/BRAVE/12 MADDEN.MP3
+2025/03/08 12:51:04 [INFO] (upload.go:888) Uploading 13 MALICE.MP3 to album folder (storage ID: 131073, folder ID: 16777666)
+2025/03/08 12:51:04 [INFO] (upload.go:943) Successfully uploaded 13 MALICE.MP3 (object ID: 16783098) to /MUSIC/DREZO/MALICE/13 MALICE.MP3
+2025/03/08 12:51:05 [INFO] (upload.go:888) Uploading 14 MOVE_MINT_-_VIP.MP3 to album folder (storage ID: 131073, folder ID: 16777667)
+2025/03/08 12:51:05 [INFO] (upload.go:943) Successfully uploaded 14 MOVE_MINT_-_VIP.MP3 (object ID: 16783099) to /MUSIC/HEROBUST/VERTEBREAKER_(REMIXES)/14 MOVE_MINT_-_VIP.MP3
+2025/03/08 12:51:05 [INFO] (upload.go:888) Uploading 15 OK!.MP3 to album folder (storage ID: 131073, folder ID: 16777671)
+2025/03/08 12:51:06 [INFO] (upload.go:943) Successfully uploaded 15 OK!.MP3 (object ID: 16783100) to /MUSIC/JAUZ_SAN_HOLO/OK!/15 OK!.MP3
+2025/03/08 12:51:06 [INFO] (upload.go:888) Uploading 16 OURS.MP3 to album folder (storage ID: 131073, folder ID: 16777672)
+2025/03/08 12:51:06 [INFO] (upload.go:943) Successfully uploaded 16 OURS.MP3 (object ID: 16783101) to /MUSIC/BONNIE_X_CLYDE/OURS/16 OURS.MP3
+2025/03/08 12:51:06 [INFO] (upload.go:888) Uploading 17 ON_YOU.MP3 to album folder (storage ID: 131073, folder ID: 16777673)
+2025/03/08 12:51:06 [INFO] (upload.go:943) Successfully uploaded 17 ON_YOU.MP3 (object ID: 16783102) to /MUSIC/MONXX/ON_YOU/17 ON_YOU.MP3
+2025/03/08 12:51:06 [INFO] (upload.go:888) Uploading 18 PARANOID.MP3 to album folder (storage ID: 131073, folder ID: 16777674)
+2025/03/08 12:51:07 [INFO] (upload.go:943) Successfully uploaded 18 PARANOID.MP3 (object ID: 16783103) to /MUSIC/KNOCK2/PARANOID/18 PARANOID.MP3
+2025/03/08 12:51:07 [INFO] (upload.go:888) Uploading 19 PLUR_POLICE_-_JAUZ_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16777677)
+2025/03/08 12:51:08 [INFO] (upload.go:943) Successfully uploaded 19 PLUR_POLICE_-_JAUZ_REMIX.MP3 (object ID: 16783104) to /MUSIC/KNIFE_PARTY_JAUZ/TRIGGER_WARNING/19 PLUR_POLICE_-_JAUZ_REMIX.MP3
+2025/03/08 12:51:08 [INFO] (upload.go:888) Uploading 20 REALITY.MP3 to album folder (storage ID: 131073, folder ID: 16777678)
+2025/03/08 12:51:08 [INFO] (upload.go:943) Successfully uploaded 20 REALITY.MP3 (object ID: 16783105) to /MUSIC/BRO_SAFARI_SARAH_HUDSON/COLLISIONS/20 REALITY.MP3
+2025/03/08 12:51:08 [INFO] (upload.go:888) Uploading 21 ROCK_THE_PARTY.MP3 to album folder (storage ID: 131073, folder ID: 16777679)
+2025/03/08 12:51:09 [INFO] (upload.go:943) Successfully uploaded 21 ROCK_THE_PARTY.MP3 (object ID: 16783106) to /MUSIC/JAUZ_EPHWURD/ROCK_THE_PARTY/21 ROCK_THE_PARTY.MP3
+2025/03/08 12:51:09 [INFO] (upload.go:888) Uploading 22 SELECTA_19.MP3 to album folder (storage ID: 131073, folder ID: 16777658)
+2025/03/08 12:51:09 [INFO] (upload.go:943) Successfully uploaded 22 SELECTA_19.MP3 (object ID: 16783107) to /MUSIC/JOYRYDE/BRAVE/22 SELECTA_19.MP3
+2025/03/08 12:51:10 [INFO] (upload.go:888) Uploading 23 SPEED_TRAP.MP3 to album folder (storage ID: 131073, folder ID: 16777659)
+2025/03/08 12:51:10 [INFO] (upload.go:943) Successfully uploaded 23 SPEED_TRAP.MP3 (object ID: 16783108) to /MUSIC/JOYRYDE/SPEED_TRAP/23 SPEED_TRAP.MP3
+2025/03/08 12:51:10 [INFO] (upload.go:888) Uploading 24 SHIPWRECK'D.MP3 to album folder (storage ID: 131073, folder ID: 16777680)
+2025/03/08 12:51:10 [INFO] (upload.go:943) Successfully uploaded 24 SHIPWRECK'D.MP3 (object ID: 16783109) to /MUSIC/12TH_PLANET/SHIPWRECK'D/24 SHIPWRECK'D.MP3
+2025/03/08 12:51:11 [INFO] (upload.go:888) Uploading 25 SLOW_IT_DOWN.MP3 to album folder (storage ID: 131073, folder ID: 16777682)
+2025/03/08 12:51:11 [INFO] (upload.go:943) Successfully uploaded 25 SLOW_IT_DOWN.MP3 (object ID: 16783110) to /MUSIC/SIKDOPE_LOUD_ABOUT_US!/SLOW_IT_DOWN/25 SLOW_IT_DOWN.MP3
+2025/03/08 12:51:11 [INFO] (upload.go:888) Uploading 26 SUPER_FLY.MP3 to album folder (storage ID: 131073, folder ID: 16777683)
+2025/03/08 12:51:12 [INFO] (upload.go:943) Successfully uploaded 26 SUPER_FLY.MP3 (object ID: 16783111) to /MUSIC/JAUZ_666/THE_WISE_AND_THE_WICKED/26 SUPER_FLY.MP3
+2025/03/08 12:51:12 [INFO] (upload.go:888) Uploading 27 THE_BEAT.MP3 to album folder (storage ID: 131073, folder ID: 16777684)
+2025/03/08 12:51:12 [INFO] (upload.go:943) Successfully uploaded 27 THE_BEAT.MP3 (object ID: 16783112) to /MUSIC/JAUZ_NONSENS/THE_BEAT/27 THE_BEAT.MP3
+2025/03/08 12:51:12 [INFO] (upload.go:888) Uploading 28 THE_GAME.MP3 to album folder (storage ID: 131073, folder ID: 16777652)
+2025/03/08 12:51:13 [INFO] (upload.go:943) Successfully uploaded 28 THE_GAME.MP3 (object ID: 16783113) to /MUSIC/JAUZ/THE_GAME/28 THE_GAME.MP3
+2025/03/08 12:51:13 [INFO] (upload.go:888) Uploading 29 THERE_4_YOU.MP3 to album folder (storage ID: 131073, folder ID: 16777685)
+2025/03/08 12:51:13 [INFO] (upload.go:943) Successfully uploaded 29 THERE_4_YOU.MP3 (object ID: 16783114) to /MUSIC/4B/THERE_4_YOU/29 THERE_4_YOU.MP3
+2025/03/08 12:51:14 [INFO] (upload.go:888) Uploading 30 TIME_WARP_-_LEVEL_UP_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16777686)
+2025/03/08 12:51:14 [INFO] (upload.go:943) Successfully uploaded 30 TIME_WARP_-_LEVEL_UP_REMIX.MP3 (object ID: 16783115) to /MUSIC/APASHE_LEVEL_UP_SAMI_CHAOUKI/TIME_WARP_(LEVEL_UP_REMIX)/30 TIME_WARP_-_LEVEL_UP_REMIX.MP3
+2025/03/08 12:51:14 [INFO] (upload.go:888) Uploading 31 WTF.MP3 to album folder (storage ID: 131073, folder ID: 16777668)
+2025/03/08 12:51:14 [INFO] (upload.go:943) Successfully uploaded 31 WTF.MP3 (object ID: 16783116) to /MUSIC/HEROBUST/WTF/31 WTF.MP3
+2025/03/08 12:51:15 [INFO] (upload.go:888) Uploading 32 WITHOUT.MP3 to album folder (storage ID: 131073, folder ID: 16777687)
+2025/03/08 12:51:15 [INFO] (upload.go:943) Successfully uploaded 32 WITHOUT.MP3 (object ID: 16783117) to /MUSIC/FUNTCASE_DANI_POPPITT/NEXT_CHAPTER/32 WITHOUT.MP3
+2025/03/08 12:51:17 [INFO] (list.go:62) Searching for MP3 files...
+2025/03/08 12:51:17 [INFO] (list.go:81) Searching storage #1:  (ID: 131073)
+2025/03/08 12:51:27 [INFO] (list.go:91) Found 30 MP3 files in storage #1
+2025/03/08 12:51:27 [INFO] (list.go:101) Total MP3 files found across all storages: 30
+2025/03/08 12:51:38 [INFO] (list.go:17) Searching for playlists...
+2025/03/08 12:51:38 [INFO] (list.go:36) Searching storage #1:  (ID: 131073)
+2025/03/08 12:51:48 [INFO] (list.go:449) Walk scan completed: checked 347 files, found 0 playlists
+2025/03/08 12:51:48 [INFO] (list.go:455) Using alternative search method for playlists
+2025/03/08 12:52:19 [ERROR] (upload.go:1133) Error getting object info for handle 16783118: GeneralError
+2025/03/08 12:52:19 [INFO] (list.go:494) Total unique playlists found: 0
+2025/03/08 12:52:19 [INFO] (list.go:46) Found 0 playlists in storage #1
+2025/03/08 12:52:19 [INFO] (list.go:56) Total playlists found across all storages: 0
+2025/03/08 12:53:16 [INFO] (list.go:17) Searching for playlists...
+2025/03/08 12:53:16 [INFO] (list.go:36) Searching storage #1:  (ID: 131073)
+2025/03/08 12:53:26 [INFO] (list.go:449) Walk scan completed: checked 347 files, found 0 playlists
+2025/03/08 12:53:26 [INFO] (list.go:455) Using alternative search method for playlists
+2025/03/08 12:53:57 [ERROR] (upload.go:1133) Error getting object info for handle 16783118: GeneralError
+2025/03/08 12:53:57 [INFO] (list.go:494) Total unique playlists found: 0
+2025/03/08 12:53:57 [INFO] (list.go:46) Found 0 playlists in storage #1
+2025/03/08 12:53:57 [INFO] (list.go:56) Total playlists found across all storages: 0

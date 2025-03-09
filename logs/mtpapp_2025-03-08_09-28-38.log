@@ -1,0 +1,15 @@
+2025/03/08 09:28:38 --- MTP Music Manager Started ---
+2025/03/08 09:28:38 OS: darwin, Architecture: arm64
+2025/03/08 09:28:38 Verbose logging: false
+2025/03/08 09:28:38 [INFO] Starting MTP Music Manager
+2025/03/08 09:28:38 [INFO] Running on darwin/arm64
+2025/03/08 09:28:38 [INFO] Initializing device with timeout of 30s...
+2025/03/08 09:28:38 [INFO] Starting MTP device detection in background goroutine
+2025/03/08 09:28:38 [INFO] MTP device found successfully
+2025/03/08 09:28:38 [INFO] Device initialized successfully
+2025/03/08 09:28:38 [INFO] Fetching storages with timeout of 30s...
+2025/03/08 09:28:38 [INFO] Found 1 storage(s) on device
+2025/03/08 09:28:38 [INFO] Storages fetched successfully
+2025/03/08 09:28:40 [INFO] Automatically selected storage:  (ID: 0)
+2025/03/08 09:28:40 [ERROR] Error finding Music folder: error getting object handles: InvalidStorageId
+2025/03/08 09:28:40 [ERROR] Error selecting storage: failed to find or create Music folder: error getting object handles: InvalidStorageId

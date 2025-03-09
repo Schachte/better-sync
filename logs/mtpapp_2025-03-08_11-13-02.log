@@ -1,0 +1,61 @@
+2025/03/08 11:13:02 --- MTP Music Manager Started ---
+2025/03/08 11:13:02 OS: darwin, Architecture: arm64
+2025/03/08 11:13:02 Verbose logging: false
+2025/03/08 11:13:02 [INFO] (main.go:25) Starting MTP Music Manager
+2025/03/08 11:13:02 [INFO] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 11:13:02 [INFO] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 11:13:02 [INFO] (connect.go:40) MTP device found successfully
+2025/03/08 11:13:02 [INFO] (connect.go:54) Device initialized successfully
+2025/03/08 11:13:02 [INFO] (storage.go:21) Fetching storages with timeout of 30s...
+2025/03/08 11:13:02 [INFO] (storage.go:48) Found 1 storage(s) on device
+2025/03/08 11:13:02 [INFO] (storage.go:61) Storage #1:  (ID: 131073)
+2025/03/08 11:13:04 [INFO] (list.go:265) Looking for folder 'Music' in storage 131073, parent 0
+2025/03/08 11:13:04 [INFO] (list.go:275) Found 544 objects in parent folder
+2025/03/08 11:13:04 [INFO] (list.go:288) Found folder 'Music' (ID: 16777218)
+2025/03/08 11:13:04 [INFO] (list.go:244) Found existing Music folder (ID: 16777218)
+2025/03/08 11:13:42 [ERROR] (upload.go:648) Send attempt 1 failed: LIBUSB_ERROR_TIMEOUT
+2025/03/08 11:13:43 [ERROR] (upload.go:648) Send attempt 2 failed: mtp: cannot run operation SendObject, device is not open
+2025/03/08 11:13:44 [ERROR] (upload.go:648) Send attempt 3 failed: mtp: cannot run operation SendObject, device is not open
+2025/03/08 11:13:44 [ERROR] (upload.go:628) All file transfer methods failed: all transfer attempts failed
+2025/03/08 11:13:44 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:44 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:45 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:45 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:45 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:46 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:46 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:46 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:47 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:47 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:47 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:48 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:48 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:48 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:49 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:49 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:49 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:50 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:50 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:50 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:51 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:51 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:51 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:52 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:52 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:52 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:53 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:53 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:53 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:54 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:54 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:54 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:55 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:55 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:55 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:56 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:56 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:56 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:57 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:57 [ERROR] (upload.go:601) Error sending object info (attempt 1/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:57 [ERROR] (upload.go:601) Error sending object info (attempt 2/3): mtp: cannot run operation SendObjectInfo, device is not open
+2025/03/08 11:13:58 [ERROR] (upload.go:610) Error sending object info after 3 attempts: mtp: cannot run operation SendObjectInfo, device is not open

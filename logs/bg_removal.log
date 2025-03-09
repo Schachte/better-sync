@@ -1,0 +1,177 @@
+[2025-03-08T18:41:52.175Z] Created output directory: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg
+[2025-03-08T18:41:52.176Z] Starting background removal process
+[2025-03-08T18:41:52.176Z] Source directory: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images
+[2025-03-08T18:41:52.176Z] Output directory: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg
+[2025-03-08T18:41:52.177Z] Found 31 images to process
+[2025-03-08T18:41:52.177Z] [1/31] Processing: D2_D2_Air.jpg
+[2025-03-08T18:41:52.594Z] API Error (400): Bad Request
+[2025-03-08T18:41:52.595Z] Error details: [{"title":"No image given","code":"missing_source","detail":"Please provide the source image in the image_url, image_file or image_file_b64 parameter."}]
+[2025-03-08T18:41:52.595Z]   ✗ Failed to process D2_D2_Air.jpg
+[2025-03-08T18:41:52.595Z] [2/31] Processing: D2_D2_Delta.jpg
+[2025-03-08T18:41:52.782Z] API Error (400): Bad Request
+[2025-03-08T18:41:52.782Z] Error details: [{"title":"No image given","code":"missing_source","detail":"Please provide the source image in the image_url, image_file or image_file_b64 parameter."}]
+[2025-03-08T18:41:52.782Z]   ✗ Failed to process D2_D2_Delta.jpg
+[2025-03-08T18:41:52.783Z] [3/31] Processing: Enduro_Enduro_2_Music.jpg
+[2025-03-08T18:41:53.089Z] API Error (400): Bad Request
+[2025-03-08T18:41:53.089Z] Error details: [{"title":"No image given","code":"missing_source","detail":"Please provide the source image in the image_url, image_file or image_file_b64 parameter."}]
+[2025-03-08T18:41:53.090Z]   ✗ Failed to process Enduro_Enduro_2_Music.jpg
+[2025-03-08T18:41:53.090Z] [4/31] Processing: Fenix_Fenix_5X_Plus.jpg
+[2025-03-08T18:41:53.261Z] API Error (400): Bad Request
+[2025-03-08T18:41:53.261Z] Error details: [{"title":"No image given","code":"missing_source","detail":"Please provide the source image in the image_url, image_file or image_file_b64 parameter."}]
+[2025-03-08T18:41:53.262Z]   ✗ Failed to process Fenix_Fenix_5X_Plus.jpg
+[2025-03-08T18:41:53.262Z] [5/31] Processing: Fenix_Fenix_5X_Plus_Sapphire.png
+[2025-03-08T18:41:53.496Z] API Error (400): Bad Request
+[2025-03-08T18:41:53.497Z] Error details: [{"title":"No image given","code":"missing_source","detail":"Please provide the source image in the image_url, image_file or image_file_b64 parameter."}]
+[2025-03-08T18:41:53.497Z]   ✗ Failed to process Fenix_Fenix_5X_Plus_Sapphire.png
+[2025-03-08T18:41:53.498Z] [6/31] Processing: Fenix_Fenix_5_Plus.png
+[2025-03-08T18:41:53.822Z] API Error (400): Bad Request
+[2025-03-08T18:41:53.823Z] Error details: [{"title":"No image given","code":"missing_source","detail":"Please provide the source image in the image_url, image_file or image_file_b64 parameter."}]
+[2025-03-08T18:41:53.823Z]   ✗ Failed to process Fenix_Fenix_5_Plus.png
+[2025-03-08T18:41:53.824Z] [7/31] Processing: Fenix_Fenix_5_Plus_Sapphire.jpeg
+[2025-03-08T18:43:06.361Z] Starting background removal process
+[2025-03-08T18:43:06.362Z] Source directory: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images
+[2025-03-08T18:43:06.362Z] Output directory: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg
+[2025-03-08T18:43:06.363Z] Found 31 images to process
+[2025-03-08T18:43:06.363Z] [1/31] Processing: D2_D2_Air.jpg
+[2025-03-08T18:43:07.502Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/D2_D2_Air_nobg.png
+[2025-03-08T18:43:07.503Z] [2/31] Processing: D2_D2_Delta.jpg
+[2025-03-08T18:43:09.066Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/D2_D2_Delta_nobg.png
+[2025-03-08T18:43:09.067Z] [3/31] Processing: Enduro_Enduro_2_Music.jpg
+[2025-03-08T18:43:11.703Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Enduro_Enduro_2_Music_nobg.png
+[2025-03-08T18:43:11.703Z] [4/31] Processing: Fenix_Fenix_5X_Plus.jpg
+[2025-03-08T18:43:13.635Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_5X_Plus_nobg.png
+[2025-03-08T18:43:13.636Z] [5/31] Processing: Fenix_Fenix_5X_Plus_Sapphire.png
+[2025-03-08T18:43:15.242Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_5X_Plus_Sapphire_nobg.png
+[2025-03-08T18:43:15.242Z] [6/31] Processing: Fenix_Fenix_5_Plus.png
+[2025-03-08T18:43:16.748Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_5_Plus_nobg.png
+[2025-03-08T18:43:16.748Z] [7/31] Processing: Fenix_Fenix_5_Plus_Sapphire.jpeg
+[2025-03-08T18:43:17.961Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_5_Plus_Sapphire_nobg.png
+[2025-03-08T18:43:17.962Z] [8/31] Processing: Fenix_Fenix_6S_Pro.jpg
+[2025-03-08T18:43:18.884Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_6S_Pro_nobg.png
+[2025-03-08T18:43:18.884Z] [9/31] Processing: Fenix_Fenix_6S_Pro_Solar.png
+[2025-03-08T18:43:19.814Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_6S_Pro_Solar_nobg.png
+[2025-03-08T18:43:19.814Z] [10/31] Processing: Fenix_Fenix_6X_Pro_Solar.jpg
+[2025-03-08T18:43:20.727Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_6X_Pro_Solar_nobg.png
+[2025-03-08T18:43:20.727Z] [11/31] Processing: Fenix_Fenix_6_Pro.jpg
+[2025-03-08T18:43:21.774Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_6_Pro_nobg.png
+[2025-03-08T18:43:21.774Z] [12/31] Processing: Fenix_Fenix_7.jpg
+[2025-03-08T18:43:22.627Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_7_nobg.png
+[2025-03-08T18:43:22.628Z] [13/31] Processing: Fenix_Fenix_7S.jpg
+[2025-03-08T18:43:23.583Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_7S_nobg.png
+[2025-03-08T18:43:23.590Z] [14/31] Processing: Fenix_Fenix_7X.jpg
+[2025-03-08T18:43:24.464Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Fenix_Fenix_7X_nobg.png
+[2025-03-08T18:43:24.464Z] [15/31] Processing: Forerunner_Forerunner_245_Music.jpg
+[2025-03-08T18:43:25.263Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Forerunner_Forerunner_245_Music_nobg.png
+[2025-03-08T18:43:25.263Z] [16/31] Processing: Forerunner_Forerunner_645_Music.jpg
+[2025-03-08T18:43:27.310Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Forerunner_Forerunner_645_Music_nobg.png
+[2025-03-08T18:43:27.312Z] [17/31] Processing: Forerunner_Forerunner_945.png
+[2025-03-08T18:43:28.831Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Forerunner_Forerunner_945_nobg.png
+[2025-03-08T18:43:28.832Z] [18/31] Processing: Forerunner_Forerunner_955.jpg
+[2025-03-08T18:43:29.828Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Forerunner_Forerunner_955_nobg.png
+[2025-03-08T18:43:29.828Z] [19/31] Processing: Forerunner_Forerunner_965.jpg
+[2025-03-08T18:43:30.267Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:30.267Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:30.267Z]   ✗ Failed to process Forerunner_Forerunner_965.jpg
+[2025-03-08T18:43:30.267Z] [20/31] Processing: MARQ_MARQ_Adventurer.jpg
+[2025-03-08T18:43:30.488Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:30.488Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:30.488Z]   ✗ Failed to process MARQ_MARQ_Adventurer.jpg
+[2025-03-08T18:43:30.488Z] [21/31] Processing: MARQ_MARQ_Athlete.jpg
+[2025-03-08T18:43:30.676Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:30.676Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:30.677Z]   ✗ Failed to process MARQ_MARQ_Athlete.jpg
+[2025-03-08T18:43:30.677Z] [22/31] Processing: MARQ_MARQ_Aviator.jpg
+[2025-03-08T18:43:30.885Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:30.885Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:30.886Z]   ✗ Failed to process MARQ_MARQ_Aviator.jpg
+[2025-03-08T18:43:30.886Z] [23/31] Processing: MARQ_MARQ_Commander.jpg
+[2025-03-08T18:43:31.110Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:31.111Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:31.111Z]   ✗ Failed to process MARQ_MARQ_Commander.jpg
+[2025-03-08T18:43:31.111Z] [24/31] Processing: Venu_Venu.jpg
+[2025-03-08T18:43:31.328Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:31.329Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:31.329Z]   ✗ Failed to process Venu_Venu.jpg
+[2025-03-08T18:43:31.329Z] [25/31] Processing: Venu_Venu_2.jpg
+[2025-03-08T18:43:31.516Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:31.517Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:31.517Z]   ✗ Failed to process Venu_Venu_2.jpg
+[2025-03-08T18:43:31.518Z] [26/31] Processing: Venu_Venu_2_Plus.jpg
+[2025-03-08T18:43:31.716Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:31.716Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:31.717Z]   ✗ Failed to process Venu_Venu_2_Plus.jpg
+[2025-03-08T18:43:31.717Z] [27/31] Processing: Venu_Venu_Sq_Music.png
+[2025-03-08T18:43:31.959Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:31.959Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:31.959Z]   ✗ Failed to process Venu_Venu_Sq_Music.png
+[2025-03-08T18:43:31.959Z] [28/31] Processing: Vivoactive_Vivoactive_3_Music.jpg
+[2025-03-08T18:43:32.226Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:32.227Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:32.227Z]   ✗ Failed to process Vivoactive_Vivoactive_3_Music.jpg
+[2025-03-08T18:43:32.228Z] [29/31] Processing: Vivoactive_Vivoactive_3_Music_Verizon.jpg
+[2025-03-08T18:43:32.399Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:32.400Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:32.400Z]   ✗ Failed to process Vivoactive_Vivoactive_3_Music_Verizon.jpg
+[2025-03-08T18:43:32.401Z] [30/31] Processing: Vivoactive_Vivoactive_4.jpg
+[2025-03-08T18:43:32.597Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:32.598Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:32.598Z]   ✗ Failed to process Vivoactive_Vivoactive_4.jpg
+[2025-03-08T18:43:32.598Z] [31/31] Processing: Vivoactive_Vivoactive_5.jpg
+[2025-03-08T18:43:32.792Z] API Error (429): Too Many Requests
+[2025-03-08T18:43:32.793Z] Error details: [{"title":"Rate limit exceeded","code":"rate_limit_exceeded"}]
+[2025-03-08T18:43:32.793Z]   ✗ Failed to process Vivoactive_Vivoactive_5.jpg
+[2025-03-08T18:43:32.794Z] All images processed!
+[2025-03-08T18:45:08.093Z] Starting background removal process
+[2025-03-08T18:45:08.094Z] Source directory: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images
+[2025-03-08T18:45:08.094Z] Output directory: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg
+[2025-03-08T18:45:08.095Z] Found 31 total images in source directory
+[2025-03-08T18:45:08.096Z] [1/31] Skipping: D2_D2_Air.jpg (already processed)
+[2025-03-08T18:45:08.096Z] [2/31] Skipping: D2_D2_Delta.jpg (already processed)
+[2025-03-08T18:45:08.096Z] [3/31] Skipping: Enduro_Enduro_2_Music.jpg (already processed)
+[2025-03-08T18:45:08.096Z] [4/31] Skipping: Fenix_Fenix_5X_Plus.jpg (already processed)
+[2025-03-08T18:45:08.096Z] [5/31] Skipping: Fenix_Fenix_5X_Plus_Sapphire.png (already processed)
+[2025-03-08T18:45:08.096Z] [6/31] Skipping: Fenix_Fenix_5_Plus.png (already processed)
+[2025-03-08T18:45:08.097Z] [7/31] Skipping: Fenix_Fenix_5_Plus_Sapphire.jpeg (already processed)
+[2025-03-08T18:45:08.097Z] [8/31] Skipping: Fenix_Fenix_6S_Pro.jpg (already processed)
+[2025-03-08T18:45:08.097Z] [9/31] Skipping: Fenix_Fenix_6S_Pro_Solar.png (already processed)
+[2025-03-08T18:45:08.097Z] [10/31] Skipping: Fenix_Fenix_6X_Pro_Solar.jpg (already processed)
+[2025-03-08T18:45:08.097Z] [11/31] Skipping: Fenix_Fenix_6_Pro.jpg (already processed)
+[2025-03-08T18:45:08.097Z] [12/31] Skipping: Fenix_Fenix_7.jpg (already processed)
+[2025-03-08T18:45:08.097Z] [13/31] Skipping: Fenix_Fenix_7S.jpg (already processed)
+[2025-03-08T18:45:08.097Z] [14/31] Skipping: Fenix_Fenix_7X.jpg (already processed)
+[2025-03-08T18:45:08.097Z] [15/31] Skipping: Forerunner_Forerunner_245_Music.jpg (already processed)
+[2025-03-08T18:45:08.097Z] [16/31] Skipping: Forerunner_Forerunner_645_Music.jpg (already processed)
+[2025-03-08T18:45:08.098Z] [17/31] Skipping: Forerunner_Forerunner_945.png (already processed)
+[2025-03-08T18:45:08.098Z] [18/31] Skipping: Forerunner_Forerunner_955.jpg (already processed)
+[2025-03-08T18:45:08.098Z] [19/31] Processing: Forerunner_Forerunner_965.jpg
+[2025-03-08T18:45:10.498Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Forerunner_Forerunner_965_nobg.png
+[2025-03-08T18:45:10.499Z] [20/31] Processing: MARQ_MARQ_Adventurer.jpg
+[2025-03-08T18:45:11.851Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/MARQ_MARQ_Adventurer_nobg.png
+[2025-03-08T18:45:11.852Z] [21/31] Processing: MARQ_MARQ_Athlete.jpg
+[2025-03-08T18:45:12.961Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/MARQ_MARQ_Athlete_nobg.png
+[2025-03-08T18:45:12.962Z] [22/31] Processing: MARQ_MARQ_Aviator.jpg
+[2025-03-08T18:45:14.242Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/MARQ_MARQ_Aviator_nobg.png
+[2025-03-08T18:45:14.242Z] [23/31] Processing: MARQ_MARQ_Commander.jpg
+[2025-03-08T18:45:15.348Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/MARQ_MARQ_Commander_nobg.png
+[2025-03-08T18:45:15.348Z] [24/31] Processing: Venu_Venu.jpg
+[2025-03-08T18:45:16.487Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Venu_Venu_nobg.png
+[2025-03-08T18:45:16.487Z] [25/31] Processing: Venu_Venu_2.jpg
+[2025-03-08T18:45:18.191Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Venu_Venu_2_nobg.png
+[2025-03-08T18:45:18.191Z] [26/31] Processing: Venu_Venu_2_Plus.jpg
+[2025-03-08T18:45:18.920Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Venu_Venu_2_Plus_nobg.png
+[2025-03-08T18:45:18.921Z] [27/31] Processing: Venu_Venu_Sq_Music.png
+[2025-03-08T18:45:20.025Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Venu_Venu_Sq_Music_nobg.png
+[2025-03-08T18:45:20.025Z] [28/31] Processing: Vivoactive_Vivoactive_3_Music.jpg
+[2025-03-08T18:45:21.424Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Vivoactive_Vivoactive_3_Music_nobg.png
+[2025-03-08T18:45:21.424Z] [29/31] Processing: Vivoactive_Vivoactive_3_Music_Verizon.jpg
+[2025-03-08T18:45:22.157Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Vivoactive_Vivoactive_3_Music_Verizon_nobg.png
+[2025-03-08T18:45:22.157Z] [30/31] Processing: Vivoactive_Vivoactive_4.jpg
+[2025-03-08T18:45:22.976Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Vivoactive_Vivoactive_4_nobg.png
+[2025-03-08T18:45:22.976Z] [31/31] Processing: Vivoactive_Vivoactive_5.jpg
+[2025-03-08T18:45:23.722Z]   ✓ Saved to: /Users/schachte/Documents/repos/better-sync/product_photo_downloader/garmin_watch_images_nobg/Vivoactive_Vivoactive_5_nobg.png
+[2025-03-08T18:45:23.722Z] 
+Processing complete:
+[2025-03-08T18:45:23.722Z]   ✓ Successfully processed: 13
+[2025-03-08T18:45:23.723Z]   ↷ Skipped (already exist): 18
+[2025-03-08T18:45:23.723Z]   ✗ Failed to process: 0
+[2025-03-08T18:45:23.723Z]   Total images handled: 31

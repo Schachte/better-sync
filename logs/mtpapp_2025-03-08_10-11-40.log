@@ -1,0 +1,233 @@
+2025/03/08 10:11:40 --- MTP Music Manager Started ---
+2025/03/08 10:11:40 OS: darwin, Architecture: arm64
+2025/03/08 10:11:40 Verbose logging: false
+2025/03/08 10:11:40 [INFO] Starting MTP Music Manager
+2025/03/08 10:11:40 [INFO] Running on darwin/arm64
+2025/03/08 10:11:40 [INFO] Initializing device with timeout of 30s...
+2025/03/08 10:11:40 [INFO] Starting MTP device detection in background goroutine
+2025/03/08 10:11:40 [INFO] MTP device found successfully
+2025/03/08 10:11:40 [INFO] Device initialized successfully
+2025/03/08 10:11:40 [INFO] Fetching storages with timeout of 30s...
+2025/03/08 10:11:40 [INFO] Found 1 storage(s) on device
+2025/03/08 10:11:40 [INFO] Storages fetched successfully
+2025/03/08 10:11:44 [INFO] Starting enhanced playlist and songs deletion operation
+2025/03/08 10:11:44 [INFO] Searching storage #1:  (ID: 131073) for playlists
+2025/03/08 10:11:48 [INFO] Walk scan completed: checked 315 files, found 0 playlists
+2025/03/08 10:11:48 [INFO] Using alternative search method for playlists
+2025/03/08 10:12:00 [INFO] Total unique playlists found: 0
+2025/03/08 10:12:07 [INFO] Automatically selected storage:  (ID: 131073)
+2025/03/08 10:12:07 [INFO] Found existing Music folder with ID: 16777218
+2025/03/08 10:12:17 [INFO] Folder 'ROOTKIT_TYLOR_MAURER' not found, attempting to create it
+2025/03/08 10:12:17 [INFO] Folder 'GOOD_2_GO' not found, attempting to create it
+2025/03/08 10:12:17 [INFO] Uploading 01 GOOD_2_GO.MP3 to album folder (storage ID: 131073, folder ID: 16783093)
+2025/03/08 10:12:17 [INFO] Successfully uploaded 01 GOOD_2_GO.MP3 (object ID: 16783094) to /MUSIC/ROOTKIT_TYLOR_MAURER/GOOD_2_GO/01 GOOD_2_GO.MP3
+2025/03/08 10:12:17 [INFO] Folder 'JAUZ' not found, attempting to create it
+2025/03/08 10:12:17 [INFO] Folder 'GOODIEZ' not found, attempting to create it
+2025/03/08 10:12:17 [INFO] Uploading 02 GOODIEZ.MP3 to album folder (storage ID: 131073, folder ID: 16783096)
+2025/03/08 10:12:18 [INFO] Successfully uploaded 02 GOODIEZ.MP3 (object ID: 16783097) to /MUSIC/JAUZ/GOODIEZ/02 GOODIEZ.MP3
+2025/03/08 10:12:18 [INFO] Folder 'QUIX' not found, attempting to create it
+2025/03/08 10:12:18 [INFO] Folder 'GRENADE' not found, attempting to create it
+2025/03/08 10:12:18 [INFO] Uploading 03 GRENADE.MP3 to album folder (storage ID: 131073, folder ID: 16783099)
+2025/03/08 10:12:18 [INFO] Successfully uploaded 03 GRENADE.MP3 (object ID: 16783100) to /MUSIC/QUIX/GRENADE/03 GRENADE.MP3
+2025/03/08 10:12:18 [INFO] Folder 'JOYRYDE' not found, attempting to create it
+2025/03/08 10:12:18 [INFO] Folder 'HOT_DRUM' not found, attempting to create it
+2025/03/08 10:12:18 [INFO] Uploading 04 HOT_DRUM.MP3 to album folder (storage ID: 131073, folder ID: 16783102)
+2025/03/08 10:12:19 [INFO] Successfully uploaded 04 HOT_DRUM.MP3 (object ID: 16783103) to /MUSIC/JOYRYDE/HOT_DRUM/04 HOT_DRUM.MP3
+2025/03/08 10:12:19 [INFO] Folder 'QUIX_AMBA_SHEPHERD' not found, attempting to create it
+2025/03/08 10:12:19 [INFO] Folder 'HEADS_OR_TAILS' not found, attempting to create it
+2025/03/08 10:12:19 [INFO] Uploading 05 HEADS_OR_TAILS.MP3 to album folder (storage ID: 131073, folder ID: 16783105)
+2025/03/08 10:12:19 [INFO] Successfully uploaded 05 HEADS_OR_TAILS.MP3 (object ID: 16783106) to /MUSIC/QUIX_AMBA_SHEPHERD/HEADS_OR_TAILS/05 HEADS_OR_TAILS.MP3
+2025/03/08 10:12:19 [INFO] Folder 'EPHWURD_SWAGE' not found, attempting to create it
+2025/03/08 10:12:20 [INFO] Folder 'HECTIC' not found, attempting to create it
+2025/03/08 10:12:20 [INFO] Uploading 06 HECTIC.MP3 to album folder (storage ID: 131073, folder ID: 16783108)
+2025/03/08 10:12:20 [INFO] Successfully uploaded 06 HECTIC.MP3 (object ID: 16783109) to /MUSIC/EPHWURD_SWAGE/HECTIC/06 HECTIC.MP3
+2025/03/08 10:12:20 [INFO] Folder 'AHEE_DEFUNK' not found, attempting to create it
+2025/03/08 10:12:20 [INFO] Folder 'I_FEEL_IT' not found, attempting to create it
+2025/03/08 10:12:20 [INFO] Uploading 07 I_FEEL_IT.MP3 to album folder (storage ID: 131073, folder ID: 16783111)
+2025/03/08 10:12:21 [INFO] Successfully uploaded 07 I_FEEL_IT.MP3 (object ID: 16783112) to /MUSIC/AHEE_DEFUNK/I_FEEL_IT/07 I_FEEL_IT.MP3
+2025/03/08 10:12:21 [INFO] Using existing folder: JOYRYDE (ID: 16783101)
+2025/03/08 10:12:21 [INFO] Folder 'BRAVE' not found, attempting to create it
+2025/03/08 10:12:21 [INFO] Uploading 08 IM_GONE.MP3 to album folder (storage ID: 131073, folder ID: 16783113)
+2025/03/08 10:12:21 [INFO] Successfully uploaded 08 IM_GONE.MP3 (object ID: 16783114) to /MUSIC/JOYRYDE/BRAVE/08 IM_GONE.MP3
+2025/03/08 10:12:21 [INFO] Folder 'JAUZ_EXAMPLE' not found, attempting to create it
+2025/03/08 10:12:21 [INFO] Folder 'THE_WISE_AND_THE_WICKED' not found, attempting to create it
+2025/03/08 10:12:21 [INFO] Uploading 09 IN_THE_ZONE.MP3 to album folder (storage ID: 131073, folder ID: 16783116)
+2025/03/08 10:12:22 [INFO] Successfully uploaded 09 IN_THE_ZONE.MP3 (object ID: 16783117) to /MUSIC/JAUZ_EXAMPLE/THE_WISE_AND_THE_WICKED/09 IN_THE_ZONE.MP3
+2025/03/08 10:12:22 [INFO] Folder 'TI_STO_JAUZ' not found, attempting to create it
+2025/03/08 10:12:22 [INFO] Folder 'INFECTED' not found, attempting to create it
+2025/03/08 10:12:22 [INFO] Uploading 10 INFECTED.MP3 to album folder (storage ID: 131073, folder ID: 16783119)
+2025/03/08 10:12:22 [INFO] Successfully uploaded 10 INFECTED.MP3 (object ID: 16783120) to /MUSIC/TI_STO_JAUZ/INFECTED/10 INFECTED.MP3
+2025/03/08 10:12:22 [INFO] Folder 'ZEDS_DEAD_JAUZ_SUBTRONICS' not found, attempting to create it
+2025/03/08 10:12:23 [INFO] Folder 'LIGHTS_GO_DOWN_(REMIXES)' not found, attempting to create it
+2025/03/08 10:12:23 [INFO] Uploading 11 LIGHTS_GO_DOWN_-_SUBTRONICS_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16783122)
+2025/03/08 10:12:23 [INFO] Successfully uploaded 11 LIGHTS_GO_DOWN_-_SUBTRONICS_REMIX.MP3 (object ID: 16783123) to /MUSIC/ZEDS_DEAD_JAUZ_SUBTRONICS/LIGHTS_GO_DOWN_(REMIXES)/11 LIGHTS_GO_DOWN_-_SUBTRONICS_REMIX.MP3
+2025/03/08 10:12:23 [INFO] Using existing folder: JOYRYDE (ID: 16783101)
+2025/03/08 10:12:23 [INFO] Using existing folder: BRAVE (ID: 16783113)
+2025/03/08 10:12:23 [INFO] Uploading 12 MADDEN.MP3 to album folder (storage ID: 131073, folder ID: 16783113)
+2025/03/08 10:12:23 [INFO] Successfully uploaded 12 MADDEN.MP3 (object ID: 16783124) to /MUSIC/JOYRYDE/BRAVE/12 MADDEN.MP3
+2025/03/08 10:12:24 [INFO] Folder 'DREZO' not found, attempting to create it
+2025/03/08 10:12:24 [INFO] Folder 'MALICE' not found, attempting to create it
+2025/03/08 10:12:24 [INFO] Uploading 13 MALICE.MP3 to album folder (storage ID: 131073, folder ID: 16783126)
+2025/03/08 10:12:24 [INFO] Successfully uploaded 13 MALICE.MP3 (object ID: 16783127) to /MUSIC/DREZO/MALICE/13 MALICE.MP3
+2025/03/08 10:12:24 [INFO] Folder 'HEROBUST' not found, attempting to create it
+2025/03/08 10:12:24 [INFO] Folder 'VERTEBREAKER_(REMIXES)' not found, attempting to create it
+2025/03/08 10:12:24 [INFO] Uploading 14 MOVE_MINT_-_VIP.MP3 to album folder (storage ID: 131073, folder ID: 16783129)
+2025/03/08 10:12:25 [INFO] Successfully uploaded 14 MOVE_MINT_-_VIP.MP3 (object ID: 16783130) to /MUSIC/HEROBUST/VERTEBREAKER_(REMIXES)/14 MOVE_MINT_-_VIP.MP3
+2025/03/08 10:12:25 [INFO] Folder 'JAUZ_SAN_HOLO' not found, attempting to create it
+2025/03/08 10:12:25 [INFO] Folder 'OK!' not found, attempting to create it
+2025/03/08 10:12:25 [INFO] Uploading 15 OK!.MP3 to album folder (storage ID: 131073, folder ID: 16783132)
+2025/03/08 10:12:25 [INFO] Successfully uploaded 15 OK!.MP3 (object ID: 16783133) to /MUSIC/JAUZ_SAN_HOLO/OK!/15 OK!.MP3
+2025/03/08 10:12:25 [INFO] Folder 'BONNIE_X_CLYDE' not found, attempting to create it
+2025/03/08 10:12:25 [INFO] Folder 'OURS' not found, attempting to create it
+2025/03/08 10:12:25 [INFO] Uploading 16 OURS.MP3 to album folder (storage ID: 131073, folder ID: 16783135)
+2025/03/08 10:12:26 [INFO] Successfully uploaded 16 OURS.MP3 (object ID: 16783136) to /MUSIC/BONNIE_X_CLYDE/OURS/16 OURS.MP3
+2025/03/08 10:12:26 [INFO] Folder 'MONXX' not found, attempting to create it
+2025/03/08 10:12:26 [INFO] Folder 'ON_YOU' not found, attempting to create it
+2025/03/08 10:12:26 [INFO] Uploading 17 ON_YOU.MP3 to album folder (storage ID: 131073, folder ID: 16783138)
+2025/03/08 10:12:26 [INFO] Successfully uploaded 17 ON_YOU.MP3 (object ID: 16783139) to /MUSIC/MONXX/ON_YOU/17 ON_YOU.MP3
+2025/03/08 10:12:26 [INFO] Folder 'KNOCK2' not found, attempting to create it
+2025/03/08 10:12:26 [INFO] Folder 'PARANOID' not found, attempting to create it
+2025/03/08 10:12:26 [INFO] Uploading 18 PARANOID.MP3 to album folder (storage ID: 131073, folder ID: 16783141)
+2025/03/08 10:12:27 [INFO] Successfully uploaded 18 PARANOID.MP3 (object ID: 16783142) to /MUSIC/KNOCK2/PARANOID/18 PARANOID.MP3
+2025/03/08 10:12:27 [INFO] Folder 'KNIFE_PARTY_JAUZ' not found, attempting to create it
+2025/03/08 10:12:27 [INFO] Folder 'TRIGGER_WARNING' not found, attempting to create it
+2025/03/08 10:12:27 [INFO] Uploading 19 PLUR_POLICE_-_JAUZ_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16783144)
+2025/03/08 10:12:27 [INFO] Successfully uploaded 19 PLUR_POLICE_-_JAUZ_REMIX.MP3 (object ID: 16783145) to /MUSIC/KNIFE_PARTY_JAUZ/TRIGGER_WARNING/19 PLUR_POLICE_-_JAUZ_REMIX.MP3
+2025/03/08 10:12:27 [INFO] Folder 'BRO_SAFARI_SARAH_HUDSON' not found, attempting to create it
+2025/03/08 10:12:28 [INFO] Folder 'COLLISIONS' not found, attempting to create it
+2025/03/08 10:12:28 [INFO] Uploading 20 REALITY.MP3 to album folder (storage ID: 131073, folder ID: 16783147)
+2025/03/08 10:12:28 [INFO] Successfully uploaded 20 REALITY.MP3 (object ID: 16783148) to /MUSIC/BRO_SAFARI_SARAH_HUDSON/COLLISIONS/20 REALITY.MP3
+2025/03/08 10:12:28 [INFO] Folder 'JAUZ_EPHWURD' not found, attempting to create it
+2025/03/08 10:12:28 [INFO] Folder 'ROCK_THE_PARTY' not found, attempting to create it
+2025/03/08 10:12:28 [INFO] Uploading 21 ROCK_THE_PARTY.MP3 to album folder (storage ID: 131073, folder ID: 16783150)
+2025/03/08 10:12:29 [INFO] Successfully uploaded 21 ROCK_THE_PARTY.MP3 (object ID: 16783151) to /MUSIC/JAUZ_EPHWURD/ROCK_THE_PARTY/21 ROCK_THE_PARTY.MP3
+2025/03/08 10:12:29 [INFO] Using existing folder: JOYRYDE (ID: 16783101)
+2025/03/08 10:12:29 [INFO] Using existing folder: BRAVE (ID: 16783113)
+2025/03/08 10:12:29 [INFO] Uploading 22 SELECTA_19.MP3 to album folder (storage ID: 131073, folder ID: 16783113)
+2025/03/08 10:12:29 [INFO] Successfully uploaded 22 SELECTA_19.MP3 (object ID: 16783152) to /MUSIC/JOYRYDE/BRAVE/22 SELECTA_19.MP3
+2025/03/08 10:12:29 [INFO] Using existing folder: JOYRYDE (ID: 16783101)
+2025/03/08 10:12:29 [INFO] Folder 'SPEED_TRAP' not found, attempting to create it
+2025/03/08 10:12:29 [INFO] Uploading 23 SPEED_TRAP.MP3 to album folder (storage ID: 131073, folder ID: 16783153)
+2025/03/08 10:12:30 [INFO] Successfully uploaded 23 SPEED_TRAP.MP3 (object ID: 16783154) to /MUSIC/JOYRYDE/SPEED_TRAP/23 SPEED_TRAP.MP3
+2025/03/08 10:12:30 [INFO] Folder '12TH_PLANET' not found, attempting to create it
+2025/03/08 10:12:30 [INFO] Folder 'SHIPWRECK'D' not found, attempting to create it
+2025/03/08 10:12:30 [INFO] Uploading 24 SHIPWRECK'D.MP3 to album folder (storage ID: 131073, folder ID: 16783156)
+2025/03/08 10:12:30 [INFO] Successfully uploaded 24 SHIPWRECK'D.MP3 (object ID: 16783157) to /MUSIC/12TH_PLANET/SHIPWRECK'D/24 SHIPWRECK'D.MP3
+2025/03/08 10:12:30 [INFO] Folder 'SIKDOPE_LOUD_ABOUT_US!' not found, attempting to create it
+2025/03/08 10:12:31 [INFO] Folder 'SLOW_IT_DOWN' not found, attempting to create it
+2025/03/08 10:12:31 [INFO] Uploading 25 SLOW_IT_DOWN.MP3 to album folder (storage ID: 131073, folder ID: 16783159)
+2025/03/08 10:12:31 [INFO] Successfully uploaded 25 SLOW_IT_DOWN.MP3 (object ID: 16783160) to /MUSIC/SIKDOPE_LOUD_ABOUT_US!/SLOW_IT_DOWN/25 SLOW_IT_DOWN.MP3
+2025/03/08 10:12:31 [INFO] Folder 'JAUZ_666' not found, attempting to create it
+2025/03/08 10:12:31 [INFO] Folder 'THE_WISE_AND_THE_WICKED' not found, attempting to create it
+2025/03/08 10:12:31 [INFO] Uploading 26 SUPER_FLY.MP3 to album folder (storage ID: 131073, folder ID: 16783162)
+2025/03/08 10:12:32 [INFO] Successfully uploaded 26 SUPER_FLY.MP3 (object ID: 16783163) to /MUSIC/JAUZ_666/THE_WISE_AND_THE_WICKED/26 SUPER_FLY.MP3
+2025/03/08 10:12:32 [INFO] Folder 'JAUZ_NONSENS' not found, attempting to create it
+2025/03/08 10:12:32 [INFO] Folder 'THE_BEAT' not found, attempting to create it
+2025/03/08 10:12:32 [INFO] Uploading 27 THE_BEAT.MP3 to album folder (storage ID: 131073, folder ID: 16783165)
+2025/03/08 10:12:32 [INFO] Successfully uploaded 27 THE_BEAT.MP3 (object ID: 16783166) to /MUSIC/JAUZ_NONSENS/THE_BEAT/27 THE_BEAT.MP3
+2025/03/08 10:12:32 [INFO] Using existing folder: JAUZ (ID: 16783095)
+2025/03/08 10:12:32 [INFO] Folder 'THE_GAME' not found, attempting to create it
+2025/03/08 10:12:32 [INFO] Uploading 28 THE_GAME.MP3 to album folder (storage ID: 131073, folder ID: 16783167)
+2025/03/08 10:12:33 [INFO] Successfully uploaded 28 THE_GAME.MP3 (object ID: 16783168) to /MUSIC/JAUZ/THE_GAME/28 THE_GAME.MP3
+2025/03/08 10:12:33 [INFO] Folder '4B' not found, attempting to create it
+2025/03/08 10:12:33 [INFO] Folder 'THERE_4_YOU' not found, attempting to create it
+2025/03/08 10:12:33 [INFO] Uploading 29 THERE_4_YOU.MP3 to album folder (storage ID: 131073, folder ID: 16783170)
+2025/03/08 10:12:33 [INFO] Successfully uploaded 29 THERE_4_YOU.MP3 (object ID: 16783171) to /MUSIC/4B/THERE_4_YOU/29 THERE_4_YOU.MP3
+2025/03/08 10:12:34 [INFO] Folder 'APASHE_LEVEL_UP_SAMI_CHAOUKI' not found, attempting to create it
+2025/03/08 10:12:34 [INFO] Folder 'TIME_WARP_(LEVEL_UP_REMIX)' not found, attempting to create it
+2025/03/08 10:12:34 [INFO] Uploading 30 TIME_WARP_-_LEVEL_UP_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16783173)
+2025/03/08 10:12:34 [INFO] Successfully uploaded 30 TIME_WARP_-_LEVEL_UP_REMIX.MP3 (object ID: 16783174) to /MUSIC/APASHE_LEVEL_UP_SAMI_CHAOUKI/TIME_WARP_(LEVEL_UP_REMIX)/30 TIME_WARP_-_LEVEL_UP_REMIX.MP3
+2025/03/08 10:12:34 [INFO] Using existing folder: HEROBUST (ID: 16783128)
+2025/03/08 10:12:34 [INFO] Folder 'WTF' not found, attempting to create it
+2025/03/08 10:12:34 [INFO] Uploading 31 WTF.MP3 to album folder (storage ID: 131073, folder ID: 16783175)
+2025/03/08 10:12:35 [INFO] Successfully uploaded 31 WTF.MP3 (object ID: 16783176) to /MUSIC/HEROBUST/WTF/31 WTF.MP3
+2025/03/08 10:12:35 [INFO] Folder 'FUNTCASE_DANI_POPPITT' not found, attempting to create it
+2025/03/08 10:12:35 [INFO] Folder 'NEXT_CHAPTER' not found, attempting to create it
+2025/03/08 10:12:35 [INFO] Uploading 32 WITHOUT.MP3 to album folder (storage ID: 131073, folder ID: 16783178)
+2025/03/08 10:12:35 [INFO] Successfully uploaded 32 WITHOUT.MP3 (object ID: 16783179) to /MUSIC/FUNTCASE_DANI_POPPITT/NEXT_CHAPTER/32 WITHOUT.MP3
+2025/03/08 10:12:35 [INFO] Using alternative transfer method for data of size 2930 bytes
+2025/03/08 10:12:35 [INFO] Successfully created and uploaded playlist BROKENJAUZ.m3u8 (object ID: 16783180) with 32 songs
+2025/03/08 10:12:35 [INFO] Verifying playlist upload for BROKENJAUZ.m3u8
+2025/03/08 10:12:35 [INFO] Playlist verification: Found playlist BROKENJAUZ.m3u8 directly in parent folder (ID: 16783180)
+2025/03/08 10:12:35 [INFO] Attempting to read content of playlist BROKENJAUZ.m3u8 (ID: 16783180)
+2025/03/08 10:14:01 [INFO] Searching for playlists...
+2025/03/08 10:14:01 [INFO] Searching storage #1:  (ID: 131073)
+2025/03/08 10:14:09 [INFO] Walk scan completed: checked 348 files, found 1 playlists
+2025/03/08 10:14:09 [INFO] Total unique playlists found: 1
+2025/03/08 10:14:09 [INFO] Found 1 playlists in storage #1
+2025/03/08 10:14:09 [INFO] Total playlists found across all storages: 1
+2025/03/08 10:14:17 [INFO] Automatically selected storage:  (ID: 131073)
+2025/03/08 10:14:17 [INFO] Found existing Music folder with ID: 16777218
+2025/03/08 10:14:24 [INFO] Folder 'JOYRYDE_SKRILLEX' not found, attempting to create it
+2025/03/08 10:14:24 [INFO] Folder 'AGEN_WIDA' not found, attempting to create it
+2025/03/08 10:14:24 [INFO] Uploading 01 AGEN_WIDA.MP3 to album folder (storage ID: 131073, folder ID: 16783182)
+2025/03/08 10:14:24 [INFO] Successfully uploaded 01 AGEN_WIDA.MP3 (object ID: 16783183) to /MUSIC/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 10:14:24 [INFO] Folder 'ISOXO_KNOCK2' not found, attempting to create it
+2025/03/08 10:14:24 [INFO] Folder 'NITEHARTS' not found, attempting to create it
+2025/03/08 10:14:24 [INFO] Uploading 02 AARENA_(KNOCK2_REMIX).MP3 to album folder (storage ID: 131073, folder ID: 16783185)
+2025/03/08 10:14:25 [INFO] Successfully uploaded 02 AARENA_(KNOCK2_REMIX).MP3 (object ID: 16783186) to /MUSIC/ISOXO_KNOCK2/NITEHARTS/02 AARENA_(KNOCK2_REMIX).MP3
+2025/03/08 10:14:25 [INFO] Using existing folder: JAUZ (ID: 16783095)
+2025/03/08 10:14:25 [INFO] Folder 'ALPHA' not found, attempting to create it
+2025/03/08 10:14:25 [INFO] Uploading 03 ALPHA.MP3 to album folder (storage ID: 131073, folder ID: 16783187)
+2025/03/08 10:14:25 [INFO] Successfully uploaded 03 ALPHA.MP3 (object ID: 16783188) to /MUSIC/JAUZ/ALPHA/03 ALPHA.MP3
+2025/03/08 10:14:25 [INFO] Using existing folder: HEROBUST (ID: 16783128)
+2025/03/08 10:14:25 [INFO] Folder 'BRUH_!' not found, attempting to create it
+2025/03/08 10:14:26 [INFO] Uploading 04 BRUH!.MP3 to album folder (storage ID: 131073, folder ID: 16783189)
+2025/03/08 10:14:26 [INFO] Successfully uploaded 04 BRUH!.MP3 (object ID: 16783190) to /MUSIC/HEROBUST/BRUH_!/04 BRUH!.MP3
+2025/03/08 10:14:26 [INFO] Folder 'BRO_SAFARI_TANK_PARADE' not found, attempting to create it
+2025/03/08 10:14:26 [INFO] Folder 'BLITZ' not found, attempting to create it
+2025/03/08 10:14:26 [INFO] Uploading 05 BLITZ.MP3 to album folder (storage ID: 131073, folder ID: 16783192)
+2025/03/08 10:14:27 [INFO] Successfully uploaded 05 BLITZ.MP3 (object ID: 16783193) to /MUSIC/BRO_SAFARI_TANK_PARADE/BLITZ/05 BLITZ.MP3
+2025/03/08 10:14:27 [INFO] Using existing folder: HEROBUST (ID: 16783128)
+2025/03/08 10:14:27 [INFO] Folder 'BLOCKBUSTER_VIP' not found, attempting to create it
+2025/03/08 10:14:27 [INFO] Uploading 06 BLOCKBUSTER_VIP.MP3 to album folder (storage ID: 131073, folder ID: 16783194)
+2025/03/08 10:14:27 [INFO] Successfully uploaded 06 BLOCKBUSTER_VIP.MP3 (object ID: 16783195) to /MUSIC/HEROBUST/BLOCKBUSTER_VIP/06 BLOCKBUSTER_VIP.MP3
+2025/03/08 10:14:27 [INFO] Folder 'RUSKO_SUBTRONICS' not found, attempting to create it
+2025/03/08 10:14:27 [INFO] Folder 'BOUNCE' not found, attempting to create it
+2025/03/08 10:14:27 [INFO] Uploading 07 BOUNCE.MP3 to album folder (storage ID: 131073, folder ID: 16783197)
+2025/03/08 10:14:28 [INFO] Successfully uploaded 07 BOUNCE.MP3 (object ID: 16783198) to /MUSIC/RUSKO_SUBTRONICS/BOUNCE/07 BOUNCE.MP3
+2025/03/08 10:14:28 [INFO] Using existing folder: 12TH_PLANET (ID: 16783155)
+2025/03/08 10:14:28 [INFO] Folder 'CLAIRVOYANT' not found, attempting to create it
+2025/03/08 10:14:28 [INFO] Uploading 08 CLAIRVOYANT.MP3 to album folder (storage ID: 131073, folder ID: 16783199)
+2025/03/08 10:14:28 [INFO] Successfully uploaded 08 CLAIRVOYANT.MP3 (object ID: 16783200) to /MUSIC/12TH_PLANET/CLAIRVOYANT/08 CLAIRVOYANT.MP3
+2025/03/08 10:14:28 [INFO] Folder '4B_NVRLEFT' not found, attempting to create it
+2025/03/08 10:14:28 [INFO] Folder 'DOPE' not found, attempting to create it
+2025/03/08 10:14:28 [INFO] Uploading 09 DOPE.MP3 to album folder (storage ID: 131073, folder ID: 16783202)
+2025/03/08 10:14:29 [INFO] Successfully uploaded 09 DOPE.MP3 (object ID: 16783203) to /MUSIC/4B_NVRLEFT/DOPE/09 DOPE.MP3
+2025/03/08 10:14:29 [INFO] Folder 'RIOT' not found, attempting to create it
+2025/03/08 10:14:29 [INFO] Folder 'DOWN_WITH_YOUR_LOVE' not found, attempting to create it
+2025/03/08 10:14:29 [INFO] Uploading 10 DOWN_WITH_YOUR_LOVE.MP3 to album folder (storage ID: 131073, folder ID: 16783205)
+2025/03/08 10:14:29 [INFO] Successfully uploaded 10 DOWN_WITH_YOUR_LOVE.MP3 (object ID: 16783206) to /MUSIC/RIOT/DOWN_WITH_YOUR_LOVE/10 DOWN_WITH_YOUR_LOVE.MP3
+2025/03/08 10:14:29 [INFO] Folder 'BRAINRACK_EYEZIC_ALLEYCVT' not found, attempting to create it
+2025/03/08 10:14:29 [INFO] Folder 'EYES_CLOSED' not found, attempting to create it
+2025/03/08 10:14:30 [INFO] Uploading 11 EYES_CLOSED.MP3 to album folder (storage ID: 131073, folder ID: 16783208)
+2025/03/08 10:14:30 [INFO] Successfully uploaded 11 EYES_CLOSED.MP3 (object ID: 16783209) to /MUSIC/BRAINRACK_EYEZIC_ALLEYCVT/EYES_CLOSED/11 EYES_CLOSED.MP3
+2025/03/08 10:14:30 [INFO] Using existing folder: JAUZ (ID: 16783095)
+2025/03/08 10:14:30 [INFO] Folder 'FEEL_THE_VOLUME' not found, attempting to create it
+2025/03/08 10:14:30 [INFO] Uploading 12 FEEL_THE_VOLUME.MP3 to album folder (storage ID: 131073, folder ID: 16783210)
+2025/03/08 10:14:31 [INFO] Successfully uploaded 12 FEEL_THE_VOLUME.MP3 (object ID: 16783211) to /MUSIC/JAUZ/FEEL_THE_VOLUME/12 FEEL_THE_VOLUME.MP3
+2025/03/08 10:14:31 [INFO] Folder '12TH_PLANET_KATIE_SKY' not found, attempting to create it
+2025/03/08 10:14:31 [INFO] Folder 'FOLLOW' not found, attempting to create it
+2025/03/08 10:14:31 [INFO] Uploading 13 FOLLOW.MP3 to album folder (storage ID: 131073, folder ID: 16783213)
+2025/03/08 10:14:31 [INFO] Successfully uploaded 13 FOLLOW.MP3 (object ID: 16783214) to /MUSIC/12TH_PLANET_KATIE_SKY/FOLLOW/13 FOLLOW.MP3
+2025/03/08 10:14:31 [INFO] Folder 'BUKU_BASSNECTAR' not found, attempting to create it
+2025/03/08 10:14:31 [INFO] Folder 'FRONT_TO_BACK_(BASSNECTAR_REMIX)' not found, attempting to create it
+2025/03/08 10:14:31 [INFO] Uploading 14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16783216)
+2025/03/08 10:14:32 [INFO] Successfully uploaded 14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3 (object ID: 16783217) to /MUSIC/BUKU_BASSNECTAR/FRONT_TO_BACK_(BASSNECTAR_REMIX)/14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3
+2025/03/08 10:14:32 [INFO] Using existing folder: KNOCK2 (ID: 16783140)
+2025/03/08 10:14:32 [INFO] Folder 'SABLE_VALLEY_SUMMER_VOL._1' not found, attempting to create it
+2025/03/08 10:14:32 [INFO] Uploading 15 GEMS.MP3 to album folder (storage ID: 131073, folder ID: 16783218)
+2025/03/08 10:14:32 [INFO] Successfully uploaded 15 GEMS.MP3 (object ID: 16783219) to /MUSIC/KNOCK2/SABLE_VALLEY_SUMMER_VOL._1/15 GEMS.MP3
+2025/03/08 10:14:32 [INFO] Using existing folder: JAUZ (ID: 16783095)
+2025/03/08 10:14:32 [INFO] Folder 'GET_TO_ME' not found, attempting to create it
+2025/03/08 10:14:32 [INFO] Uploading 16 GET_TO_ME.MP3 to album folder (storage ID: 131073, folder ID: 16783220)
+2025/03/08 10:14:33 [INFO] Successfully uploaded 16 GET_TO_ME.MP3 (object ID: 16783221) to /MUSIC/JAUZ/GET_TO_ME/16 GET_TO_ME.MP3
+2025/03/08 10:14:33 [INFO] Folder 'DEADMAU5_ROB_SWIRE_JAUZ' not found, attempting to create it
+2025/03/08 10:14:33 [INFO] Folder 'GHOSTS_'N'_STUFF_(JAUZ_REMIX)' not found, attempting to create it
+2025/03/08 10:14:33 [INFO] Uploading 17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16783223)
+2025/03/08 10:14:33 [INFO] Successfully uploaded 17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3 (object ID: 16783224) to /MUSIC/DEADMAU5_ROB_SWIRE_JAUZ/GHOSTS_'N'_STUFF_(JAUZ_REMIX)/17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3
+2025/03/08 10:14:33 [INFO] Using alternative transfer method for data of size 1684 bytes
+2025/03/08 10:14:33 [INFO] Successfully created and uploaded playlist WORKINGJAUZ.m3u8 (object ID: 16783225) with 17 songs
+2025/03/08 10:14:33 [INFO] Verifying playlist upload for WORKINGJAUZ.m3u8
+2025/03/08 10:14:34 [INFO] Playlist verification: Found playlist WORKINGJAUZ.m3u8 directly in parent folder (ID: 16783225)
+2025/03/08 10:14:34 [INFO] Attempting to read content of playlist WORKINGJAUZ.m3u8 (ID: 16783225)

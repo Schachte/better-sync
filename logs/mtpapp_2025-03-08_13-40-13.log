@@ -1,0 +1,13 @@
+2025/03/08 13:40:13 --- MTP Music Manager Started ---
+2025/03/08 13:40:13 OS: darwin, Architecture: arm64
+2025/03/08 13:40:13 Verbose logging: true
+2025/03/08 13:40:13 [VERBOSE] (main.go:25) Starting MTP Music Manager
+2025/03/08 13:40:13 [VERBOSE] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 13:40:13 [VERBOSE] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 13:40:13 [VERBOSE] (connect.go:40) MTP device found successfully
+2025/03/08 13:40:13 [VERBOSE] (connect.go:54) Device initialized successfully
+2025/03/08 13:40:13 [VERBOSE] (storage.go:21) Fetching storages with timeout of 30s...
+2025/03/08 13:40:13 [VERBOSE] (storage.go:48) Found 1 storage(s) on device
+2025/03/08 13:40:13 [VERBOSE] (storage.go:61) Storage #1:  (ID: 131073)
+2025/03/08 13:40:19 [INFO] (upload.go:1217) Automatically selected storage:  (ID: 131073)
+2025/03/08 13:40:19 [VERBOSE] (upload.go:1076) Found existing Music folder with ID: 16777218

@@ -1,0 +1,5 @@
+2025/03/08 12:28:16 --- MTP Music Manager Started ---
+2025/03/08 12:28:16 OS: darwin, Architecture: arm64
+2025/03/08 12:28:16 Verbose logging: false
+2025/03/08 12:28:17 [ERROR] (connect.go:37) MTP initialization failed: OpenSession after reset: LIBUSB_ERROR_NOT_FOUND
+2025/03/08 12:28:17 [ERROR] (main.go:31) Failed to initialize device: OpenSession after reset: LIBUSB_ERROR_NOT_FOUND

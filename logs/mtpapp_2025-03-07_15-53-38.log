@@ -1,0 +1,9 @@
+2025/03/07 15:53:38 --- MTP Music Manager Started ---
+2025/03/07 15:53:38 OS: darwin, Architecture: arm64
+2025/03/07 15:53:38 Verbose logging: false
+2025/03/07 15:53:38 [INFO] Starting MTP Music Manager
+2025/03/07 15:53:38 [INFO] Running on darwin/arm64
+2025/03/07 15:53:38 [INFO] Initializing device with timeout of 30s...
+2025/03/07 15:53:38 [INFO] Starting MTP device detection in background goroutine
+2025/03/07 15:53:38 [ERROR] MTP initialization failed: no MTP devices found
+2025/03/07 15:53:38 [ERROR] Failed to initialize device: no MTP devices found

@@ -1,0 +1,17 @@
+2025/03/08 11:00:23 --- MTP Music Manager Started ---
+2025/03/08 11:00:23 OS: darwin, Architecture: arm64
+2025/03/08 11:00:23 Verbose logging: false
+2025/03/08 11:00:23 [INFO] (main.go:25) Starting MTP Music Manager
+2025/03/08 11:00:23 [INFO] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 11:00:23 [INFO] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 11:00:23 [INFO] (connect.go:40) MTP device found successfully
+2025/03/08 11:00:23 [INFO] (connect.go:54) Device initialized successfully
+2025/03/08 11:00:23 [INFO] (storage.go:21) Fetching storages with timeout of 30s...
+2025/03/08 11:00:23 [INFO] (storage.go:48) Found 1 storage(s) on device
+2025/03/08 11:00:23 [INFO] (storage.go:61) Storage #1:  (ID: 131073)
+2025/03/08 11:00:35 [INFO] (list.go:207) Scanned 367 files in storage, found 2 playlists
+2025/03/08 11:00:50 [INFO] (list.go:235) Scanned 367 files in storage, found 49 MP3 files
+2025/03/08 11:02:05 [ERROR] (upload.go:345) Error selecting storage: failed to find or create Music folder: failed to create Music folder: failed to send folder info: GeneralError
+2025/03/08 11:02:20 [INFO] (list.go:207) Scanned 367 files in storage, found 2 playlists
+2025/03/08 11:02:58 [INFO] (list.go:207) Scanned 366 files in storage, found 1 playlists
+2025/03/08 11:03:14 [INFO] (list.go:235) Scanned 366 files in storage, found 49 MP3 files

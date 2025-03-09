@@ -1,0 +1,14 @@
+2025/03/08 11:08:35 --- MTP Music Manager Started ---
+2025/03/08 11:08:35 OS: darwin, Architecture: arm64
+2025/03/08 11:08:35 Verbose logging: false
+2025/03/08 11:08:35 [INFO] (main.go:25) Starting MTP Music Manager
+2025/03/08 11:08:35 [INFO] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 11:08:35 [INFO] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 11:08:35 [INFO] (connect.go:40) MTP device found successfully
+2025/03/08 11:08:35 [INFO] (connect.go:54) Device initialized successfully
+2025/03/08 11:08:35 [INFO] (storage.go:21) Fetching storages with timeout of 30s...
+2025/03/08 11:08:35 [INFO] (storage.go:48) Found 1 storage(s) on device
+2025/03/08 11:08:35 [INFO] (storage.go:61) Storage #1:  (ID: 131073)
+2025/03/08 11:08:39 [INFO] (list.go:266) Looking for folder 'Music' in storage 131073, parent 0
+2025/03/08 11:08:39 [ERROR] (list.go:272) GetObjectHandles failed: SpecificationByFormatUnsupported
+2025/03/08 11:08:39 [ERROR] (menu.go:67) Error selecting storage: failed to find or create Music folder: failed to create Music folder: failed to send folder info: GeneralError

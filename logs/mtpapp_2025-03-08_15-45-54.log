@@ -1,0 +1,202 @@
+2025/03/08 15:45:54 --- MTP Music Manager Started ---
+2025/03/08 15:45:54 OS: darwin, Architecture: arm64
+2025/03/08 15:45:54 Verbose logging: true
+2025/03/08 15:45:54 [VERBOSE] (main.go:25) Starting MTP Music Manager
+2025/03/08 15:45:54 [VERBOSE] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 15:45:54 [VERBOSE] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 15:45:54 [VERBOSE] (connect.go:40) MTP device found successfully
+2025/03/08 15:45:54 [VERBOSE] (connect.go:54) Device initialized successfully
+2025/03/08 15:45:54 [VERBOSE] (storage.go:21) Fetching storages with timeout of 30s...
+2025/03/08 15:45:54 [VERBOSE] (storage.go:48) Found 1 storage(s) on device
+2025/03/08 15:45:54 [VERBOSE] (storage.go:61) Storage #1:  (ID: 131073)
+2025/03/08 15:45:56 [INFO] (upload.go:1232) Automatically selected storage:  (ID: 131073)
+2025/03/08 15:45:56 [VERBOSE] (upload.go:1165) Found existing Music folder with ID: 16777218
+2025/03/08 15:46:02 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music (ID: 16777218)
+2025/03/08 15:46:02 [INFO] (delete.go:714) Found 40 items in folder /Music
+2025/03/08 15:46:02 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/JOYRYDE_SKRILLEX (ID: 16777306)
+2025/03/08 15:46:02 [INFO] (delete.go:714) Found 1 items in folder /Music/JOYRYDE_SKRILLEX
+2025/03/08 15:46:02 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (ID: 16777641)
+2025/03/08 15:46:02 [INFO] (delete.go:714) Found 3 items in folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA
+2025/03/08 15:46:02 [ERROR] (delete.go:730) Error getting object info for handle 16783016: GeneralError
+2025/03/08 15:46:02 [ERROR] (delete.go:730) Error getting object info for handle 16783034: GeneralError
+2025/03/08 15:46:02 [ERROR] (delete.go:730) Error getting object info for handle 16783205: GeneralError
+2025/03/08 15:46:02 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (ID: 16777641): GeneralError
+2025/03/08 15:46:03 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (ID: 16777641): GeneralError
+2025/03/08 15:46:03 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (ID: 16777641): GeneralError
+2025/03/08 15:46:03 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777641
+2025/03/08 15:46:03 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA: failed to send modified object info: GeneralError
+2025/03/08 15:46:03 [ERROR] (delete.go:742) Error deleting subfolder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA: completed with 4 failed deletions
+2025/03/08 15:46:04 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/JOYRYDE_SKRILLEX (ID: 16777306): GeneralError
+2025/03/08 15:46:04 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/JOYRYDE_SKRILLEX (ID: 16777306): GeneralError
+2025/03/08 15:46:05 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/JOYRYDE_SKRILLEX (ID: 16777306): GeneralError
+2025/03/08 15:46:05 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777306
+2025/03/08 15:46:05 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/JOYRYDE_SKRILLEX: failed to send modified object info: GeneralError
+2025/03/08 15:46:05 [ERROR] (delete.go:742) Error deleting subfolder /Music/JOYRYDE_SKRILLEX: completed with 2 failed deletions
+2025/03/08 15:46:05 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/ISOXO_KNOCK2 (ID: 16777307)
+2025/03/08 15:46:05 [INFO] (delete.go:714) Found 1 items in folder /Music/ISOXO_KNOCK2
+2025/03/08 15:46:05 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/ISOXO_KNOCK2/NITEHARTS (ID: 16777642)
+2025/03/08 15:46:05 [INFO] (delete.go:714) Found 3 items in folder /Music/ISOXO_KNOCK2/NITEHARTS
+2025/03/08 15:46:05 [ERROR] (delete.go:730) Error getting object info for handle 16783017: GeneralError
+2025/03/08 15:46:05 [ERROR] (delete.go:730) Error getting object info for handle 16783035: GeneralError
+2025/03/08 15:46:05 [ERROR] (delete.go:730) Error getting object info for handle 16783206: GeneralError
+2025/03/08 15:46:05 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/ISOXO_KNOCK2/NITEHARTS (ID: 16777642): GeneralError
+2025/03/08 15:46:05 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/ISOXO_KNOCK2/NITEHARTS (ID: 16777642): GeneralError
+2025/03/08 15:46:06 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/ISOXO_KNOCK2/NITEHARTS (ID: 16777642): GeneralError
+2025/03/08 15:46:06 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777642
+2025/03/08 15:46:06 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/ISOXO_KNOCK2/NITEHARTS: failed to send modified object info: GeneralError
+2025/03/08 15:46:06 [ERROR] (delete.go:742) Error deleting subfolder /Music/ISOXO_KNOCK2/NITEHARTS: completed with 4 failed deletions
+2025/03/08 15:46:06 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/ISOXO_KNOCK2 (ID: 16777307): GeneralError
+2025/03/08 15:46:06 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/ISOXO_KNOCK2 (ID: 16777307): GeneralError
+2025/03/08 15:46:07 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/ISOXO_KNOCK2 (ID: 16777307): GeneralError
+2025/03/08 15:46:07 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777307
+2025/03/08 15:46:07 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/ISOXO_KNOCK2: failed to send modified object info: GeneralError
+2025/03/08 15:46:07 [ERROR] (delete.go:742) Error deleting subfolder /Music/ISOXO_KNOCK2: completed with 2 failed deletions
+2025/03/08 15:46:07 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/JAUZ (ID: 16777308)
+2025/03/08 15:46:07 [INFO] (delete.go:714) Found 5 items in folder /Music/JAUZ
+2025/03/08 15:46:07 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/JAUZ/ALPHA (ID: 16777643)
+2025/03/08 15:46:07 [INFO] (delete.go:714) Found 3 items in folder /Music/JAUZ/ALPHA
+2025/03/08 15:46:07 [ERROR] (delete.go:730) Error getting object info for handle 16783018: GeneralError
+2025/03/08 15:46:07 [ERROR] (delete.go:730) Error getting object info for handle 16783036: GeneralError
+2025/03/08 15:46:07 [ERROR] (delete.go:730) Error getting object info for handle 16783207: GeneralError
+2025/03/08 15:46:07 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/JAUZ/ALPHA (ID: 16777643): GeneralError
+2025/03/08 15:46:08 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/JAUZ/ALPHA (ID: 16777643): GeneralError
+2025/03/08 15:46:08 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/JAUZ/ALPHA (ID: 16777643): GeneralError
+2025/03/08 15:46:08 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777643
+2025/03/08 15:46:08 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/JAUZ/ALPHA: failed to send modified object info: GeneralError
+2025/03/08 15:46:08 [ERROR] (delete.go:742) Error deleting subfolder /Music/JAUZ/ALPHA: completed with 4 failed deletions
+2025/03/08 15:46:08 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/JAUZ/FEEL_THE_VOLUME (ID: 16777644)
+2025/03/08 15:46:08 [INFO] (delete.go:714) Found 3 items in folder /Music/JAUZ/FEEL_THE_VOLUME
+2025/03/08 15:46:08 [ERROR] (delete.go:730) Error getting object info for handle 16783027: GeneralError
+2025/03/08 15:46:08 [ERROR] (delete.go:730) Error getting object info for handle 16783045: GeneralError
+2025/03/08 15:46:08 [ERROR] (delete.go:730) Error getting object info for handle 16783216: GeneralError
+2025/03/08 15:46:08 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/JAUZ/FEEL_THE_VOLUME (ID: 16777644): GeneralError
+2025/03/08 15:46:09 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/JAUZ/FEEL_THE_VOLUME (ID: 16777644): GeneralError
+2025/03/08 15:46:09 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/JAUZ/FEEL_THE_VOLUME (ID: 16777644): GeneralError
+2025/03/08 15:46:09 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777644
+2025/03/08 15:46:09 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/JAUZ/FEEL_THE_VOLUME: failed to send modified object info: GeneralError
+2025/03/08 15:46:09 [ERROR] (delete.go:742) Error deleting subfolder /Music/JAUZ/FEEL_THE_VOLUME: completed with 4 failed deletions
+2025/03/08 15:46:09 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/JAUZ/GET_TO_ME (ID: 16777645)
+2025/03/08 15:46:09 [INFO] (delete.go:714) Found 3 items in folder /Music/JAUZ/GET_TO_ME
+2025/03/08 15:46:09 [ERROR] (delete.go:730) Error getting object info for handle 16783031: GeneralError
+2025/03/08 15:46:09 [ERROR] (delete.go:730) Error getting object info for handle 16783049: GeneralError
+2025/03/08 15:46:09 [ERROR] (delete.go:730) Error getting object info for handle 16783220: GeneralError
+2025/03/08 15:46:10 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/JAUZ/GET_TO_ME (ID: 16777645): GeneralError
+2025/03/08 15:46:10 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/JAUZ/GET_TO_ME (ID: 16777645): GeneralError
+2025/03/08 15:46:11 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/JAUZ/GET_TO_ME (ID: 16777645): GeneralError
+2025/03/08 15:46:11 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777645
+2025/03/08 15:46:11 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/JAUZ/GET_TO_ME: failed to send modified object info: GeneralError
+2025/03/08 15:46:11 [ERROR] (delete.go:742) Error deleting subfolder /Music/JAUZ/GET_TO_ME: completed with 4 failed deletions
+2025/03/08 15:46:11 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/JAUZ/GOODIEZ (ID: 16783055)
+2025/03/08 15:46:11 [INFO] (delete.go:714) Found 3 items in folder /Music/JAUZ/GOODIEZ
+2025/03/08 15:46:11 [ERROR] (delete.go:730) Error getting object info for handle 16783056: GeneralError
+2025/03/08 15:46:11 [ERROR] (delete.go:730) Error getting object info for handle 16783138: GeneralError
+2025/03/08 15:46:11 [ERROR] (delete.go:730) Error getting object info for handle 16783171: GeneralError
+2025/03/08 15:46:11 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/JAUZ/GOODIEZ (ID: 16783055): GeneralError
+2025/03/08 15:46:11 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/JAUZ/GOODIEZ (ID: 16783055): GeneralError
+2025/03/08 15:46:12 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/JAUZ/GOODIEZ (ID: 16783055): GeneralError
+2025/03/08 15:46:12 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16783055
+2025/03/08 15:46:12 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/JAUZ/GOODIEZ: failed to send modified object info: GeneralError
+2025/03/08 15:46:12 [ERROR] (delete.go:742) Error deleting subfolder /Music/JAUZ/GOODIEZ: completed with 4 failed deletions
+2025/03/08 15:46:12 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/JAUZ/THE_GAME (ID: 16783123)
+2025/03/08 15:46:12 [INFO] (delete.go:714) Found 3 items in folder /Music/JAUZ/THE_GAME
+2025/03/08 15:46:12 [ERROR] (delete.go:730) Error getting object info for handle 16783124: GeneralError
+2025/03/08 15:46:12 [ERROR] (delete.go:730) Error getting object info for handle 16783164: GeneralError
+2025/03/08 15:46:12 [ERROR] (delete.go:730) Error getting object info for handle 16783197: GeneralError
+2025/03/08 15:46:12 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/JAUZ/THE_GAME (ID: 16783123): GeneralError
+2025/03/08 15:46:12 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/JAUZ/THE_GAME (ID: 16783123): GeneralError
+2025/03/08 15:46:13 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/JAUZ/THE_GAME (ID: 16783123): GeneralError
+2025/03/08 15:46:13 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16783123
+2025/03/08 15:46:13 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/JAUZ/THE_GAME: failed to send modified object info: GeneralError
+2025/03/08 15:46:13 [ERROR] (delete.go:742) Error deleting subfolder /Music/JAUZ/THE_GAME: completed with 4 failed deletions
+2025/03/08 15:46:13 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/JAUZ (ID: 16777308): GeneralError
+2025/03/08 15:46:14 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/JAUZ (ID: 16777308): GeneralError
+2025/03/08 15:46:14 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/JAUZ (ID: 16777308): GeneralError
+2025/03/08 15:46:14 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777308
+2025/03/08 15:46:14 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/JAUZ: failed to send modified object info: GeneralError
+2025/03/08 15:46:14 [ERROR] (delete.go:742) Error deleting subfolder /Music/JAUZ: completed with 6 failed deletions
+2025/03/08 15:46:14 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/HEROBUST (ID: 16777309)
+2025/03/08 15:46:14 [INFO] (delete.go:714) Found 4 items in folder /Music/HEROBUST
+2025/03/08 15:46:14 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/HEROBUST/BRUH_! (ID: 16777646)
+2025/03/08 15:46:14 [INFO] (delete.go:714) Found 3 items in folder /Music/HEROBUST/BRUH_!
+2025/03/08 15:46:14 [ERROR] (delete.go:730) Error getting object info for handle 16783019: GeneralError
+2025/03/08 15:46:14 [ERROR] (delete.go:730) Error getting object info for handle 16783037: GeneralError
+2025/03/08 15:46:14 [ERROR] (delete.go:730) Error getting object info for handle 16783208: GeneralError
+2025/03/08 15:46:14 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/HEROBUST/BRUH_! (ID: 16777646): GeneralError
+2025/03/08 15:46:15 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/HEROBUST/BRUH_! (ID: 16777646): GeneralError
+2025/03/08 15:46:15 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/HEROBUST/BRUH_! (ID: 16777646): GeneralError
+2025/03/08 15:46:15 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777646
+2025/03/08 15:46:15 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/HEROBUST/BRUH_!: failed to send modified object info: GeneralError
+2025/03/08 15:46:15 [ERROR] (delete.go:742) Error deleting subfolder /Music/HEROBUST/BRUH_!: completed with 4 failed deletions
+2025/03/08 15:46:15 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/HEROBUST/BLOCKBUSTER_VIP (ID: 16777647)
+2025/03/08 15:46:15 [INFO] (delete.go:714) Found 3 items in folder /Music/HEROBUST/BLOCKBUSTER_VIP
+2025/03/08 15:46:15 [ERROR] (delete.go:730) Error getting object info for handle 16783021: GeneralError
+2025/03/08 15:46:15 [ERROR] (delete.go:730) Error getting object info for handle 16783039: GeneralError
+2025/03/08 15:46:15 [ERROR] (delete.go:730) Error getting object info for handle 16783210: GeneralError
+2025/03/08 15:46:15 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/HEROBUST/BLOCKBUSTER_VIP (ID: 16777647): GeneralError
+2025/03/08 15:46:16 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/HEROBUST/BLOCKBUSTER_VIP (ID: 16777647): GeneralError
+2025/03/08 15:46:17 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/HEROBUST/BLOCKBUSTER_VIP (ID: 16777647): GeneralError
+2025/03/08 15:46:17 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777647
+2025/03/08 15:46:17 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/HEROBUST/BLOCKBUSTER_VIP: failed to send modified object info: GeneralError
+2025/03/08 15:46:17 [ERROR] (delete.go:742) Error deleting subfolder /Music/HEROBUST/BLOCKBUSTER_VIP: completed with 4 failed deletions
+2025/03/08 15:46:17 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/HEROBUST/VERTEBREAKER_(REMIXES) (ID: 16783087)
+2025/03/08 15:46:17 [INFO] (delete.go:714) Found 3 items in folder /Music/HEROBUST/VERTEBREAKER_(REMIXES)
+2025/03/08 15:46:17 [ERROR] (delete.go:730) Error getting object info for handle 16783088: GeneralError
+2025/03/08 15:46:17 [ERROR] (delete.go:730) Error getting object info for handle 16783150: GeneralError
+2025/03/08 15:46:17 [ERROR] (delete.go:730) Error getting object info for handle 16783183: GeneralError
+2025/03/08 15:46:17 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/HEROBUST/VERTEBREAKER_(REMIXES) (ID: 16783087): GeneralError
+2025/03/08 15:46:17 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/HEROBUST/VERTEBREAKER_(REMIXES) (ID: 16783087): GeneralError
+2025/03/08 15:46:18 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/HEROBUST/VERTEBREAKER_(REMIXES) (ID: 16783087): GeneralError
+2025/03/08 15:46:18 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16783087
+2025/03/08 15:46:18 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/HEROBUST/VERTEBREAKER_(REMIXES): failed to send modified object info: GeneralError
+2025/03/08 15:46:18 [ERROR] (delete.go:742) Error deleting subfolder /Music/HEROBUST/VERTEBREAKER_(REMIXES): completed with 4 failed deletions
+2025/03/08 15:46:18 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/HEROBUST/WTF (ID: 16783131)
+2025/03/08 15:46:18 [INFO] (delete.go:714) Found 3 items in folder /Music/HEROBUST/WTF
+2025/03/08 15:46:18 [ERROR] (delete.go:730) Error getting object info for handle 16783132: GeneralError
+2025/03/08 15:46:18 [ERROR] (delete.go:730) Error getting object info for handle 16783167: GeneralError
+2025/03/08 15:46:18 [ERROR] (delete.go:730) Error getting object info for handle 16783200: GeneralError
+2025/03/08 15:46:18 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/HEROBUST/WTF (ID: 16783131): GeneralError
+2025/03/08 15:46:18 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/HEROBUST/WTF (ID: 16783131): GeneralError
+2025/03/08 15:46:19 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/HEROBUST/WTF (ID: 16783131): GeneralError
+2025/03/08 15:46:19 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16783131
+2025/03/08 15:46:19 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/HEROBUST/WTF: failed to send modified object info: GeneralError
+2025/03/08 15:46:19 [ERROR] (delete.go:742) Error deleting subfolder /Music/HEROBUST/WTF: completed with 4 failed deletions
+2025/03/08 15:46:19 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/HEROBUST (ID: 16777309): GeneralError
+2025/03/08 15:46:20 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/HEROBUST (ID: 16777309): GeneralError
+2025/03/08 15:46:20 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/HEROBUST (ID: 16777309): GeneralError
+2025/03/08 15:46:20 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777309
+2025/03/08 15:46:20 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/HEROBUST: failed to send modified object info: GeneralError
+2025/03/08 15:46:20 [ERROR] (delete.go:742) Error deleting subfolder /Music/HEROBUST: completed with 5 failed deletions
+2025/03/08 15:46:20 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/BRO_SAFARI_TANK_PARADE (ID: 16777310)
+2025/03/08 15:46:20 [INFO] (delete.go:714) Found 1 items in folder /Music/BRO_SAFARI_TANK_PARADE
+2025/03/08 15:46:20 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/BRO_SAFARI_TANK_PARADE/BLITZ (ID: 16777648)
+2025/03/08 15:46:20 [INFO] (delete.go:714) Found 3 items in folder /Music/BRO_SAFARI_TANK_PARADE/BLITZ
+2025/03/08 15:46:20 [ERROR] (delete.go:730) Error getting object info for handle 16783020: GeneralError
+2025/03/08 15:46:20 [ERROR] (delete.go:730) Error getting object info for handle 16783038: GeneralError
+2025/03/08 15:46:20 [ERROR] (delete.go:730) Error getting object info for handle 16783209: GeneralError
+2025/03/08 15:46:20 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/BRO_SAFARI_TANK_PARADE/BLITZ (ID: 16777648): GeneralError
+2025/03/08 15:46:21 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/BRO_SAFARI_TANK_PARADE/BLITZ (ID: 16777648): GeneralError
+2025/03/08 15:46:21 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/BRO_SAFARI_TANK_PARADE/BLITZ (ID: 16777648): GeneralError
+2025/03/08 15:46:21 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777648
+2025/03/08 15:46:21 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/BRO_SAFARI_TANK_PARADE/BLITZ: failed to send modified object info: GeneralError
+2025/03/08 15:46:21 [ERROR] (delete.go:742) Error deleting subfolder /Music/BRO_SAFARI_TANK_PARADE/BLITZ: completed with 4 failed deletions
+2025/03/08 15:46:21 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/BRO_SAFARI_TANK_PARADE (ID: 16777310): GeneralError
+2025/03/08 15:46:22 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/BRO_SAFARI_TANK_PARADE (ID: 16777310): GeneralError
+2025/03/08 15:46:23 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/BRO_SAFARI_TANK_PARADE (ID: 16777310): GeneralError
+2025/03/08 15:46:23 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777310
+2025/03/08 15:46:23 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/BRO_SAFARI_TANK_PARADE: failed to send modified object info: GeneralError
+2025/03/08 15:46:23 [ERROR] (delete.go:742) Error deleting subfolder /Music/BRO_SAFARI_TANK_PARADE: completed with 2 failed deletions
+2025/03/08 15:46:23 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/RUSKO_SUBTRONICS (ID: 16777311)
+2025/03/08 15:46:23 [INFO] (delete.go:714) Found 1 items in folder /Music/RUSKO_SUBTRONICS
+2025/03/08 15:46:23 [INFO] (delete.go:703) Starting recursive deletion of folder: /Music/RUSKO_SUBTRONICS/BOUNCE (ID: 16777649)
+2025/03/08 15:46:23 [INFO] (delete.go:714) Found 3 items in folder /Music/RUSKO_SUBTRONICS/BOUNCE
+2025/03/08 15:46:23 [ERROR] (delete.go:730) Error getting object info for handle 16783022: GeneralError
+2025/03/08 15:46:23 [ERROR] (delete.go:730) Error getting object info for handle 16783040: GeneralError
+2025/03/08 15:46:23 [ERROR] (delete.go:730) Error getting object info for handle 16783211: GeneralError
+2025/03/08 15:46:23 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/RUSKO_SUBTRONICS/BOUNCE (ID: 16777649): GeneralError
+2025/03/08 15:46:23 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/RUSKO_SUBTRONICS/BOUNCE (ID: 16777649): GeneralError
+2025/03/08 15:46:24 [ERROR] (delete.go:803) Attempt 3: Error deleting folder /Music/RUSKO_SUBTRONICS/BOUNCE (ID: 16777649): GeneralError
+2025/03/08 15:46:24 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777649
+2025/03/08 15:46:24 [ERROR] (delete.go:817) Alternative deletion method failed for folder /Music/RUSKO_SUBTRONICS/BOUNCE: failed to send modified object info: GeneralError
+2025/03/08 15:46:24 [ERROR] (delete.go:742) Error deleting subfolder /Music/RUSKO_SUBTRONICS/BOUNCE: completed with 4 failed deletions
+2025/03/08 15:46:24 [ERROR] (delete.go:803) Attempt 1: Error deleting folder /Music/RUSKO_SUBTRONICS (ID: 16777311): GeneralError
+2025/03/08 15:46:24 [ERROR] (delete.go:803) Attempt 2: Error deleting folder /Music/RUSKO_SUBTRONICS (ID: 16777311): GeneralError

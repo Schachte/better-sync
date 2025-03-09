@@ -1,0 +1,74 @@
+2025/03/08 15:54:48 --- MTP Music Manager Started ---
+2025/03/08 15:54:48 OS: darwin, Architecture: arm64
+2025/03/08 15:54:48 Verbose logging: true
+2025/03/08 15:54:48 [VERBOSE] (main.go:25) Starting MTP Music Manager
+2025/03/08 15:54:48 [VERBOSE] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 15:54:48 [VERBOSE] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 15:54:48 [VERBOSE] (connect.go:40) MTP device found successfully
+2025/03/08 15:54:48 [VERBOSE] (connect.go:54) Device initialized successfully
+2025/03/08 15:54:48 [VERBOSE] (storage.go:22) Fetching storages with timeout of 30s...
+2025/03/08 15:54:48 [VERBOSE] (storage.go:49) Found 1 storage(s) on device
+2025/03/08 15:54:48 [VERBOSE] (storage.go:62) Storage #1:  (ID: 131073)
+2025/03/08 15:54:52 [INFO] (upload.go:1165) Automatically selected storage:  (ID: 131073)
+2025/03/08 15:54:52 [INFO] (helpers.go:177) Found existing Music folder with ID: 16777218
+2025/03/08 15:54:57 [ERROR] (helpers.go:195) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:54:57 [ERROR] (helpers.go:195) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:54:57 [VERBOSE] (upload.go:1108) Using existing folder: HWLS (ID: 16783223)
+2025/03/08 15:54:57 [VERBOSE] (upload.go:1108) Using existing folder: HWLS (ID: 16783224)
+2025/03/08 15:54:57 [VERBOSE] (upload.go:928) Uploading 01 001.MP3 to album folder (storage ID: 131073, folder ID: 16783224)
+2025/03/08 15:54:58 [VERBOSE] (upload.go:1002) Successfully uploaded 01 001.MP3 (object ID: 16783316) to /MUSIC/HWLS/HWLS/01 001.MP3
+2025/03/08 15:54:58 [INFO] (upload.go:1019) Verifying file upload for 01 001.MP3 (ID: 16783316)
+2025/03/08 15:54:58 [INFO] (upload.go:1028) Direct verification successful: 01 001.MP3 exists with correct size 3875427 bytes
+2025/03/08 15:54:58 [ERROR] (helpers.go:195) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:54:58 [ERROR] (helpers.go:195) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:54:58 [VERBOSE] (upload.go:1108) Using existing folder: OF_THE_TREES (ID: 16783226)
+2025/03/08 15:54:58 [VERBOSE] (upload.go:1108) Using existing folder: DREAM_ATLAS (ID: 16783227)
+2025/03/08 15:54:58 [VERBOSE] (upload.go:928) Uploading 02 6AM.MP3 to album folder (storage ID: 131073, folder ID: 16783227)
+2025/03/08 15:54:58 [VERBOSE] (upload.go:1002) Successfully uploaded 02 6AM.MP3 (object ID: 16783317) to /MUSIC/OF_THE_TREES/DREAM_ATLAS/02 6AM.MP3
+2025/03/08 15:54:58 [INFO] (upload.go:1019) Verifying file upload for 02 6AM.MP3 (ID: 16783317)
+2025/03/08 15:54:58 [INFO] (upload.go:1028) Direct verification successful: 02 6AM.MP3 exists with correct size 5148063 bytes
+2025/03/08 15:54:59 [ERROR] (helpers.go:195) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:54:59 [ERROR] (helpers.go:195) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:54:59 [VERBOSE] (upload.go:1108) Using existing folder: GRIZMATIK_GRIZ_GRAMATIK (ID: 16783229)
+2025/03/08 15:54:59 [VERBOSE] (upload.go:1108) Using existing folder: AS_WE_PROCEED (ID: 16783230)
+2025/03/08 15:54:59 [VERBOSE] (upload.go:928) Uploading 03 AS_WE_PROCEED.MP3 to album folder (storage ID: 131073, folder ID: 16783230)
+2025/03/08 15:54:59 [VERBOSE] (upload.go:1002) Successfully uploaded 03 AS_WE_PROCEED.MP3 (object ID: 16783318) to /MUSIC/GRIZMATIK_GRIZ_GRAMATIK/AS_WE_PROCEED/03 AS_WE_PROCEED.MP3
+2025/03/08 15:54:59 [INFO] (upload.go:1019) Verifying file upload for 03 AS_WE_PROCEED.MP3 (ID: 16783318)
+2025/03/08 15:54:59 [INFO] (upload.go:1028) Direct verification successful: 03 AS_WE_PROCEED.MP3 exists with correct size 4527705 bytes
+2025/03/08 15:54:59 [ERROR] (helpers.go:195) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:54:59 [ERROR] (helpers.go:195) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:54:59 [VERBOSE] (upload.go:1108) Using existing folder: CAPTAIN_PLANET_SHUNGUDZO (ID: 16783232)
+2025/03/08 15:54:59 [VERBOSE] (upload.go:1108) Using existing folder: NO_VISA (ID: 16783233)
+2025/03/08 15:54:59 [VERBOSE] (upload.go:928) Uploading 04 BIG_MAN.MP3 to album folder (storage ID: 131073, folder ID: 16783233)
+2025/03/08 15:55:00 [VERBOSE] (upload.go:1002) Successfully uploaded 04 BIG_MAN.MP3 (object ID: 16783319) to /MUSIC/CAPTAIN_PLANET_SHUNGUDZO/NO_VISA/04 BIG_MAN.MP3
+2025/03/08 15:55:00 [INFO] (upload.go:1019) Verifying file upload for 04 BIG_MAN.MP3 (ID: 16783319)
+2025/03/08 15:55:00 [INFO] (upload.go:1028) Direct verification successful: 04 BIG_MAN.MP3 exists with correct size 3779247 bytes
+2025/03/08 15:55:00 [ERROR] (helpers.go:195) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:55:00 [ERROR] (helpers.go:195) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:55:00 [VERBOSE] (upload.go:1108) Using existing folder: THE_POLISH_AMBASSADOR (ID: 16783235)
+2025/03/08 15:55:00 [VERBOSE] (upload.go:1108) Using existing folder: TIME'S_RUNNING_IN (ID: 16783236)
+2025/03/08 15:55:00 [VERBOSE] (upload.go:928) Uploading 05 BEBE.MP3 to album folder (storage ID: 131073, folder ID: 16783236)
+2025/03/08 15:55:01 [VERBOSE] (upload.go:1002) Successfully uploaded 05 BEBE.MP3 (object ID: 16783320) to /MUSIC/THE_POLISH_AMBASSADOR/TIME'S_RUNNING_IN/05 BEBE.MP3
+2025/03/08 15:55:01 [INFO] (upload.go:1019) Verifying file upload for 05 BEBE.MP3 (ID: 16783320)
+2025/03/08 15:55:01 [INFO] (upload.go:1028) Direct verification successful: 05 BEBE.MP3 exists with correct size 7358898 bytes
+2025/03/08 15:55:01 [ERROR] (helpers.go:195) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:55:01 [ERROR] (helpers.go:195) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:55:01 [VERBOSE] (upload.go:1108) Using existing folder: SHUB_BLACK_LODGE_SINGERS (ID: 16783238)
+2025/03/08 15:55:01 [VERBOSE] (upload.go:1108) Using existing folder: POWWOWSTEP (ID: 16783239)
+2025/03/08 15:55:01 [VERBOSE] (upload.go:928) Uploading 06 BIG_CROW.MP3 to album folder (storage ID: 131073, folder ID: 16783239)
+2025/03/08 15:55:01 [VERBOSE] (upload.go:1002) Successfully uploaded 06 BIG_CROW.MP3 (object ID: 16783321) to /MUSIC/SHUB_BLACK_LODGE_SINGERS/POWWOWSTEP/06 BIG_CROW.MP3
+2025/03/08 15:55:01 [INFO] (upload.go:1019) Verifying file upload for 06 BIG_CROW.MP3 (ID: 16783321)
+2025/03/08 15:55:01 [INFO] (upload.go:1028) Direct verification successful: 06 BIG_CROW.MP3 exists with correct size 4084850 bytes
+2025/03/08 15:55:01 [ERROR] (helpers.go:195) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:55:01 [ERROR] (helpers.go:195) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:55:01 [VERBOSE] (upload.go:1108) Using existing folder: STICKYBUDS_K+LAB_KWADI (ID: 16783241)
+2025/03/08 15:55:01 [VERBOSE] (upload.go:1108) Using existing folder: CLAP_YA_HANDS_NOW (ID: 16783242)
+2025/03/08 15:55:01 [VERBOSE] (upload.go:928) Uploading 07 CLAP_YA_HANDS_NOW.MP3 to album folder (storage ID: 131073, folder ID: 16783242)
+2025/03/08 15:55:02 [VERBOSE] (upload.go:1002) Successfully uploaded 07 CLAP_YA_HANDS_NOW.MP3 (object ID: 16783322) to /MUSIC/STICKYBUDS_K+LAB_KWADI/CLAP_YA_HANDS_NOW/07 CLAP_YA_HANDS_NOW.MP3
+2025/03/08 15:55:02 [INFO] (upload.go:1019) Verifying file upload for 07 CLAP_YA_HANDS_NOW.MP3 (ID: 16783322)
+2025/03/08 15:55:02 [INFO] (upload.go:1028) Direct verification successful: 07 CLAP_YA_HANDS_NOW.MP3 exists with correct size 4199670 bytes
+2025/03/08 15:55:02 [ERROR] (helpers.go:195) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:55:02 [ERROR] (helpers.go:195) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:55:02 [VERBOSE] (upload.go:1108) Using existing folder: WOO2TECH (ID: 16783244)
+2025/03/08 15:55:02 [VERBOSE] (upload.go:1108) Using existing folder: DON'T_BE_LATE_EP (ID: 16783245)
+2025/03/08 15:55:02 [VERBOSE] (upload.go:928) Uploading 08 DON'T_BE_LATE_-_ORIGINAL_MIX.MP3 to album folder (storage ID: 131073, folder ID: 16783245)

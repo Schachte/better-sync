@@ -1,0 +1,46 @@
+2025/03/08 14:11:22 --- MTP Music Manager Started ---
+2025/03/08 14:11:22 OS: darwin, Architecture: arm64
+2025/03/08 14:11:22 Verbose logging: true
+2025/03/08 14:11:22 [VERBOSE] (main.go:25) Starting MTP Music Manager
+2025/03/08 14:11:22 [VERBOSE] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 14:11:22 [VERBOSE] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 14:11:22 [VERBOSE] (connect.go:40) MTP device found successfully
+2025/03/08 14:11:22 [VERBOSE] (connect.go:54) Device initialized successfully
+2025/03/08 14:11:22 [VERBOSE] (storage.go:21) Fetching storages with timeout of 30s...
+2025/03/08 14:11:22 [VERBOSE] (storage.go:48) Found 1 storage(s) on device
+2025/03/08 14:11:22 [VERBOSE] (storage.go:61) Storage #1:  (ID: 131073)
+2025/03/08 14:11:24 [INFO] (list.go:25) Searching for playlists...
+2025/03/08 14:11:24 [INFO] (list.go:46) Searching storage #1:  (ID: 131073)
+2025/03/08 14:11:24 [INFO] (list.go:456) Searching for playlists only in /Music directory
+2025/03/08 14:11:24 [VERBOSE] (list.go:490) Found playlist: /Music/WORKINGJAUZ.m3u8 (ID: 16777343, Format: 47633)
+2025/03/08 14:11:24 [INFO] (list.go:495) Total playlists found in /Music: 1
+2025/03/08 14:11:24 [INFO] (list.go:56) Found 1 playlists in storage #1
+2025/03/08 14:11:24 [VERBOSE] (list.go:273) Trimmed path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:11:24 [VERBOSE] (list.go:278) Normalized path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:11:24 [VERBOSE] (list.go:285) Trying path variation: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:11:24 [VERBOSE] (list.go:325) Found object: WORKINGJAUZ.m3u8 (ID: 16777343)
+2025/03/08 14:11:24 [VERBOSE] (list.go:233) Found object by path: /Music/WORKINGJAUZ.m3u8 (ID: 16777343)
+2025/03/08 14:11:24 [INFO] (list.go:83) Total playlists found across all storages: 1
+2025/03/08 14:11:26 [VERBOSE] (list.go:502) Starting playlist deletion operation for WORKINGJAUZ.M3U8
+2025/03/08 14:11:26 [INFO] (list.go:25) Searching for playlists...
+2025/03/08 14:11:26 [INFO] (list.go:46) Searching storage #1:  (ID: 131073)
+2025/03/08 14:11:26 [INFO] (list.go:456) Searching for playlists only in /Music directory
+2025/03/08 14:11:26 [VERBOSE] (list.go:490) Found playlist: /Music/WORKINGJAUZ.m3u8 (ID: 16777343, Format: 47633)
+2025/03/08 14:11:26 [INFO] (list.go:495) Total playlists found in /Music: 1
+2025/03/08 14:11:26 [INFO] (list.go:56) Found 1 playlists in storage #1
+2025/03/08 14:11:26 [VERBOSE] (list.go:273) Trimmed path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:11:26 [VERBOSE] (list.go:278) Normalized path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:11:26 [VERBOSE] (list.go:285) Trying path variation: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:11:26 [VERBOSE] (list.go:325) Found object: WORKINGJAUZ.m3u8 (ID: 16777343)
+2025/03/08 14:11:26 [VERBOSE] (list.go:233) Found object by path: /Music/WORKINGJAUZ.m3u8 (ID: 16777343)
+2025/03/08 14:11:26 [INFO] (list.go:83) Total playlists found across all storages: 1
+2025/03/08 14:11:26 [VERBOSE] (list.go:510) Playlist: WORKINGJAUZ.m3u8
+2025/03/08 14:11:26 [INFO] (list.go:531) Playlist contains 17 songs
+2025/03/08 14:11:26 [VERBOSE] (list.go:536) Deleting song: 0:/MUSIC/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:11:26 [VERBOSE] (list.go:273) Trimmed path: /0:/MUSIC/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:11:26 [VERBOSE] (list.go:278) Normalized path: /0:/Music/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:11:26 [VERBOSE] (list.go:285) Trying path variation: /0:/Music/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:11:27 [VERBOSE] (list.go:285) Trying path variation: /0:/Music/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:11:28 [VERBOSE] (list.go:285) Trying path variation: 0:/Music/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:11:28 [VERBOSE] (list.go:285) Trying path variation: 0:/0:/Music/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:11:29 [VERBOSE] (list.go:285) Trying path variation: 0:/0:/Music/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3

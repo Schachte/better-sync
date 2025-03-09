@@ -1,0 +1,6 @@
+2025/03/08 14:02:14 --- MTP Music Manager Started ---
+2025/03/08 14:02:14 OS: darwin, Architecture: arm64
+2025/03/08 14:02:14 Verbose logging: true
+2025/03/08 14:02:14 [VERBOSE] (main.go:25) Starting MTP Music Manager
+2025/03/08 14:02:14 [VERBOSE] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 14:02:14 [VERBOSE] (connect.go:28) Starting MTP device detection in background goroutine

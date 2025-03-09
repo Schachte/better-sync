@@ -1,0 +1,676 @@
+2025/03/08 14:36:58 --- MTP Music Manager Started ---
+2025/03/08 14:36:58 OS: darwin, Architecture: arm64
+2025/03/08 14:36:58 Verbose logging: true
+2025/03/08 14:36:58 [VERBOSE] (main.go:25) Starting MTP Music Manager
+2025/03/08 14:36:58 [VERBOSE] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 14:36:58 [VERBOSE] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 14:36:58 [VERBOSE] (connect.go:40) MTP device found successfully
+2025/03/08 14:36:58 [VERBOSE] (connect.go:54) Device initialized successfully
+2025/03/08 14:36:58 [VERBOSE] (storage.go:21) Fetching storages with timeout of 30s...
+2025/03/08 14:36:58 [VERBOSE] (storage.go:48) Found 1 storage(s) on device
+2025/03/08 14:36:58 [VERBOSE] (storage.go:61) Storage #1:  (ID: 131073)
+2025/03/08 14:37:02 [INFO] (upload.go:1192) Automatically selected storage:  (ID: 131073)
+2025/03/08 14:37:02 [VERBOSE] (upload.go:1079) Found existing Music folder with ID: 16777218
+2025/03/08 14:37:06 [VERBOSE] (upload.go:1135) Using existing folder: JOYRYDE_SKRILLEX (ID: 16777306)
+2025/03/08 14:37:06 [VERBOSE] (upload.go:1135) Using existing folder: AGEN_WIDA (ID: 16777641)
+2025/03/08 14:37:06 [VERBOSE] (upload.go:923) Uploading 01 AGEN_WIDA.MP3 to album folder (storage ID: 131073, folder ID: 16777641)
+2025/03/08 14:37:07 [VERBOSE] (upload.go:978) Successfully uploaded 01 AGEN_WIDA.MP3 (object ID: 16783016) to /MUSIC/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:37:07 [VERBOSE] (upload.go:1135) Using existing folder: ISOXO_KNOCK2 (ID: 16777307)
+2025/03/08 14:37:07 [VERBOSE] (upload.go:1135) Using existing folder: NITEHARTS (ID: 16777642)
+2025/03/08 14:37:07 [VERBOSE] (upload.go:923) Uploading 02 AARENA_(KNOCK2_REMIX).MP3 to album folder (storage ID: 131073, folder ID: 16777642)
+2025/03/08 14:37:07 [VERBOSE] (upload.go:978) Successfully uploaded 02 AARENA_(KNOCK2_REMIX).MP3 (object ID: 16783017) to /MUSIC/ISOXO_KNOCK2/NITEHARTS/02 AARENA_(KNOCK2_REMIX).MP3
+2025/03/08 14:37:07 [VERBOSE] (upload.go:1135) Using existing folder: JAUZ (ID: 16777308)
+2025/03/08 14:37:07 [VERBOSE] (upload.go:1135) Using existing folder: ALPHA (ID: 16777643)
+2025/03/08 14:37:07 [VERBOSE] (upload.go:923) Uploading 03 ALPHA.MP3 to album folder (storage ID: 131073, folder ID: 16777643)
+2025/03/08 14:37:08 [VERBOSE] (upload.go:978) Successfully uploaded 03 ALPHA.MP3 (object ID: 16783018) to /MUSIC/JAUZ/ALPHA/03 ALPHA.MP3
+2025/03/08 14:37:08 [VERBOSE] (upload.go:1135) Using existing folder: HEROBUST (ID: 16777309)
+2025/03/08 14:37:08 [VERBOSE] (upload.go:1135) Using existing folder: BRUH_! (ID: 16777646)
+2025/03/08 14:37:08 [VERBOSE] (upload.go:923) Uploading 04 BRUH!.MP3 to album folder (storage ID: 131073, folder ID: 16777646)
+2025/03/08 14:37:08 [VERBOSE] (upload.go:978) Successfully uploaded 04 BRUH!.MP3 (object ID: 16783019) to /MUSIC/HEROBUST/BRUH_!/04 BRUH!.MP3
+2025/03/08 14:37:08 [VERBOSE] (upload.go:1135) Using existing folder: BRO_SAFARI_TANK_PARADE (ID: 16777310)
+2025/03/08 14:37:08 [VERBOSE] (upload.go:1135) Using existing folder: BLITZ (ID: 16777648)
+2025/03/08 14:37:08 [VERBOSE] (upload.go:923) Uploading 05 BLITZ.MP3 to album folder (storage ID: 131073, folder ID: 16777648)
+2025/03/08 14:37:09 [VERBOSE] (upload.go:978) Successfully uploaded 05 BLITZ.MP3 (object ID: 16783020) to /MUSIC/BRO_SAFARI_TANK_PARADE/BLITZ/05 BLITZ.MP3
+2025/03/08 14:37:09 [VERBOSE] (upload.go:1135) Using existing folder: HEROBUST (ID: 16777309)
+2025/03/08 14:37:09 [VERBOSE] (upload.go:1135) Using existing folder: BLOCKBUSTER_VIP (ID: 16777647)
+2025/03/08 14:37:09 [VERBOSE] (upload.go:923) Uploading 06 BLOCKBUSTER_VIP.MP3 to album folder (storage ID: 131073, folder ID: 16777647)
+2025/03/08 14:37:09 [VERBOSE] (upload.go:978) Successfully uploaded 06 BLOCKBUSTER_VIP.MP3 (object ID: 16783021) to /MUSIC/HEROBUST/BLOCKBUSTER_VIP/06 BLOCKBUSTER_VIP.MP3
+2025/03/08 14:37:09 [VERBOSE] (upload.go:1135) Using existing folder: RUSKO_SUBTRONICS (ID: 16777311)
+2025/03/08 14:37:09 [VERBOSE] (upload.go:1135) Using existing folder: BOUNCE (ID: 16777649)
+2025/03/08 14:37:09 [VERBOSE] (upload.go:923) Uploading 07 BOUNCE.MP3 to album folder (storage ID: 131073, folder ID: 16777649)
+2025/03/08 14:37:10 [VERBOSE] (upload.go:978) Successfully uploaded 07 BOUNCE.MP3 (object ID: 16783022) to /MUSIC/RUSKO_SUBTRONICS/BOUNCE/07 BOUNCE.MP3
+2025/03/08 14:37:10 [VERBOSE] (upload.go:1135) Using existing folder: 12TH_PLANET (ID: 16777312)
+2025/03/08 14:37:10 [VERBOSE] (upload.go:1135) Using existing folder: CLAIRVOYANT (ID: 16777650)
+2025/03/08 14:37:10 [VERBOSE] (upload.go:923) Uploading 08 CLAIRVOYANT.MP3 to album folder (storage ID: 131073, folder ID: 16777650)
+2025/03/08 14:37:10 [VERBOSE] (upload.go:978) Successfully uploaded 08 CLAIRVOYANT.MP3 (object ID: 16783023) to /MUSIC/12TH_PLANET/CLAIRVOYANT/08 CLAIRVOYANT.MP3
+2025/03/08 14:37:10 [VERBOSE] (upload.go:1135) Using existing folder: 4B_NVRLEFT (ID: 16777313)
+2025/03/08 14:37:10 [VERBOSE] (upload.go:1135) Using existing folder: DOPE (ID: 16777651)
+2025/03/08 14:37:10 [VERBOSE] (upload.go:923) Uploading 09 DOPE.MP3 to album folder (storage ID: 131073, folder ID: 16777651)
+2025/03/08 14:37:11 [VERBOSE] (upload.go:978) Successfully uploaded 09 DOPE.MP3 (object ID: 16783024) to /MUSIC/4B_NVRLEFT/DOPE/09 DOPE.MP3
+2025/03/08 14:37:11 [VERBOSE] (upload.go:1135) Using existing folder: RIOT (ID: 16777314)
+2025/03/08 14:37:11 [VERBOSE] (upload.go:1135) Using existing folder: DOWN_WITH_YOUR_LOVE (ID: 16777652)
+2025/03/08 14:37:11 [VERBOSE] (upload.go:923) Uploading 10 DOWN_WITH_YOUR_LOVE.MP3 to album folder (storage ID: 131073, folder ID: 16777652)
+2025/03/08 14:37:11 [VERBOSE] (upload.go:978) Successfully uploaded 10 DOWN_WITH_YOUR_LOVE.MP3 (object ID: 16783025) to /MUSIC/RIOT/DOWN_WITH_YOUR_LOVE/10 DOWN_WITH_YOUR_LOVE.MP3
+2025/03/08 14:37:11 [VERBOSE] (upload.go:1135) Using existing folder: BRAINRACK_EYEZIC_ALLEYCVT (ID: 16777315)
+2025/03/08 14:37:11 [VERBOSE] (upload.go:1135) Using existing folder: EYES_CLOSED (ID: 16777653)
+2025/03/08 14:37:11 [VERBOSE] (upload.go:923) Uploading 11 EYES_CLOSED.MP3 to album folder (storage ID: 131073, folder ID: 16777653)
+2025/03/08 14:37:12 [VERBOSE] (upload.go:978) Successfully uploaded 11 EYES_CLOSED.MP3 (object ID: 16783026) to /MUSIC/BRAINRACK_EYEZIC_ALLEYCVT/EYES_CLOSED/11 EYES_CLOSED.MP3
+2025/03/08 14:37:12 [VERBOSE] (upload.go:1135) Using existing folder: JAUZ (ID: 16777308)
+2025/03/08 14:37:12 [VERBOSE] (upload.go:1135) Using existing folder: FEEL_THE_VOLUME (ID: 16777644)
+2025/03/08 14:37:12 [VERBOSE] (upload.go:923) Uploading 12 FEEL_THE_VOLUME.MP3 to album folder (storage ID: 131073, folder ID: 16777644)
+2025/03/08 14:37:12 [VERBOSE] (upload.go:978) Successfully uploaded 12 FEEL_THE_VOLUME.MP3 (object ID: 16783027) to /MUSIC/JAUZ/FEEL_THE_VOLUME/12 FEEL_THE_VOLUME.MP3
+2025/03/08 14:37:12 [VERBOSE] (upload.go:1135) Using existing folder: 12TH_PLANET_KATIE_SKY (ID: 16777316)
+2025/03/08 14:37:12 [VERBOSE] (upload.go:1135) Using existing folder: FOLLOW (ID: 16777654)
+2025/03/08 14:37:12 [VERBOSE] (upload.go:923) Uploading 13 FOLLOW.MP3 to album folder (storage ID: 131073, folder ID: 16777654)
+2025/03/08 14:37:13 [VERBOSE] (upload.go:978) Successfully uploaded 13 FOLLOW.MP3 (object ID: 16783028) to /MUSIC/12TH_PLANET_KATIE_SKY/FOLLOW/13 FOLLOW.MP3
+2025/03/08 14:37:13 [VERBOSE] (upload.go:1135) Using existing folder: BUKU_BASSNECTAR (ID: 16777317)
+2025/03/08 14:37:13 [VERBOSE] (upload.go:1135) Using existing folder: FRONT_TO_BACK_(BASSNECTAR_REMIX) (ID: 16777655)
+2025/03/08 14:37:13 [VERBOSE] (upload.go:923) Uploading 14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16777655)
+2025/03/08 14:37:13 [VERBOSE] (upload.go:978) Successfully uploaded 14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3 (object ID: 16783029) to /MUSIC/BUKU_BASSNECTAR/FRONT_TO_BACK_(BASSNECTAR_REMIX)/14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3
+2025/03/08 14:37:13 [VERBOSE] (upload.go:1135) Using existing folder: KNOCK2 (ID: 16777318)
+2025/03/08 14:37:13 [VERBOSE] (upload.go:1135) Using existing folder: SABLE_VALLEY_SUMMER_VOL._1 (ID: 16777656)
+2025/03/08 14:37:13 [VERBOSE] (upload.go:923) Uploading 15 GEMS.MP3 to album folder (storage ID: 131073, folder ID: 16777656)
+2025/03/08 14:37:14 [VERBOSE] (upload.go:978) Successfully uploaded 15 GEMS.MP3 (object ID: 16783030) to /MUSIC/KNOCK2/SABLE_VALLEY_SUMMER_VOL._1/15 GEMS.MP3
+2025/03/08 14:37:14 [VERBOSE] (upload.go:1135) Using existing folder: JAUZ (ID: 16777308)
+2025/03/08 14:37:14 [VERBOSE] (upload.go:1135) Using existing folder: GET_TO_ME (ID: 16777645)
+2025/03/08 14:37:14 [VERBOSE] (upload.go:923) Uploading 16 GET_TO_ME.MP3 to album folder (storage ID: 131073, folder ID: 16777645)
+2025/03/08 14:37:14 [VERBOSE] (upload.go:978) Successfully uploaded 16 GET_TO_ME.MP3 (object ID: 16783031) to /MUSIC/JAUZ/GET_TO_ME/16 GET_TO_ME.MP3
+2025/03/08 14:37:14 [VERBOSE] (upload.go:1135) Using existing folder: DEADMAU5_ROB_SWIRE_JAUZ (ID: 16777319)
+2025/03/08 14:37:15 [VERBOSE] (upload.go:1135) Using existing folder: GHOSTS_'N'_STUFF_(JAUZ_REMIX) (ID: 16777657)
+2025/03/08 14:37:15 [VERBOSE] (upload.go:923) Uploading 17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3 to album folder (storage ID: 131073, folder ID: 16777657)
+2025/03/08 14:37:15 [VERBOSE] (upload.go:978) Successfully uploaded 17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3 (object ID: 16783032) to /MUSIC/DEADMAU5_ROB_SWIRE_JAUZ/GHOSTS_'N'_STUFF_(JAUZ_REMIX)/17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3 -> JOYRYDE SKRILLEX - 01 AGEN WIDA
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/ISOXO_KNOCK2/NITEHARTS/02 AARENA_(KNOCK2_REMIX).MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/ISOXO_KNOCK2/NITEHARTS/02 AARENA_(KNOCK2_REMIX).MP3 -> ISOXO KNOCK2 - 02 AARENA (KNOCK2 REMIX)
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/JAUZ/ALPHA/03 ALPHA.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/JAUZ/ALPHA/03 ALPHA.MP3 -> JAUZ - 03 ALPHA
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/HEROBUST/BRUH_!/04 BRUH!.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/HEROBUST/BRUH_!/04 BRUH!.MP3 -> HEROBUST - 04 BRUH!
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/BRO_SAFARI_TANK_PARADE/BLITZ/05 BLITZ.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/BRO_SAFARI_TANK_PARADE/BLITZ/05 BLITZ.MP3 -> BRO SAFARI TANK PARADE - 05 BLITZ
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/HEROBUST/BLOCKBUSTER_VIP/06 BLOCKBUSTER_VIP.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/HEROBUST/BLOCKBUSTER_VIP/06 BLOCKBUSTER_VIP.MP3 -> HEROBUST - 06 BLOCKBUSTER VIP
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/RUSKO_SUBTRONICS/BOUNCE/07 BOUNCE.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/RUSKO_SUBTRONICS/BOUNCE/07 BOUNCE.MP3 -> RUSKO SUBTRONICS - 07 BOUNCE
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/12TH_PLANET/CLAIRVOYANT/08 CLAIRVOYANT.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/12TH_PLANET/CLAIRVOYANT/08 CLAIRVOYANT.MP3 -> 12TH PLANET - 08 CLAIRVOYANT
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/4B_NVRLEFT/DOPE/09 DOPE.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/4B_NVRLEFT/DOPE/09 DOPE.MP3 -> 4B NVRLEFT - 09 DOPE
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/RIOT/DOWN_WITH_YOUR_LOVE/10 DOWN_WITH_YOUR_LOVE.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/RIOT/DOWN_WITH_YOUR_LOVE/10 DOWN_WITH_YOUR_LOVE.MP3 -> RIOT - 10 DOWN WITH YOUR LOVE
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/BRAINRACK_EYEZIC_ALLEYCVT/EYES_CLOSED/11 EYES_CLOSED.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/BRAINRACK_EYEZIC_ALLEYCVT/EYES_CLOSED/11 EYES_CLOSED.MP3 -> BRAINRACK EYEZIC ALLEYCVT - 11 EYES CLOSED
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/JAUZ/FEEL_THE_VOLUME/12 FEEL_THE_VOLUME.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/JAUZ/FEEL_THE_VOLUME/12 FEEL_THE_VOLUME.MP3 -> JAUZ - 12 FEEL THE VOLUME
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/12TH_PLANET_KATIE_SKY/FOLLOW/13 FOLLOW.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/12TH_PLANET_KATIE_SKY/FOLLOW/13 FOLLOW.MP3 -> 12TH PLANET KATIE SKY - 13 FOLLOW
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/BUKU_BASSNECTAR/FRONT_TO_BACK_(BASSNECTAR_REMIX)/14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/BUKU_BASSNECTAR/FRONT_TO_BACK_(BASSNECTAR_REMIX)/14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3 -> BUKU BASSNECTAR - 14 FRONT TO BACK - BASSNECTAR REMIX
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/KNOCK2/SABLE_VALLEY_SUMMER_VOL._1/15 GEMS.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/KNOCK2/SABLE_VALLEY_SUMMER_VOL._1/15 GEMS.MP3 -> KNOCK2 - 15 GEMS
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/JAUZ/GET_TO_ME/16 GET_TO_ME.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/JAUZ/GET_TO_ME/16 GET_TO_ME.MP3 -> JAUZ - 16 GET TO ME
+2025/03/08 14:37:15 [VERBOSE] (sanitize.go:238) Formatted playlist path to: 0:/MUSIC/DEADMAU5_ROB_SWIRE_JAUZ/GHOSTS_'N'_STUFF_(JAUZ_REMIX)/17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3
+2025/03/08 14:37:15 [VERBOSE] (upload.go:297) Added to playlist: 0:/MUSIC/DEADMAU5_ROB_SWIRE_JAUZ/GHOSTS_'N'_STUFF_(JAUZ_REMIX)/17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3 -> DEADMAU5 ROB SWIRE JAUZ - 17 GHOSTS 'N' STUFF - JAUZ REMIX
+2025/03/08 14:37:15 [VERBOSE] (upload.go:301) Full playlist content:
+#EXTM3U
+#EXTINF:-1,JOYRYDE SKRILLEX - 01 AGEN WIDA
+0:/MUSIC/JOYRYDE_SKRILLEX/AGEN_WIDA/01 AGEN_WIDA.MP3
+#EXTINF:-1,ISOXO KNOCK2 - 02 AARENA (KNOCK2 REMIX)
+0:/MUSIC/ISOXO_KNOCK2/NITEHARTS/02 AARENA_(KNOCK2_REMIX).MP3
+#EXTINF:-1,JAUZ - 03 ALPHA
+0:/MUSIC/JAUZ/ALPHA/03 ALPHA.MP3
+#EXTINF:-1,HEROBUST - 04 BRUH!
+0:/MUSIC/HEROBUST/BRUH_!/04 BRUH!.MP3
+#EXTINF:-1,BRO SAFARI TANK PARADE - 05 BLITZ
+0:/MUSIC/BRO_SAFARI_TANK_PARADE/BLITZ/05 BLITZ.MP3
+#EXTINF:-1,HEROBUST - 06 BLOCKBUSTER VIP
+0:/MUSIC/HEROBUST/BLOCKBUSTER_VIP/06 BLOCKBUSTER_VIP.MP3
+#EXTINF:-1,RUSKO SUBTRONICS - 07 BOUNCE
+0:/MUSIC/RUSKO_SUBTRONICS/BOUNCE/07 BOUNCE.MP3
+#EXTINF:-1,12TH PLANET - 08 CLAIRVOYANT
+0:/MUSIC/12TH_PLANET/CLAIRVOYANT/08 CLAIRVOYANT.MP3
+#EXTINF:-1,4B NVRLEFT - 09 DOPE
+0:/MUSIC/4B_NVRLEFT/DOPE/09 DOPE.MP3
+#EXTINF:-1,RIOT - 10 DOWN WITH YOUR LOVE
+0:/MUSIC/RIOT/DOWN_WITH_YOUR_LOVE/10 DOWN_WITH_YOUR_LOVE.MP3
+#EXTINF:-1,BRAINRACK EYEZIC ALLEYCVT - 11 EYES CLOSED
+0:/MUSIC/BRAINRACK_EYEZIC_ALLEYCVT/EYES_CLOSED/11 EYES_CLOSED.MP3
+#EXTINF:-1,JAUZ - 12 FEEL THE VOLUME
+0:/MUSIC/JAUZ/FEEL_THE_VOLUME/12 FEEL_THE_VOLUME.MP3
+#EXTINF:-1,12TH PLANET KATIE SKY - 13 FOLLOW
+0:/MUSIC/12TH_PLANET_KATIE_SKY/FOLLOW/13 FOLLOW.MP3
+#EXTINF:-1,BUKU BASSNECTAR - 14 FRONT TO BACK - BASSNECTAR REMIX
+0:/MUSIC/BUKU_BASSNECTAR/FRONT_TO_BACK_(BASSNECTAR_REMIX)/14 FRONT_TO_BACK_-_BASSNECTAR_REMIX.MP3
+#EXTINF:-1,KNOCK2 - 15 GEMS
+0:/MUSIC/KNOCK2/SABLE_VALLEY_SUMMER_VOL._1/15 GEMS.MP3
+#EXTINF:-1,JAUZ - 16 GET TO ME
+0:/MUSIC/JAUZ/GET_TO_ME/16 GET_TO_ME.MP3
+#EXTINF:-1,DEADMAU5 ROB SWIRE JAUZ - 17 GHOSTS 'N' STUFF - JAUZ REMIX
+0:/MUSIC/DEADMAU5_ROB_SWIRE_JAUZ/GHOSTS_'N'_STUFF_(JAUZ_REMIX)/17 GHOSTS_'N'_STUFF_-_JAUZ_REMIX.MP3
+2025/03/08 14:37:15 [INFO] (upload.go:380) Successfully created and uploaded playlist WORKINGJAUZ.m3u8 (object ID: 16783033) with 17 songs
+2025/03/08 14:37:15 [INFO] (upload.go:612) Verifying playlist upload for WORKINGJAUZ.m3u8
+2025/03/08 14:37:15 [INFO] (upload.go:636) Playlist verification: Found playlist WORKINGJAUZ.m3u8 directly in parent folder (ID: 16777320)
+2025/03/08 14:37:15 [INFO] (upload.go:693) Attempting to read content of playlist WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:37:51 [INFO] (list.go:93) Searching for MP3 files...
+2025/03/08 14:37:51 [INFO] (list.go:112) Searching storage #1:  (ID: 131073)
+2025/03/08 14:37:51 [VERBOSE] (list.go:707) Examining file: /GARMIN (IsDir: true)
+2025/03/08 14:37:51 [VERBOSE] (list.go:707) Examining file: /GARMIN/TLG (IsDir: true)
+2025/03/08 14:37:51 [VERBOSE] (list.go:707) Examining file: /GARMIN/TLG/DAT (IsDir: true)
+2025/03/08 14:37:51 [VERBOSE] (list.go:707) Examining file: /GARMIN/TLG/PER (IsDir: true)
+2025/03/08 14:37:51 [VERBOSE] (list.go:707) Examining file: /GARMIN/TLG/PER/0E (IsDir: true)
+2025/03/08 14:37:51 [VERBOSE] (list.go:707) Examining file: /GARMIN/TLG/PER/0E/00 (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/TLG/PER/0E/00/01 (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/TLG/TLG_KPI.bak (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/TLG/TLG_KPI.kpi (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/gmaptz.img (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/CustomMaps (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/cpyright.txt (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Audio (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Audio/Tones (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/TEMP (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/LOGS (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/DATA (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/DATA/AUXFILE (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/DATA/F3640230.IDX (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/DATA/F3640230.DAT (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/DATA/F3640230.IMT (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/SETTINGS (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/SETTINGS/F3640429.SET (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/SETTINGS/F3641113.SET (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/MAIL (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Apps/OUT.BIN (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/SQL (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/SQL/temp (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/EDM (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/EDM/hash.bin (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/EDM/hashbin.bin (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/EDM/points.bin (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/EDM/collection_list.bin (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/EDM/lines.bin (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/EDM/transaction_id.bin (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/EDM/active.bin (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Settings (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Settings/Settings.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/RunningRun.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/RunningTrackTrack_Run.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/RunningTrailTrail_Run.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/RunningTreadmillTreadmill.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/RunningVirtualVirtual_Run.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/RunningIndoor TrackIndoor_Track.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Field_Hockey.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Ice_Hockey.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/American_FootballAmerican_Football.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Lacrosse.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Rugby.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Cricket.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Softball.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Baseball.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/BasketballBasketball.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Volleyball.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/SoccerSoccer_Football.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingBike.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingIndoor_CycleBike_Indoor.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingMountainMTB.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingeBike.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingeMTB.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingCyclocrossCyclocross.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingGravel_Bike.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingBike_Commute.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingBike_Tour.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingRoadRoad_Bike.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/CyclingBMX.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/SwimmingOpen_WaterOpen_Water.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/SwimmingLap_SwimPool_Swim.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Health_Snapshot.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Hike.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Disc_Golf.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Ski.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Snowboard.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Backcountry_Snowboard.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Backcountry_Ski.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/XC_Classic_Ski.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/XC_Skate_Ski.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Mountaineering.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/WalkingWalk.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/WalkingWalk_Indoor.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Ice_Skating.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Inline_Skating.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/SUP.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Kayak.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Row.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Indoor_RowingRow_Indoor.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/TrainingStrg_TrainStrength.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/TrainingCardio.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/TrainingBreathwork.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/TrainingYoga.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Fitness_EquipmentPilates.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Boxing.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Mixed_Martial_Arts.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Archery.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Ultimate_Disc.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Floor_Climb.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Fitness_EquipmentEllipticalElliptical.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Fitness_EquipmentStair_ClimbStair_Stepper.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Jump_Rope.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Bouldering.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Climb_Indoor.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/GenericNavigate.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/GenericTrack_Me.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/GenericMap.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/GenericOther.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Golf.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/RunningUltra_Run.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/HIIT.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/PadelPadel.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/PickleballPickleball.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Squash.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Racquetball.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Badminton.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Snowshoe.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/TennisTennis.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/TennisTable_Tennis.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Motorcycle.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/TennisPlatform_Tennis.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/ATV.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Snowmobile.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Motocross.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/Overland.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sports/MeditationMeditation.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Activity (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Activity/2025-03-07-16-12-54.fit (IsDir: false)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Schedule (IsDir: true)
+2025/03/08 14:37:52 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/.Intervals (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/.FTP (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Guided (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Guided/adc_schedule.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/30-Minute_Blast_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Back_to_Basics_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Back-to-Basics_Workout_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Improve_Flexibility_Now_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Maximize_Your_Upper_Body_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Pilates_On_the_Road_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Articulate_Your_Spine_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Sun_Salutations_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Tabata_Abs__Planks_&_Sit-ups_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Tabata_Something_Else_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Tabata_Squats,_Sit-Ups_&_Pushup_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Workouts/Wake_Up,_Energize!_workout.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Courses (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Schedule (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Schedule/Schedule.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Location (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Location/Lctns.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Totals (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Totals/Totals.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Goals (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Goals/Goals.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Records (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Records/Records.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Segments (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Segments/debug (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Seg_List (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Seg_List/seg_list.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/MltSport (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/MltSport/0Triathlon.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/MltSport/1Swimrun.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38C2823.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38C3810.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38C5030.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38D1641.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38D2744.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38D3110.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38D4521.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38D5132.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E0223.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E0704.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E1015.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E1200.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E1253.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E1506.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E2015.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E2840.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E3218.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Monitor/M38E3643.FIT (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/HMD (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/SCORCRDS (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Clubs (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Clubs/Clubs.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Adjstmts (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Metrics (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Metrics/F37N5623.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Metrics/F3800401.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Metrics/F3862401.fit (IsDir: false)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/ChngLog (IsDir: true)
+2025/03/08 14:37:53 [VERBOSE] (list.go:707) Examining file: /GARMIN/Sleep (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4439.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4441.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4442.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4443.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4444.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4446.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4448.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4449.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4451.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4452.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4453.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4454.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4456.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4457.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4458.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4459.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4500.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4502.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4503.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4504.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4505.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4506.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4507.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4509.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4510.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4511.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4512.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4513.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4514.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4515.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4517.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4518.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4519.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4520.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4521.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4522.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4523.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4525.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4526.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4527.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4528.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4529.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4530.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4531.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4533.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4534.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4535.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4536.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4537.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4538.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4540.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4541.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4542.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4543.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4544.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4546.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4547.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4548.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4549.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4550.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4551.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4552.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4553.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4554.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4556.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4557.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/SUMMARY/F35M4558.FIT (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/PaceBands (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/RunningTrack (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/PowerGuide (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/Benchmark (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/HRVStatus (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/Calendar (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/Calendar/Calendar.fit (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/HSA (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/ComAct (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/FbtBackup (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/FbtBackup/lha_bkup.fit (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/FbtPtdBackup (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/FbtPtdBackup/ptd_bkup.fit (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/NewFiles (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/WIFI (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/TempFIT (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/TempFIT/SaF_HR (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/PointCache (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/PointCache/2025-03-07-16-12-54.gpc (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/JetLag (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/RemoteSW (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/RemoteSW/006-D9033-01.zip (IsDir: false)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/Uploads (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/Uploads/ULF (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/Uploads/Error (IsDir: true)
+2025/03/08 14:37:54 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/F35M4432.FIT (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/F35M4435.FIT (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/F35M4436.FIT (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/F35M4437.FIT (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/F35M4600.FIT (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4633.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4632.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4634.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4635.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4637.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4636.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4638.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4639.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4640.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4641.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4643.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4642.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4645.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4644.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4647.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4648.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4649.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4650.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4651.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4652.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4653.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4654.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4655.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4657.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4656.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4658.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4659.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4701.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4700.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35k3116.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35e4646.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35g2648.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35k3737.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35k3808.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f35n5457.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3600216.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/F3683839.FIT (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3652911.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3652909.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3662156.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3664748.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3670042.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3680302.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f36l5327.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f36m1410.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f36n0454.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f36n5841.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3700554.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3763554.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3781200.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f3782135.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f37d1439.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f37f4801.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/MetricsBackup/f37h5232.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/Golf (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/err_log.txt (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/err_log.bak (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/bak (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Debug/kpi_usage.log (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/UpdateManager (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/UpdateManager/database (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Backup (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Backup/Backups (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Backup/Backups/settings_backup.bak (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Backup/Restore (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/device.fit (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/MAPTHEMES (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/MAPTHEMES/High Contrast.kmtf (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/MAPTHEMES/Dark.kmtf (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/MAPTHEMES/Popularity.kmtf (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/MAPTHEMES/Resort Ski.kmtf (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/EXPRESS (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/gmapbmap.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/D4712050A.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/D7249110A.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/D7725070A.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/D7753060A.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/D5947220A.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/D5948210A.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/D5949210A.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/D7672030A.img (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/http (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/http/client00000001.TMP (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/http/client00000002.TMP (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/SNS_ERR.BIN (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/ScreenShot (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/ScreenShot/2025-03-05-20-52-55.BMP (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/contentSet.json (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar_index.xml (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741239300 (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741239300/21-76-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741239300/20-76-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741239300/20-77-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741239300/21-77-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236300 (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236300/21-76-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236300/20-76-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236300/20-77-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236300/21-77-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236900 (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236900/20-76-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236900/20-77-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236900/21-76-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741236900/21-77-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741237500 (IsDir: true)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741237500/21-76-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741237500/20-77-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741237500/20-76-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741237500/21-77-7.png (IsDir: false)
+2025/03/08 14:37:55 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238100 (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238100/21-76-7.png (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238100/20-76-7.png (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238100/20-77-7.png (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238100/21-77-7.png (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238700 (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238700/21-76-7.png (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238700/20-76-7.png (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238700/20-77-7.png (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Weather/radar/1741238700/21-77-7.png (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/SNS_ERR.TXT (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/HFD (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/HFD/hfddm0.bin (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/HFD/hfddm1.bin (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Coach (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/Coach/schedule.fit (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /GARMIN/GarminDevice.xml (IsDir: false)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/JOYRYDE_SKRILLEX (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/ISOXO_KNOCK2 (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/ISOXO_KNOCK2/NITEHARTS (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/JAUZ (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/JAUZ/ALPHA (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/JAUZ/FEEL_THE_VOLUME (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/JAUZ/GET_TO_ME (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/HEROBUST (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/HEROBUST/BRUH_! (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/HEROBUST/BLOCKBUSTER_VIP (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/BRO_SAFARI_TANK_PARADE (IsDir: true)
+2025/03/08 14:37:56 [VERBOSE] (list.go:707) Examining file: /Music/BRO_SAFARI_TANK_PARADE/BLITZ (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/RUSKO_SUBTRONICS (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/RUSKO_SUBTRONICS/BOUNCE (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/12TH_PLANET (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/12TH_PLANET/CLAIRVOYANT (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/4B_NVRLEFT (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/4B_NVRLEFT/DOPE (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/RIOT (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/RIOT/DOWN_WITH_YOUR_LOVE (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/BRAINRACK_EYEZIC_ALLEYCVT (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/BRAINRACK_EYEZIC_ALLEYCVT/EYES_CLOSED (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/12TH_PLANET_KATIE_SKY (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/12TH_PLANET_KATIE_SKY/FOLLOW (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/BUKU_BASSNECTAR (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/BUKU_BASSNECTAR/FRONT_TO_BACK_(BASSNECTAR_REMIX) (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/KNOCK2 (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/KNOCK2/SABLE_VALLEY_SUMMER_VOL._1 (IsDir: true)
+2025/03/08 14:37:57 [VERBOSE] (list.go:707) Examining file: /Music/DEADMAU5_ROB_SWIRE_JAUZ (IsDir: true)
+2025/03/08 14:37:58 [VERBOSE] (list.go:707) Examining file: /Music/DEADMAU5_ROB_SWIRE_JAUZ/GHOSTS_'N'_STUFF_(JAUZ_REMIX) (IsDir: true)
+2025/03/08 14:37:58 [VERBOSE] (list.go:707) Examining file: /Music/WORKINGJAUZ.m3u8 (IsDir: false)
+2025/03/08 14:37:58 [VERBOSE] (list.go:707) Examining file: /Music/WORKINGJAUZ.m3u8 (IsDir: false)
+2025/03/08 14:37:58 [VERBOSE] (list.go:707) Examining file: /Audiobooks (IsDir: true)
+2025/03/08 14:37:58 [VERBOSE] (list.go:707) Examining file: /Podcasts (IsDir: true)
+2025/03/08 14:37:58 [VERBOSE] (list.go:707) Examining file: /Playlists (IsDir: true)
+2025/03/08 14:37:58 [INFO] (list.go:723) Scanned 334 files in storage
+2025/03/08 14:37:58 [INFO] (list.go:122) Found 0 MP3 files in storage #1
+2025/03/08 14:37:58 [INFO] (list.go:132) Total MP3 files found across all storages: 0
+2025/03/08 14:38:40 [INFO] (list.go:27) Searching for playlists...
+2025/03/08 14:38:40 [INFO] (list.go:48) Searching storage #1:  (ID: 131073)
+2025/03/08 14:38:40 [INFO] (list.go:568) Searching for playlists only in /Music directory
+2025/03/08 14:38:41 [VERBOSE] (list.go:602) Found playlist: /Music/WORKINGJAUZ.m3u8 (ID: 16777320, Format: 47633)
+2025/03/08 14:38:41 [VERBOSE] (list.go:602) Found playlist: /Music/WORKINGJAUZ.m3u8 (ID: 16783033, Format: 47621)
+2025/03/08 14:38:41 [INFO] (list.go:607) Total playlists found in /Music: 2
+2025/03/08 14:38:41 [INFO] (list.go:58) Found 2 playlists in storage #1
+2025/03/08 14:38:41 [VERBOSE] (list.go:245) Normalized path for lookup: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:41 [VERBOSE] (list.go:359) Trimmed path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:41 [VERBOSE] (list.go:364) Normalized path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:41 [VERBOSE] (list.go:371) Trying path variation: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:41 [VERBOSE] (list.go:411) Found object: WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:38:41 [VERBOSE] (list.go:250) Found object by path: /Music/WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:38:41 [VERBOSE] (list.go:245) Normalized path for lookup: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:41 [VERBOSE] (list.go:359) Trimmed path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:41 [VERBOSE] (list.go:364) Normalized path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:41 [VERBOSE] (list.go:371) Trying path variation: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:41 [VERBOSE] (list.go:411) Found object: WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:38:41 [VERBOSE] (list.go:250) Found object by path: /Music/WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:38:41 [INFO] (list.go:85) Total playlists found across all storages: 2
+2025/03/08 14:38:50 [VERBOSE] (delete.go:21) Starting playlist deletion operation
+2025/03/08 14:38:50 [INFO] (list.go:568) Searching for playlists only in /Music directory
+2025/03/08 14:38:51 [VERBOSE] (list.go:602) Found playlist: /Music/WORKINGJAUZ.m3u8 (ID: 16777320, Format: 47633)
+2025/03/08 14:38:51 [VERBOSE] (list.go:602) Found playlist: /Music/WORKINGJAUZ.m3u8 (ID: 16783033, Format: 47621)
+2025/03/08 14:38:51 [INFO] (list.go:607) Total playlists found in /Music: 2
+2025/03/08 14:38:51 [VERBOSE] (list.go:245) Normalized path for lookup: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:51 [VERBOSE] (list.go:359) Trimmed path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:51 [VERBOSE] (list.go:364) Normalized path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:51 [VERBOSE] (list.go:371) Trying path variation: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:51 [VERBOSE] (list.go:411) Found object: WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:38:51 [VERBOSE] (list.go:250) Found object by path: /Music/WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:38:51 [VERBOSE] (list.go:245) Normalized path for lookup: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:51 [VERBOSE] (list.go:359) Trimmed path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:51 [VERBOSE] (list.go:364) Normalized path: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:51 [VERBOSE] (list.go:371) Trying path variation: /Music/WORKINGJAUZ.m3u8
+2025/03/08 14:38:51 [VERBOSE] (list.go:411) Found object: WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:38:51 [VERBOSE] (list.go:250) Found object by path: /Music/WORKINGJAUZ.m3u8 (ID: 16777320)
+2025/03/08 14:38:59 [INFO] (list.go:27) Searching for playlists...
+2025/03/08 14:38:59 [INFO] (list.go:48) Searching storage #1:  (ID: 131073)
+2025/03/08 14:38:59 [INFO] (list.go:568) Searching for playlists only in /Music directory
+2025/03/08 14:38:59 [VERBOSE] (list.go:591) Error getting object info for handle 16783033: GeneralError
+2025/03/08 14:38:59 [INFO] (list.go:607) Total playlists found in /Music: 0
+2025/03/08 14:38:59 [INFO] (list.go:58) Found 0 playlists in storage #1
+2025/03/08 14:38:59 [INFO] (list.go:85) Total playlists found across all storages: 0
+2025/03/08 14:39:02 [INFO] (list.go:27) Searching for playlists...
+2025/03/08 14:39:02 [INFO] (list.go:48) Searching storage #1:  (ID: 131073)
+2025/03/08 14:39:02 [INFO] (list.go:568) Searching for playlists only in /Music directory
+2025/03/08 14:39:02 [VERBOSE] (list.go:591) Error getting object info for handle 16783033: GeneralError
+2025/03/08 14:39:02 [INFO] (list.go:607) Total playlists found in /Music: 0
+2025/03/08 14:39:02 [INFO] (list.go:58) Found 0 playlists in storage #1
+2025/03/08 14:39:02 [INFO] (list.go:85) Total playlists found across all storages: 0
+2025/03/08 14:39:04 [INFO] (list.go:27) Searching for playlists...
+2025/03/08 14:39:04 [INFO] (list.go:48) Searching storage #1:  (ID: 131073)
+2025/03/08 14:39:04 [INFO] (list.go:568) Searching for playlists only in /Music directory
+2025/03/08 14:39:04 [VERBOSE] (list.go:591) Error getting object info for handle 16783033: GeneralError
+2025/03/08 14:39:04 [INFO] (list.go:607) Total playlists found in /Music: 0
+2025/03/08 14:39:04 [INFO] (list.go:58) Found 0 playlists in storage #1
+2025/03/08 14:39:04 [INFO] (list.go:85) Total playlists found across all storages: 0

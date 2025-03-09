@@ -1,0 +1,22 @@
+2025/03/07 15:53:43 --- MTP Music Manager Started ---
+2025/03/07 15:53:43 OS: darwin, Architecture: arm64
+2025/03/07 15:53:43 Verbose logging: false
+2025/03/07 15:53:43 [INFO] Starting MTP Music Manager
+2025/03/07 15:53:43 [INFO] Running on darwin/arm64
+2025/03/07 15:53:43 [INFO] Initializing device with timeout of 30s...
+2025/03/07 15:53:43 [INFO] Starting MTP device detection in background goroutine
+2025/03/07 15:53:43 [INFO] MTP device found successfully
+2025/03/07 15:53:43 [INFO] Device initialized successfully
+2025/03/07 15:53:43 [INFO] Fetching storages with timeout of 30s...
+2025/03/07 15:53:43 [INFO] Found 1 storage(s) on device
+2025/03/07 15:53:43 [INFO] Storages fetched successfully
+2025/03/07 15:53:46 [INFO] Starting playlist and songs deletion operation
+2025/03/07 15:53:46 [INFO] Searching storage #1:  (ID: 131073) for playlists
+2025/03/07 15:54:12 [INFO] Walk scan completed: checked 463 files, found 6 playlists
+2025/03/07 15:54:12 [INFO] Total unique playlists found: 6
+2025/03/07 15:54:22 [INFO] Attempting to read content of playlist (ID: 16777341)
+2025/03/07 15:54:22 [INFO] Found 45 songs referenced in playlist /Music/Jauz.m3u8
+2025/03/07 15:55:09 [INFO] Scanned 463 files in storage
+2025/03/07 15:55:09 [ERROR] Could not find object for path /MUSIC/JOYRYDE_SKRILLEX/AGEN WIDA/AGEN WIDA.MP3: could not find object with path: /MUSIC/JOYRYDE_SKRILLEX/AGEN WIDA/AGEN WIDA.MP3
+2025/03/07 15:55:51 [INFO] Scanned 463 files in storage
+2025/03/07 15:55:51 [ERROR] Could not find object for path /MUSIC/ISOXO_KNOCK2/NITEHARTS/AARENA (KNOCK2 REMIX).MP3: could not find object with path: /MUSIC/ISOXO_KNOCK2/NITEHARTS/AARENA (KNOCK2 REMIX).MP3

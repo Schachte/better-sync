@@ -1,0 +1,11 @@
+2025/03/08 12:57:12 --- MTP Music Manager Started ---
+2025/03/08 12:57:12 OS: darwin, Architecture: arm64
+2025/03/08 12:57:12 Verbose logging: false
+2025/03/08 12:57:13 [INFO] (list.go:17) Searching for playlists...
+2025/03/08 12:57:13 [INFO] (list.go:36) Searching storage #1:  (ID: 131073)
+2025/03/08 12:57:23 [INFO] (list.go:449) Walk scan completed: checked 347 files, found 0 playlists
+2025/03/08 12:57:23 [INFO] (list.go:455) Using alternative search method for playlists
+2025/03/08 12:57:53 [ERROR] (upload.go:1128) Error getting object info for handle 16783118: GeneralError
+2025/03/08 12:57:53 [INFO] (list.go:494) Total unique playlists found: 0
+2025/03/08 12:57:53 [INFO] (list.go:46) Found 0 playlists in storage #1
+2025/03/08 12:57:53 [INFO] (list.go:56) Total playlists found across all storages: 0

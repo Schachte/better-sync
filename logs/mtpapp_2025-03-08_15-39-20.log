@@ -1,0 +1,242 @@
+2025/03/08 15:39:20 --- MTP Music Manager Started ---
+2025/03/08 15:39:20 OS: darwin, Architecture: arm64
+2025/03/08 15:39:20 Verbose logging: true
+2025/03/08 15:39:20 [VERBOSE] (main.go:25) Starting MTP Music Manager
+2025/03/08 15:39:20 [VERBOSE] (connect.go:15) Initializing device with timeout of 30s...
+2025/03/08 15:39:20 [VERBOSE] (connect.go:28) Starting MTP device detection in background goroutine
+2025/03/08 15:39:20 [VERBOSE] (connect.go:40) MTP device found successfully
+2025/03/08 15:39:20 [VERBOSE] (connect.go:54) Device initialized successfully
+2025/03/08 15:39:20 [VERBOSE] (storage.go:21) Fetching storages with timeout of 30s...
+2025/03/08 15:39:20 [VERBOSE] (storage.go:48) Found 1 storage(s) on device
+2025/03/08 15:39:20 [VERBOSE] (storage.go:61) Storage #1:  (ID: 131073)
+2025/03/08 15:39:21 [INFO] (delete.go:827) Starting folder deletion operation
+2025/03/08 15:39:21 [INFO] (upload.go:1232) Automatically selected storage:  (ID: 131073)
+2025/03/08 15:39:21 [VERBOSE] (upload.go:1165) Found existing Music folder with ID: 16777218
+2025/03/08 15:39:21 [VERBOSE] (delete.go:863) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:39:21 [VERBOSE] (delete.go:863) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:39:32 [INFO] (delete.go:827) Starting folder deletion operation
+2025/03/08 15:39:32 [INFO] (upload.go:1232) Automatically selected storage:  (ID: 131073)
+2025/03/08 15:39:32 [VERBOSE] (upload.go:1165) Found existing Music folder with ID: 16777218
+2025/03/08 15:39:32 [VERBOSE] (delete.go:863) Error getting object info for handle 16783169: GeneralError
+2025/03/08 15:39:32 [VERBOSE] (delete.go:863) Error getting object info for handle 16783202: GeneralError
+2025/03/08 15:41:39 [INFO] (delete.go:686) Starting recursive deletion of folder: /Music/JOYRYDE_SKRILLEX (ID: 16777306)
+2025/03/08 15:41:39 [INFO] (delete.go:697) Found 1 items in folder /Music/JOYRYDE_SKRILLEX
+2025/03/08 15:41:39 [INFO] (delete.go:686) Starting recursive deletion of folder: /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (ID: 16777641)
+2025/03/08 15:41:39 [INFO] (delete.go:697) Found 3 items in folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA
+2025/03/08 15:41:39 [ERROR] (delete.go:713) Error getting object info for handle 16783016: GeneralError
+2025/03/08 15:41:39 [ERROR] (delete.go:713) Error getting object info for handle 16783034: GeneralError
+2025/03/08 15:41:39 [ERROR] (delete.go:713) Error getting object info for handle 16783205: GeneralError
+2025/03/08 15:41:39 [ERROR] (delete.go:786) Attempt 1: Error deleting folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (ID: 16777641): GeneralError
+2025/03/08 15:41:40 [ERROR] (delete.go:786) Attempt 2: Error deleting folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (ID: 16777641): GeneralError
+2025/03/08 15:41:40 [ERROR] (delete.go:786) Attempt 3: Error deleting folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (ID: 16777641): GeneralError
+2025/03/08 15:41:40 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777641
+2025/03/08 15:41:40 [ERROR] (delete.go:800) Alternative deletion method failed for folder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA: failed to send modified object info: GeneralError
+2025/03/08 15:41:40 [ERROR] (delete.go:725) Error deleting subfolder /Music/JOYRYDE_SKRILLEX/AGEN_WIDA: completed with 4 failed deletions
+2025/03/08 15:41:40 [ERROR] (delete.go:786) Attempt 1: Error deleting folder /Music/JOYRYDE_SKRILLEX (ID: 16777306): GeneralError
+2025/03/08 15:41:41 [ERROR] (delete.go:786) Attempt 2: Error deleting folder /Music/JOYRYDE_SKRILLEX (ID: 16777306): GeneralError
+2025/03/08 15:41:41 [ERROR] (delete.go:786) Attempt 3: Error deleting folder /Music/JOYRYDE_SKRILLEX (ID: 16777306): GeneralError
+2025/03/08 15:41:41 [INFO] (delete.go:638) Trying alternative deletion method for object ID 16777306
+2025/03/08 15:41:41 [ERROR] (delete.go:800) Alternative deletion method failed for folder /Music/JOYRYDE_SKRILLEX: failed to send modified object info: GeneralError
+2025/03/08 15:41:41 [ERROR] (delete.go:913) Error during recursive deletion: completed with 2 failed deletions
+2025/03/08 15:41:54 [INFO] (list.go:562) Searching for playlists in both /MUSIC and /Music directories
+2025/03/08 15:41:54 [VERBOSE] (list.go:465) Getting folder ID for path: /MUSIC
+2025/03/08 15:41:54 [INFO] (list.go:571) /MUSIC folder not found: folder not found at component 0 (MUSIC): error getting object handles: InvalidStorageId
+2025/03/08 15:41:54 [VERBOSE] (list.go:465) Getting folder ID for path: /Music
+2025/03/08 15:41:54 [INFO] (list.go:571) /Music folder not found: folder not found at component 0 (Music): error getting object handles: InvalidStorageId
+2025/03/08 15:41:54 [INFO] (list.go:609) Total playlists found: 0
+2025/03/08 15:41:56 [INFO] (list.go:562) Searching for playlists in both /MUSIC and /Music directories
+2025/03/08 15:41:56 [VERBOSE] (list.go:465) Getting folder ID for path: /MUSIC
+2025/03/08 15:41:56 [INFO] (list.go:571) /MUSIC folder not found: folder not found at component 0 (MUSIC): error getting object handles: InvalidStorageId
+2025/03/08 15:41:56 [VERBOSE] (list.go:465) Getting folder ID for path: /Music
+2025/03/08 15:41:56 [INFO] (list.go:571) /Music folder not found: folder not found at component 0 (Music): error getting object handles: InvalidStorageId
+2025/03/08 15:41:56 [INFO] (list.go:609) Total playlists found: 0
+2025/03/08 15:41:57 [INFO] (list.go:562) Searching for playlists in both /MUSIC and /Music directories
+2025/03/08 15:41:57 [VERBOSE] (list.go:465) Getting folder ID for path: /MUSIC
+2025/03/08 15:41:57 [INFO] (list.go:571) /MUSIC folder not found: folder not found at component 0 (MUSIC): error getting object handles: InvalidStorageId
+2025/03/08 15:41:57 [VERBOSE] (list.go:465) Getting folder ID for path: /Music
+2025/03/08 15:41:57 [INFO] (list.go:571) /Music folder not found: folder not found at component 0 (Music): error getting object handles: InvalidStorageId
+2025/03/08 15:41:57 [INFO] (list.go:609) Total playlists found: 0
+2025/03/08 15:42:00 [INFO] (list.go:88) Searching for MP3 files...
+2025/03/08 15:42:00 [INFO] (list.go:107) Searching storage #1:  (ID: 131073)
+2025/03/08 15:42:00 [INFO] (list.go:704) Searching for MP3 files in both case variations of music directories
+2025/03/08 15:42:00 [INFO] (list.go:713) Searching in /MUSIC directory
+2025/03/08 15:42:00 [VERBOSE] (list.go:719) Examining file: /MUSIC/JOYRYDE_SKRILLEX (IsDir: true)
+2025/03/08 15:42:00 [VERBOSE] (list.go:719) Examining file: /MUSIC/JOYRYDE_SKRILLEX/AGEN_WIDA (IsDir: true)
+2025/03/08 15:42:00 [VERBOSE] (list.go:719) Examining file: /MUSIC/ISOXO_KNOCK2 (IsDir: true)
+2025/03/08 15:42:00 [VERBOSE] (list.go:719) Examining file: /MUSIC/ISOXO_KNOCK2/NITEHARTS (IsDir: true)
+2025/03/08 15:42:00 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ (IsDir: true)
+2025/03/08 15:42:00 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ/ALPHA (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ/FEEL_THE_VOLUME (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ/GET_TO_ME (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ/GOODIEZ (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ/THE_GAME (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/HEROBUST (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/HEROBUST/BRUH_! (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/HEROBUST/BLOCKBUSTER_VIP (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/HEROBUST/VERTEBREAKER_(REMIXES) (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/HEROBUST/WTF (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/BRO_SAFARI_TANK_PARADE (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/BRO_SAFARI_TANK_PARADE/BLITZ (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/RUSKO_SUBTRONICS (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/RUSKO_SUBTRONICS/BOUNCE (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/12TH_PLANET (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/12TH_PLANET/CLAIRVOYANT (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/12TH_PLANET/SHIPWRECK'D (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/4B_NVRLEFT (IsDir: true)
+2025/03/08 15:42:01 [VERBOSE] (list.go:719) Examining file: /MUSIC/4B_NVRLEFT/DOPE (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/RIOT (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/RIOT/DOWN_WITH_YOUR_LOVE (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/BRAINRACK_EYEZIC_ALLEYCVT (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/BRAINRACK_EYEZIC_ALLEYCVT/EYES_CLOSED (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/12TH_PLANET_KATIE_SKY (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/12TH_PLANET_KATIE_SKY/FOLLOW (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/BUKU_BASSNECTAR (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/BUKU_BASSNECTAR/FRONT_TO_BACK_(BASSNECTAR_REMIX) (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/KNOCK2 (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/KNOCK2/SABLE_VALLEY_SUMMER_VOL._1 (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/KNOCK2/PARANOID (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/DEADMAU5_ROB_SWIRE_JAUZ (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/DEADMAU5_ROB_SWIRE_JAUZ/GHOSTS_'N'_STUFF_(JAUZ_REMIX) (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/WORKINGJAUZ.m3u8 (IsDir: false)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/ROOTKIT_TYLOR_MAURER (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/ROOTKIT_TYLOR_MAURER/GOOD_2_GO (IsDir: true)
+2025/03/08 15:42:02 [VERBOSE] (list.go:719) Examining file: /MUSIC/QUIX (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/QUIX/GRENADE (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/JOYRYDE (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/JOYRYDE/HOT_DRUM (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/JOYRYDE/BRAVE (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/JOYRYDE/SPEED_TRAP (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/QUIX_AMBA_SHEPHERD (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/QUIX_AMBA_SHEPHERD/HEADS_OR_TAILS (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/EPHWURD_SWAGE (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/EPHWURD_SWAGE/HECTIC (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/AHEE_DEFUNK (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/AHEE_DEFUNK/I_FEEL_IT (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_EXAMPLE (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_EXAMPLE/THE_WISE_AND_THE_WICKED (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/TI_STO_JAUZ (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/TI_STO_JAUZ/INFECTED (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/ZEDS_DEAD_JAUZ_SUBTRONICS (IsDir: true)
+2025/03/08 15:42:03 [VERBOSE] (list.go:719) Examining file: /MUSIC/ZEDS_DEAD_JAUZ_SUBTRONICS/LIGHTS_GO_DOWN_(REMIXES) (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/DREZO (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/DREZO/MALICE (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_SAN_HOLO (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_SAN_HOLO/OK! (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/BONNIE_X_CLYDE (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/BONNIE_X_CLYDE/OURS (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/MONXX (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/MONXX/ON_YOU (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/KNIFE_PARTY_JAUZ (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/KNIFE_PARTY_JAUZ/TRIGGER_WARNING (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/BRO_SAFARI_SARAH_HUDSON (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/BRO_SAFARI_SARAH_HUDSON/COLLISIONS (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_EPHWURD (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_EPHWURD/ROCK_THE_PARTY (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/SIKDOPE_LOUD_ABOUT_US! (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/SIKDOPE_LOUD_ABOUT_US!/SLOW_IT_DOWN (IsDir: true)
+2025/03/08 15:42:04 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_666 (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_666/THE_WISE_AND_THE_WICKED (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_NONSENS (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/JAUZ_NONSENS/THE_BEAT (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/4B (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/4B/THERE_4_YOU (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/APASHE_LEVEL_UP_SAMI_CHAOUKI (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/APASHE_LEVEL_UP_SAMI_CHAOUKI/TIME_WARP_(LEVEL_UP_REMIX) (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/FUNTCASE_DANI_POPPITT (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/FUNTCASE_DANI_POPPITT/NEXT_CHAPTER (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /MUSIC/WORKINGJAUZ.m3u8 (IsDir: false)
+2025/03/08 15:42:05 [INFO] (list.go:744) Found 2 total objects in /MUSIC directory
+2025/03/08 15:42:05 [INFO] (list.go:713) Searching in /Music directory
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /Music/JOYRYDE_SKRILLEX (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /Music/JOYRYDE_SKRILLEX/AGEN_WIDA (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /Music/ISOXO_KNOCK2 (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /Music/ISOXO_KNOCK2/NITEHARTS (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ (IsDir: true)
+2025/03/08 15:42:05 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ/ALPHA (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ/FEEL_THE_VOLUME (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ/GET_TO_ME (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ/GOODIEZ (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ/THE_GAME (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/HEROBUST (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/HEROBUST/BRUH_! (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/HEROBUST/BLOCKBUSTER_VIP (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/HEROBUST/VERTEBREAKER_(REMIXES) (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/HEROBUST/WTF (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/BRO_SAFARI_TANK_PARADE (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/BRO_SAFARI_TANK_PARADE/BLITZ (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/RUSKO_SUBTRONICS (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/RUSKO_SUBTRONICS/BOUNCE (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/12TH_PLANET (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/12TH_PLANET/CLAIRVOYANT (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/12TH_PLANET/SHIPWRECK'D (IsDir: true)
+2025/03/08 15:42:06 [VERBOSE] (list.go:719) Examining file: /Music/4B_NVRLEFT (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/4B_NVRLEFT/DOPE (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/RIOT (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/RIOT/DOWN_WITH_YOUR_LOVE (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/BRAINRACK_EYEZIC_ALLEYCVT (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/BRAINRACK_EYEZIC_ALLEYCVT/EYES_CLOSED (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/12TH_PLANET_KATIE_SKY (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/12TH_PLANET_KATIE_SKY/FOLLOW (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/BUKU_BASSNECTAR (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/BUKU_BASSNECTAR/FRONT_TO_BACK_(BASSNECTAR_REMIX) (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/KNOCK2 (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/KNOCK2/SABLE_VALLEY_SUMMER_VOL._1 (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/KNOCK2/PARANOID (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/DEADMAU5_ROB_SWIRE_JAUZ (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/DEADMAU5_ROB_SWIRE_JAUZ/GHOSTS_'N'_STUFF_(JAUZ_REMIX) (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/WORKINGJAUZ.m3u8 (IsDir: false)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/ROOTKIT_TYLOR_MAURER (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/ROOTKIT_TYLOR_MAURER/GOOD_2_GO (IsDir: true)
+2025/03/08 15:42:07 [VERBOSE] (list.go:719) Examining file: /Music/QUIX (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/QUIX/GRENADE (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/JOYRYDE (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/JOYRYDE/HOT_DRUM (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/JOYRYDE/BRAVE (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/JOYRYDE/SPEED_TRAP (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/QUIX_AMBA_SHEPHERD (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/QUIX_AMBA_SHEPHERD/HEADS_OR_TAILS (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/EPHWURD_SWAGE (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/EPHWURD_SWAGE/HECTIC (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/AHEE_DEFUNK (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/AHEE_DEFUNK/I_FEEL_IT (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_EXAMPLE (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_EXAMPLE/THE_WISE_AND_THE_WICKED (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/TI_STO_JAUZ (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/TI_STO_JAUZ/INFECTED (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/ZEDS_DEAD_JAUZ_SUBTRONICS (IsDir: true)
+2025/03/08 15:42:08 [VERBOSE] (list.go:719) Examining file: /Music/ZEDS_DEAD_JAUZ_SUBTRONICS/LIGHTS_GO_DOWN_(REMIXES) (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/DREZO (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/DREZO/MALICE (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_SAN_HOLO (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_SAN_HOLO/OK! (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/BONNIE_X_CLYDE (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/BONNIE_X_CLYDE/OURS (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/MONXX (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/MONXX/ON_YOU (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/KNIFE_PARTY_JAUZ (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/KNIFE_PARTY_JAUZ/TRIGGER_WARNING (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/BRO_SAFARI_SARAH_HUDSON (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/BRO_SAFARI_SARAH_HUDSON/COLLISIONS (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_EPHWURD (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_EPHWURD/ROCK_THE_PARTY (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/SIKDOPE_LOUD_ABOUT_US! (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/SIKDOPE_LOUD_ABOUT_US!/SLOW_IT_DOWN (IsDir: true)
+2025/03/08 15:42:09 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_666 (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_666/THE_WISE_AND_THE_WICKED (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_NONSENS (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/JAUZ_NONSENS/THE_BEAT (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/4B (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/4B/THERE_4_YOU (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/APASHE_LEVEL_UP_SAMI_CHAOUKI (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/APASHE_LEVEL_UP_SAMI_CHAOUKI/TIME_WARP_(LEVEL_UP_REMIX) (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/FUNTCASE_DANI_POPPITT (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/FUNTCASE_DANI_POPPITT/NEXT_CHAPTER (IsDir: true)
+2025/03/08 15:42:10 [VERBOSE] (list.go:719) Examining file: /Music/WORKINGJAUZ.m3u8 (IsDir: false)
+2025/03/08 15:42:10 [INFO] (list.go:744) Found 2 total objects in /Music directory
+2025/03/08 15:42:10 [ERROR] (list.go:759) No MP3 files found in any music directories
+2025/03/08 15:42:10 [INFO] (list.go:760) HINT: If you've uploaded files but can't find them, check:
+2025/03/08 15:42:10 [INFO] (list.go:761) 1. The files were uploaded successfully (no errors during upload)
+2025/03/08 15:42:10 [INFO] (list.go:762) 2. The case of the music directory: the app now searches both /MUSIC and /Music
+2025/03/08 15:42:10 [INFO] (list.go:763) 3. The directory structure on the device (using a direct file browser)
+2025/03/08 15:42:10 [INFO] (list.go:131) Found 0 MP3 files in storage #1
+2025/03/08 15:42:10 [INFO] (list.go:142) Total MP3 files found across all storages: 0
