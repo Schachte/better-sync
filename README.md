@@ -4,6 +4,8 @@ _The missing alternative to Garmin Express_
 
 A command-line tool that uses MTP (Media Transport Protocol) to manually manage Spotify playlists and music on your Garmin device. This is a replacement option to Garmin Express.
 
+Note: I'm currently working on a desktop GUI for this tool.
+
 ![main](./assets/readme.png)
 
 ## Installation
