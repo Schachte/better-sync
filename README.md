@@ -6,6 +6,19 @@ A command-line tool that uses MTP (Media Transport Protocol) to manually manage 
 
 ## Installation
 
+## Requirements
+
+- `libusb` - Required for device communication
+
+  ```bash
+  brew install libusb
+  ```
+
+- `ffmpeg` - Required for audio processing
+  ```bash
+  brew install ffmpeg
+  ```
+
 ### From Source
 
 1. Make sure you have Go 1.19 or newer installed
