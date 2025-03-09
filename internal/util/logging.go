@@ -18,38 +18,30 @@ var (
 func SetupLogging(verbose bool) {
 	verboseOutput = verbose
 
-	// Create logs directory if it doesn't exist
 	err := os.MkdirAll("logs", 0755)
 	if err != nil {
 		fmt.Println("Warning: Failed to create logs directory:", err)
 	}
 
-	// Create a timestamped log file
 	timestamp := time.Now().Format("2006-01-02_15-04-05")
 	logPath := filepath.Join("logs", fmt.Sprintf("mtpapp_%s.log", timestamp))
 
 	logFile, err := os.Create(logPath)
 	if err != nil {
 		fmt.Println("Warning: Failed to create log file:", err)
-		// If we can't create a log file, just log to stdout
+
 		logger = log.New(os.Stdout, "", log.LstdFlags)
 		return
 	}
 
-	// Use a multiwriter to send logs to both file and console if verbose
 	if verbose {
 		multiWriter := io.MultiWriter(logFile, os.Stdout)
 		logger = log.New(multiWriter, "", log.LstdFlags)
-		fmt.Printf("Logging to file: %s and to console\n", logPath)
+		LogVerbose("Logging to file: %s and to console", logPath)
 	} else {
 		logger = log.New(logFile, "", log.LstdFlags)
-		fmt.Printf("Logging to file: %s\n", logPath)
+		LogVerbose("Logging to file: %s", logPath)
 	}
-
-	// Log basic system information
-	logger.Printf("--- MTP Music Manager Started ---")
-	logger.Printf("OS: %s, Architecture: %s", runtime.GOOS, runtime.GOARCH)
-	logger.Printf("Verbose logging: %v", verbose)
 }
 
 func LogInfo(format string, v ...interface{}) {

@@ -1,8 +1,0 @@
-2025/03/08 13:27:33 --- MTP Music Manager Started ---
-2025/03/08 13:27:33 OS: darwin, Architecture: arm64
-2025/03/08 13:27:33 Verbose logging: true
-2025/03/08 13:27:33 [VERBOSE] (main.go:25) Starting MTP Music Manager
-2025/03/08 13:27:33 [VERBOSE] (connect.go:15) Initializing device with timeout of 30s...
-2025/03/08 13:27:33 [VERBOSE] (connect.go:28) Starting MTP device detection in background goroutine
-2025/03/08 13:27:43 [ERROR] (connect.go:37) MTP initialization failed: opening after reset: LIBUSB_ERROR_PIPE
-2025/03/08 13:27:43 [ERROR] (main.go:31) Failed to initialize device: opening after reset: LIBUSB_ERROR_PIPE

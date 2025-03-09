@@ -1,5 +1,0 @@
-2025/03/07 11:52:09 [INFO] Starting MTP Music Manager
-2025/03/07 11:52:09 [INFO] Running on darwin/arm64
-2025/03/07 11:52:09 [INFO] Memory stats before init: Alloc = 0 MiB, Sys = 6 MiB
-2025/03/07 11:52:09 [INFO] Initializing device...
-2025/03/07 11:52:29 [ERROR] Failed to initialize device: OpenSession after reset: LIBUSB_ERROR_IO

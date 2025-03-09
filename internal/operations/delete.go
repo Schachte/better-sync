@@ -17,20 +17,18 @@ import (
 )
 
 func DeletePlaylist(dev *mtp.Device, storagesRaw interface{}) {
-	fmt.Println("\n=== Delete Playlist ===")
+	util.LogInfo("=== Delete Playlist ===")
 	util.LogVerbose("Starting playlist deletion operation")
 
-	// Get all playlists from all storages
 	storagesValue := reflect.ValueOf(storagesRaw)
 	if storagesValue.Kind() != reflect.Slice {
 		util.LogError("Error: Storages is not a slice")
 		return
 	}
 
-	// Collect all playlists from all storages
 	allPlaylists := make([]model.PlaylistEntry, 0)
 
-	fmt.Println("Scanning for playlists...")
+	util.LogInfo("Scanning for playlists...")
 
 	for i := 0; i < storagesValue.Len(); i++ {
 		storageObj := storagesValue.Index(i).Interface()
@@ -54,7 +52,6 @@ func DeletePlaylist(dev *mtp.Device, storagesRaw interface{}) {
 				continue
 			}
 
-			// GetObjectInfo needs an object to populate
 			info := mtp.ObjectInfo{}
 			err = dev.GetObjectInfo(objectID, &info)
 			if err != nil {
@@ -77,13 +74,11 @@ func DeletePlaylist(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Show playlists
 	fmt.Println("\n==== Available Playlists ====")
 	for i, playlist := range allPlaylists {
 		fmt.Printf("%d. [%s] %s\n", i+1, playlist.StorageDesc, filepath.Base(playlist.Path))
 	}
 
-	// Get selection
 	fmt.Print("\nSelect playlist to delete (1-" + fmt.Sprint(len(allPlaylists)) + "): ")
 	var selection int
 	fmt.Scanln(&selection)
@@ -95,7 +90,6 @@ func DeletePlaylist(dev *mtp.Device, storagesRaw interface{}) {
 
 	selected := allPlaylists[selection-1]
 
-	// Confirm deletion
 	fmt.Printf("Are you sure you want to delete the playlist '%s'? (y/n): ", filepath.Base(selected.Path))
 	var confirm string
 	fmt.Scanln(&confirm)
@@ -105,13 +99,11 @@ func DeletePlaylist(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Delete the playlist
 	err := dev.DeleteObject(selected.ObjectID)
 	if err != nil {
 		util.LogError("Error deleting playlist: %v", err)
 		fmt.Printf("Error deleting playlist: %v\n", err)
 
-		// Try alternative method
 		fmt.Println("Trying alternative deletion method...")
 		err = tryAlternativeDeleteMethod(dev, selected.StorageID, selected.ObjectID)
 		if err != nil {
@@ -120,20 +112,18 @@ func DeletePlaylist(dev *mtp.Device, storagesRaw interface{}) {
 		}
 	}
 
-	fmt.Println("Playlist deleted successfully")
+	util.LogInfo("Playlist deleted successfully")
 }
 
 func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 	util.LogInfo("Starting song deletion operation")
 
-	// Get all songs from all storages
 	storagesValue := reflect.ValueOf(storagesRaw)
 	if storagesValue.Kind() != reflect.Slice {
 		util.LogError("Error: Storages is not a slice")
 		return
 	}
 
-	// Collect all songs from all storages
 	type SongEntry struct {
 		StorageID   uint32
 		Path        string
@@ -152,38 +142,32 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 			description = extractStringField(storageObj, "Description")
 		}
 
-		fmt.Printf("Searching storage #%d: %s (ID: %d) for songs...\n", i+1, description, storageID)
-		util.LogInfo("Searching storage #%d: %s (ID: %d) for songs", i+1, description, storageID)
+		util.LogInfo("Searching storage #%d: %s (ID: %d) for songs...", i+1, description, storageID)
 
-		// Find all MP3 files in the storage
 		songPaths, err := FindMP3Files(dev, storageID)
 		if err != nil {
 			util.LogError("Error finding songs in storage #%d: %v", i+1, err)
 			continue
 		}
 
-		// For each song, find its object ID
 		for _, path := range songPaths {
-			// Get the filename from the path
+
 			filename := filepath.Base(path)
 
-			// Get the parent directory path
 			parentPath := filepath.Dir(path)
 			if parentPath == "." || parentPath == "/" {
 				parentPath = ""
 			}
 
-			// Find the parent ID by path or default to root
 			parentID := PARENT_ROOT
 			if parentPath != "" {
 				parentID, err = GetFolderIDByPath(dev, storageID, parentPath)
 				if err != nil {
 					util.LogVerbose("Could not find parent folder for %s: %v", path, err)
-					// Continue with root parent
+
 				}
 			}
 
-			// Get all objects in the parent folder
 			handles := mtp.Uint32Array{}
 			err = dev.GetObjectHandles(storageID, 0, parentID, &handles)
 			if err != nil {
@@ -191,7 +175,6 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 				continue
 			}
 
-			// Find the object with matching filename
 			found := false
 			var objectID uint32
 			for _, handle := range handles.Values {
@@ -210,7 +193,7 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 			}
 
 			if found {
-				// Extract display name for better readability
+
 				displayName := util.ExtractTrackInfo(path)
 
 				allSongs = append(allSongs, SongEntry{
@@ -232,13 +215,11 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Display all songs to the user
 	fmt.Println("\nAvailable songs to delete:")
 	for i, song := range allSongs {
 		fmt.Printf("%d. %s (%s)\n", i+1, song.DisplayName, song.Path)
 	}
 
-	// Let user select a song to delete
 	fmt.Print("\nEnter the number of the song to delete (0 to cancel): ")
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
@@ -253,10 +234,8 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Get the selected song
 	selectedSong := allSongs[index-1]
 
-	// Confirm deletion
 	fmt.Printf("\nAre you sure you want to delete the song '%s'? (y/n): ", selectedSong.DisplayName)
 	scanner.Scan()
 	confirm := strings.ToLower(scanner.Text())
@@ -265,7 +244,6 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Add an extra warning for songs that might be in playlists
 	fmt.Println("\nWARNING: If this song is included in any playlists, those playlists may be affected.")
 	fmt.Print("Continue with deletion? (y/n): ")
 	scanner.Scan()
@@ -275,8 +253,7 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Attempt to delete the song
-	fmt.Printf("Deleting song '%s'...\n", selectedSong.DisplayName)
+	util.LogInfo("Deleting song '%s'...", selectedSong.DisplayName)
 	util.LogInfo("Attempting to delete song %s (Path: %s, ObjectID: %d, StorageID: %d)",
 		selectedSong.DisplayName, selectedSong.Path, selectedSong.ObjectID, selectedSong.StorageID)
 
@@ -285,12 +262,11 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 		util.LogError("Error deleting song: %v", err)
 		fmt.Printf("Error deleting song: %v\n", err)
 
-		// Offer retry with different approach if deletion failed
 		fmt.Print("\nWould you like to try an alternative deletion method? (y/n): ")
 		scanner.Scan()
 		retry := strings.ToLower(scanner.Text())
 		if retry == "y" || retry == "yes" {
-			// Try alternative deletion method
+
 			err = tryAlternativeDeleteMethod(dev, selectedSong.StorageID, selectedSong.ObjectID)
 			if err != nil {
 				util.LogError("Alternative deletion method failed: %v", err)
@@ -303,14 +279,12 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 				fmt.Println("4. The song might be currently playing or locked by the device")
 				return
 			} else {
-				fmt.Printf("Successfully deleted song '%s' using alternative method\n", selectedSong.DisplayName)
-				util.LogInfo("Successfully deleted song %s using alternative method", selectedSong.DisplayName)
+				util.LogInfo("Successfully deleted song '%s' using alternative method", selectedSong.DisplayName)
 			}
 		} else {
 			return
 		}
 	} else {
-		fmt.Printf("Successfully deleted song '%s'\n", selectedSong.DisplayName)
 		util.LogInfo("Successfully deleted song %s", selectedSong.DisplayName)
 	}
 
@@ -320,26 +294,19 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 func tryAlternativeDeleteMethod(dev *mtp.Device, storageID, objectID uint32) error {
 	util.LogInfo("Trying alternative deletion method for object ID %d", objectID)
 
-	// Some devices require sending a specific MTP command rather than using DeleteObject
-	// This is just one example of an alternative approach
-
-	// 1. Try setting the object to zero size first (this works on some devices)
 	info := mtp.ObjectInfo{}
 	err := dev.GetObjectInfo(objectID, &info)
 	if err != nil {
 		return fmt.Errorf("failed to get object info: %v", err)
 	}
 
-	// Modify the object info to have zero size
 	info.CompressedSize = 0
 
-	// Send the modified object info
 	_, _, _, err = dev.SendObjectInfo(storageID, info.ParentObject, &info)
 	if err != nil {
 		return fmt.Errorf("failed to send modified object info: %v", err)
 	}
 
-	// 2. Now try deleting the emptied object
 	err = dev.DeleteObject(objectID)
 	if err != nil {
 		return fmt.Errorf("failed to delete modified object: %v", err)
@@ -351,7 +318,6 @@ func tryAlternativeDeleteMethod(dev *mtp.Device, storageID, objectID uint32) err
 func FindObjectByDirectPath(dev *mtp.Device, storageID uint32, path string) (uint32, error) {
 	normalizedPath := normalizePath(path)
 
-	// Try to find the object using Walk with exact case match
 	var foundObject uint32
 	var found bool
 
@@ -361,11 +327,10 @@ func FindObjectByDirectPath(dev *mtp.Device, storageID uint32, path string) (uin
 				return nil // Skip errors and continue
 			}
 
-			// Check for exact match
 			if normalizePath(fi.FullPath) == normalizedPath {
 				foundObject = objectID
 				found = true
-				return fmt.Errorf("found") // Use error to break out of walk
+				return fmt.Errorf("found")
 			}
 
 			return nil
@@ -382,19 +347,15 @@ func FindObjectByDirectPath(dev *mtp.Device, storageID uint32, path string) (uin
 func FindSongByMixedCaseAndRelativePath(dev *mtp.Device, storageID uint32, path string) (uint32, error) {
 	util.LogVerbose("Trying flexible matching for path: %s", path)
 
-	// Extract filename and strip potential path prefixes
 	fileName := filepath.Base(path)
 
-	// Handle potential numeric prefix patterns (01 - Song.mp3, 01_Song.mp3, etc.)
 	fileNameNoNumber := stripNumericPrefix(fileName)
 
-	// For the folder path, extract key components
 	folderPath := filepath.Dir(path)
 	pathComponents := strings.Split(folderPath, "/")
 
-	// Identify potential artist and album folders from the path if available
 	var artistFolder, albumFolder string
-	if len(pathComponents) >= 3 { // Has enough components for MUSIC/ARTIST/ALBUM structure
+	if len(pathComponents) >= 3 {
 		for i, comp := range pathComponents {
 			if strings.EqualFold(comp, "Music") && i+2 < len(pathComponents) {
 				artistFolder = pathComponents[i+1]
@@ -408,37 +369,32 @@ func FindSongByMixedCaseAndRelativePath(dev *mtp.Device, storageID uint32, path 
 	var found bool
 	var matchReason string
 
-	// Walk through all objects to find a match using multiple criteria
 	_, _, _, _ = mtpx.Walk(dev, storageID, "/", true, true, false,
 		func(objectID uint32, fi *mtpx.FileInfo, err error) error {
 			if err != nil {
 				return nil // Skip errors and continue
 			}
 
-			// Only check MP3 files
 			if fi.IsDir || !strings.HasSuffix(strings.ToLower(fi.FullPath), ".mp3") {
 				return nil
 			}
 
-			// Method 1: Check for exact basename match (case insensitive)
 			itemFileName := filepath.Base(fi.FullPath)
 			if strings.EqualFold(itemFileName, fileName) {
 				foundObject = objectID
 				found = true
 				matchReason = "exact filename match"
-				return fmt.Errorf("found") // Break out of walk
+				return fmt.Errorf("found")
 			}
 
-			// Method 2: Check for filename match without numeric prefix
 			itemFileNameNoNumber := stripNumericPrefix(itemFileName)
 			if fileNameNoNumber != "" && strings.EqualFold(itemFileNameNoNumber, fileNameNoNumber) {
 				foundObject = objectID
 				found = true
 				matchReason = "filename match without numeric prefix"
-				return fmt.Errorf("found") // Break out of walk
+				return fmt.Errorf("found")
 			}
 
-			// Method 3: If we have artist/album info, check if those appear in the path
 			if artistFolder != "" && albumFolder != "" {
 				itemPath := fi.FullPath
 				if strings.Contains(strings.ToUpper(itemPath), strings.ToUpper(artistFolder)) &&
@@ -447,7 +403,7 @@ func FindSongByMixedCaseAndRelativePath(dev *mtp.Device, storageID uint32, path 
 					foundObject = objectID
 					found = true
 					matchReason = "artist/album/name pattern match"
-					return fmt.Errorf("found") // Break out of walk
+					return fmt.Errorf("found")
 				}
 			}
 
@@ -463,25 +419,21 @@ func FindSongByMixedCaseAndRelativePath(dev *mtp.Device, storageID uint32, path 
 }
 
 func stripNumericPrefix(filename string) string {
-	// Remove file extension first
+
 	baseName := strings.TrimSuffix(filename, filepath.Ext(filename))
 
-	// Common patterns: "01 - Song", "01_Song", "01 Song", "01-Song"
-	// First, check if it starts with digits
 	if len(baseName) < 3 {
 		return baseName // Too short to have a prefix
 	}
 
-	// Check if the first two characters are digits
 	if baseName[0] >= '0' && baseName[0] <= '9' && baseName[1] >= '0' && baseName[1] <= '9' {
-		// Find where the actual name starts after the prefix
+
 		for i := 2; i < len(baseName); i++ {
 			if baseName[i] >= 'A' && baseName[i] <= 'Z' ||
 				baseName[i] >= 'a' && baseName[i] <= 'z' {
 				return baseName[i:]
 			}
 
-			// Skip common prefix separators
 			if baseName[i] != ' ' && baseName[i] != '-' && baseName[i] != '_' {
 				break
 			}
@@ -492,13 +444,12 @@ func stripNumericPrefix(filename string) string {
 }
 
 func normalizePath(path string) string {
-	// Remove common prefixes
+
 	path = strings.TrimPrefix(path, "0:")
 	if !strings.HasPrefix(path, "/") {
 		path = "/" + path
 	}
 
-	// Ensure single slashes
 	for strings.Contains(path, "//") {
 		path = strings.Replace(path, "//", "/", -1)
 	}
@@ -507,7 +458,7 @@ func normalizePath(path string) string {
 }
 
 func ExtractPlaylistSongPaths(dev *mtp.Device, storageID, objectID uint32, playlistPath string) ([]string, error) {
-	// Read the playlist content
+
 	songs, err := ReadPlaylistContent(dev, storageID, objectID)
 	if err != nil {
 		return nil, err
@@ -517,10 +468,9 @@ func ExtractPlaylistSongPaths(dev *mtp.Device, storageID, objectID uint32, playl
 }
 
 func ReadPlaylistContent(dev *mtp.Device, storageID, objectID uint32) ([]string, error) {
-	// We'll try to get the playlist content using GetObject
+
 	var buf bytes.Buffer
 
-	// Try to get the object data
 	err := dev.GetObject(objectID, &buf, EmptyProgressFunc)
 	if err != nil {
 		return nil, fmt.Errorf("error reading playlist: %v", err)
@@ -533,21 +483,17 @@ func ReadPlaylistContent(dev *mtp.Device, storageID, objectID uint32) ([]string,
 func ParsePlaylistContent(content string) []string {
 	var songs []string
 
-	// Split content into lines
 	lines := strings.Split(content, "\n")
 
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
 
-		// Skip empty lines and comments (lines starting with #)
 		if line == "" || strings.HasPrefix(line, "#") {
 			continue
 		}
 
-		// Normalize the path
 		songPath := line
 
-		// Add to songs list
 		songs = append(songs, songPath)
 	}
 
@@ -555,50 +501,42 @@ func ParsePlaylistContent(content string) []string {
 }
 
 func DeletePlaylistOnly(dev *mtp.Device, playlistObjectID uint32) {
-	fmt.Println("Deleting only the playlist...")
+	util.LogInfo("Deleting only the playlist...")
 	err := dev.DeleteObject(playlistObjectID)
 	if err != nil {
 		util.LogError("Error deleting playlist (ID: %d): %v", playlistObjectID, err)
 		fmt.Printf("ERROR: Could not delete playlist: %v\n", err)
 
-		// Try alternative deletion method
-		fmt.Println("Trying alternative deletion method...")
-		err = tryAlternativeDeleteMethod(dev, 0, playlistObjectID) // 0 is a placeholder for storageID, not used in this context
+		util.LogInfo("Trying alternative deletion method...")
+		err = tryAlternativeDeleteMethod(dev, 0, playlistObjectID)
 		if err != nil {
 			util.LogError("Alternative deletion method failed: %v", err)
 			fmt.Printf("Alternative deletion method failed: %v\n", err)
 			fmt.Println("Playlist could not be deleted.")
 		} else {
-			fmt.Println("Successfully deleted playlist using alternative method.")
+			util.LogInfo("Successfully deleted playlist using alternative method.")
 		}
 	} else {
-		fmt.Println("Successfully deleted playlist.")
+		util.LogInfo("Successfully deleted playlist.")
 	}
 }
 
 func TryAlternativeDeleteMethod(dev *mtp.Device, storageID, objectID uint32) error {
 	util.LogInfo("Trying alternative deletion method for object ID %d", objectID)
 
-	// Some devices require sending a specific MTP command rather than using DeleteObject
-	// This is just one example of an alternative approach
-
-	// 1. Try setting the object to zero size first (this works on some devices)
 	info := mtp.ObjectInfo{}
 	err := dev.GetObjectInfo(objectID, &info)
 	if err != nil {
 		return fmt.Errorf("failed to get object info: %v", err)
 	}
 
-	// Modify the object info to have zero size
 	info.CompressedSize = 0
 
-	// Send the modified object info
 	_, _, _, err = dev.SendObjectInfo(storageID, info.ParentObject, &info)
 	if err != nil {
 		return fmt.Errorf("failed to send modified object info: %v", err)
 	}
 
-	// 2. Now try deleting the emptied object
 	err = dev.DeleteObject(objectID)
 	if err != nil {
 		return fmt.Errorf("failed to delete modified object: %v", err)
@@ -608,14 +546,13 @@ func TryAlternativeDeleteMethod(dev *mtp.Device, storageID, objectID uint32) err
 }
 
 func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folderPath string, requireConfirmation bool) error {
-	// Safety check only for root folder
+
 	if folderPath == "/" {
 		return fmt.Errorf("refusing to delete root folder")
 	}
 
-	// Extra warning for Music folder deletions
 	lowerPath := strings.ToLower(folderPath)
-	if (lowerPath == "/music" || lowerPath == "/music/" || lowerPath == "/music") && requireConfirmation {
+	if (lowerPath == "/music" || lowerPath == "/music/") && requireConfirmation {
 		fmt.Printf("\n!!! EXTREME CAUTION !!!\n")
 		fmt.Printf("You are about to delete the ENTIRE MUSIC FOLDER and ALL its contents.\n")
 		fmt.Printf("This will remove ALL playlists, songs, and artist folders.\n")
@@ -631,7 +568,6 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 		}
 	}
 
-	// Confirm deletion if required
 	if requireConfirmation {
 		fmt.Printf("WARNING: About to delete folder '%s' and ALL its contents. Continue? (y/n): ", folderPath)
 		var confirm string
@@ -642,28 +578,24 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 	}
 
 	util.LogInfo("Starting recursive deletion of folder: %s (ID: %d)", folderPath, folderID)
-	fmt.Printf("Deleting folder: %s\n", folderPath)
+	util.LogInfo("Deleting folder: %s", folderPath)
 
-	// Get all objects in this folder
 	handles := mtp.Uint32Array{}
 	err := dev.GetObjectHandles(storageID, 0, folderID, &handles)
 	if err != nil {
 		return fmt.Errorf("error getting object handles: %w", err)
 	}
 
-	// Log the number of items to delete
 	util.LogInfo("Found %d items in folder %s", len(handles.Values), folderPath)
-	fmt.Printf("Found %d items to process\n", len(handles.Values))
+	util.LogInfo("Found %d items to process", len(handles.Values))
 
-	// Keep track of deletion stats
 	deletedFiles := 0
 	deletedFolders := 0
 	failedItems := 0
 
-	// Process all objects in this folder
 	for i, handle := range handles.Values {
-		// Show progress
-		fmt.Printf("[%d/%d] ", i+1, len(handles.Values))
+
+		util.LogVerbose("[%d/%d] Processing item", i+1, len(handles.Values))
 
 		info := mtp.ObjectInfo{}
 		err := dev.GetObjectInfo(handle, &info)
@@ -675,25 +607,22 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 
 		itemPath := filepath.Join(folderPath, info.Filename)
 
-		// If it's a folder, recurse into it first
 		if info.ObjectFormat == FILETYPE_FOLDER {
-			fmt.Printf("Processing subfolder: %s\n", info.Filename)
-			subErr := DeleteFolderRecursively(dev, storageID, handle, itemPath, false) // No confirmation needed for subfolders
+			util.LogInfo("Processing subfolder: %s", info.Filename)
+			subErr := DeleteFolderRecursively(dev, storageID, handle, itemPath, false)
 			if subErr != nil {
 				util.LogError("Error deleting subfolder %s: %v", itemPath, subErr)
 				failedItems++
-				// Continue with other objects even if this subfolder fails
+
 			} else {
 				deletedFolders++
 			}
-			// Skip deleting the folder itself as it's handled by the recursive call
+
 			continue
 		}
 
-		// It's a file, delete it
-		fmt.Printf("Deleting file: %s\n", info.Filename)
+		util.LogInfo("Deleting file: %s", info.Filename)
 
-		// Try multiple times to delete the file
 		deleteSuccess := false
 		for attempt := 1; attempt <= 3; attempt++ {
 			err = dev.DeleteObject(handle)
@@ -705,20 +634,18 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 			util.LogError("Attempt %d: Error deleting file %s (ID: %d): %v",
 				attempt, itemPath, handle, err)
 
-			// Wait before retry
 			if attempt < 3 {
 				time.Sleep(500 * time.Millisecond)
 			}
 		}
 
-		// If normal deletion failed, try alternative method
 		if !deleteSuccess {
-			fmt.Println("  Trying alternative deletion method...")
+			util.LogInfo("Trying alternative deletion method...")
 			err = TryAlternativeDeleteMethod(dev, storageID, handle)
 			if err != nil {
 				util.LogError("Alternative deletion method failed for %s: %v", itemPath, err)
 				failedItems++
-				// Continue with other objects even if this one fails
+
 			} else {
 				deleteSuccess = true
 				deletedFiles++
@@ -728,11 +655,9 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 		}
 	}
 
-	// Finally, delete the folder itself (if not root)
-	if folderID != 0 { // Don't try to delete root folder
-		fmt.Printf("Deleting folder itself: %s\n", folderPath)
+	if folderID != 0 {
+		util.LogInfo("Deleting folder itself: %s", folderPath)
 
-		// Try multiple times to delete the folder
 		deleteSuccess := false
 		for attempt := 1; attempt <= 3; attempt++ {
 			err = dev.DeleteObject(folderID)
@@ -744,20 +669,18 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 			util.LogError("Attempt %d: Error deleting folder %s (ID: %d): %v",
 				attempt, folderPath, folderID, err)
 
-			// Wait before retry
 			if attempt < 3 {
 				time.Sleep(500 * time.Millisecond)
 			}
 		}
 
-		// If normal deletion failed, try alternative method
 		if !deleteSuccess {
-			fmt.Println("  Trying alternative deletion method for folder...")
+			util.LogInfo("Trying alternative deletion method for folder...")
 			err = TryAlternativeDeleteMethod(dev, storageID, folderID)
 			if err != nil {
 				util.LogError("Alternative deletion method failed for folder %s: %v", folderPath, err)
 				failedItems++
-				// Don't return error here to allow showing summary
+
 			} else {
 				deletedFolders++
 			}
@@ -766,11 +689,10 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 		}
 	}
 
-	// Print summary
-	fmt.Printf("\nDeletion complete for %s:\n", folderPath)
-	fmt.Printf("- Deleted files: %d\n", deletedFiles)
-	fmt.Printf("- Deleted folders: %d\n", deletedFolders)
-	fmt.Printf("- Failed items: %d\n", failedItems)
+	util.LogInfo("\nDeletion complete for %s:", folderPath)
+	util.LogInfo("- Deleted files: %d", deletedFiles)
+	util.LogInfo("- Deleted folders: %d", deletedFolders)
+	util.LogInfo("- Failed items: %d", failedItems)
 
 	if failedItems > 0 {
 		return fmt.Errorf("completed with %d failed deletions", failedItems)
@@ -780,10 +702,9 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 }
 
 func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
-	fmt.Println("\n=== Delete Folder and Contents ===")
+	util.LogInfo("\n=== Delete Folder and Contents ===")
 	util.LogInfo("Starting folder deletion operation")
 
-	// Get storage ID
 	storageID, musicFolderID, err := SelectStorageAndMusicFolder(dev, storagesRaw)
 	if err != nil {
 		util.LogError("Error selecting storage: %v", err)
@@ -791,7 +712,6 @@ func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Show deletion options
 	fmt.Println("\nSelect a deletion option:")
 	fmt.Println("1. Delete the entire Music/MUSIC folder and all contents")
 	fmt.Println("2. Delete a specific subfolder")
@@ -806,16 +726,14 @@ func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Option to delete the entire Music folder
 	if optionChoice == 1 {
-		// Find both possible Music folder variations
+
 		musicFolderPath := "/Music"
 		musicFolderID := uint32(0)
 
-		// First look for "Music" (capital M)
 		musicFolderID, err = util.FindFolder(dev, storageID, PARENT_ROOT, "Music")
 		if err != nil {
-			// Try "MUSIC" (all caps)
+
 			musicFolderID, err = util.FindFolder(dev, storageID, PARENT_ROOT, "MUSIC")
 			if err != nil {
 				util.LogError("Could not find Music folder: %v", err)
@@ -828,22 +746,18 @@ func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 		fmt.Printf("\n!!! WARNING: About to delete the entire %s folder !!!\n", musicFolderPath)
 		fmt.Println("This will erase ALL music, playlists, and folders on your device.")
 
-		// Pass true to enable special confirmation for Music folder
 		err = DeleteFolderRecursively(dev, storageID, musicFolderID, musicFolderPath, true)
 		if err != nil {
 			util.LogError("Error deleting Music folder: %v", err)
 			fmt.Printf("Error: %v\n", err)
 		} else {
-			fmt.Println("Successfully deleted the entire Music folder.")
+			util.LogInfo("Successfully deleted the entire Music folder.")
 		}
 		return
 	}
 
-	// Option to delete a specific subfolder
-	// Show folder structure to help user select a folder
 	fmt.Println("\nAvailable folders in Music directory:")
 
-	// Get all objects in the Music folder
 	handles := mtp.Uint32Array{}
 	err = dev.GetObjectHandles(storageID, 0, musicFolderID, &handles)
 	if err != nil {
@@ -852,7 +766,6 @@ func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Collect folders
 	type FolderInfo struct {
 		ID   uint32
 		Name string
@@ -861,7 +774,6 @@ func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 
 	var folders []FolderInfo
 
-	// First find immediate subfolders of Music
 	for _, handle := range handles.Values {
 		info := mtp.ObjectInfo{}
 		err := dev.GetObjectInfo(handle, &info)
@@ -885,7 +797,6 @@ func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Let user select a folder
 	fmt.Print("\nSelect a folder to delete (1-" + fmt.Sprint(len(folders)) + "), or 0 to cancel: ")
 	var selection int
 	fmt.Scanln(&selection)
@@ -897,7 +808,6 @@ func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 
 	selectedFolder := folders[selection-1]
 
-	// Confirm deletion
 	fmt.Printf("\n!!! WARNING !!!\n")
 	fmt.Printf("You are about to delete the folder '%s' AND ALL ITS CONTENTS.\n", selectedFolder.Path)
 	fmt.Printf("This operation CANNOT BE UNDONE and will delete ALL files and subfolders.\n")
@@ -913,13 +823,12 @@ func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 		return
 	}
 
-	// Perform the deletion
-	err = DeleteFolderRecursively(dev, storageID, selectedFolder.ID, selectedFolder.Path, false) // No need for another confirmation
+	err = DeleteFolderRecursively(dev, storageID, selectedFolder.ID, selectedFolder.Path, false)
 	if err != nil {
 		util.LogError("Error during recursive deletion: %v", err)
 		fmt.Printf("Error: %v\n", err)
-		fmt.Println("Some items may have been deleted successfully.")
+		util.LogInfo("Some items may have been deleted successfully.")
 	} else {
-		fmt.Printf("Successfully deleted folder '%s' and all its contents.\n", selectedFolder.Path)
+		util.LogInfo("Successfully deleted folder '%s' and all its contents.", selectedFolder.Path)
 	}
 }

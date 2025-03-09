@@ -17,7 +17,6 @@ func ExtractUint32Field(obj interface{}, fieldName string) uint32 {
 
 	val := reflect.ValueOf(obj)
 
-	// Handle pointers
 	if val.Kind() == reflect.Ptr {
 		if val.IsNil() {
 			return 0
@@ -25,14 +24,13 @@ func ExtractUint32Field(obj interface{}, fieldName string) uint32 {
 		val = val.Elem()
 	}
 
-	// Must be a struct
 	if val.Kind() != reflect.Struct {
 		return 0
 	}
 
 	field := val.FieldByName(fieldName)
 	if !field.IsValid() || field.Kind() != reflect.Uint32 {
-		return 0 // Default value if field doesn't exist or is not uint32
+		return 0
 	}
 	return uint32(field.Uint())
 }
@@ -44,7 +42,6 @@ func ExtractStringField(obj interface{}, fieldName string) string {
 
 	val := reflect.ValueOf(obj)
 
-	// Handle pointers
 	if val.Kind() == reflect.Ptr {
 		if val.IsNil() {
 			return ""
@@ -52,14 +49,13 @@ func ExtractStringField(obj interface{}, fieldName string) string {
 		val = val.Elem()
 	}
 
-	// Must be a struct
 	if val.Kind() != reflect.Struct {
 		return ""
 	}
 
 	field := val.FieldByName(fieldName)
 	if !field.IsValid() || field.Kind() != reflect.String {
-		return "" // Default value if field doesn't exist or is not string
+		return ""
 	}
 	return field.String()
 }
@@ -72,33 +68,27 @@ func WrapError(err error, format string, args ...interface{}) error {
 }
 
 func ExtractTrackInfo(path string) string {
-	// Extract filename from path
+
 	filename := filepath.Base(path)
 
-	// Remove extension
 	filename = strings.TrimSuffix(filename, filepath.Ext(filename))
 
-	// Replace underscores back to spaces for display
 	displayName := strings.ReplaceAll(filename, "_", " ")
 
-	// Try to extract artist and title from the path
 	parts := strings.Split(path, "/")
 
-	// Default values
 	artist := "UNKNOWN ARTIST"
 	title := displayName
 
-	// Look for artist and album in the path
 	for i := 0; i < len(parts)-2; i++ {
-		// Look for MUSIC folder then artist
+
 		if strings.EqualFold(parts[i], "MUSIC") && i+1 < len(parts) {
-			// Convert underscores back to spaces for display
+
 			artist = strings.ReplaceAll(parts[i+1], "_", " ")
 			break
 		}
 	}
 
-	// If we couldn't extract from path, try to parse from filename
 	if artist == "UNKNOWN ARTIST" {
 		if strings.Contains(displayName, " - ") {
 			splitParts := strings.SplitN(displayName, " - ", 2)
@@ -109,7 +99,6 @@ func ExtractTrackInfo(path string) string {
 		}
 	}
 
-	// Return the display name in "Artist - Title" format
 	return fmt.Sprintf("%s - %s", artist, title)
 }
 
@@ -152,11 +141,10 @@ func GetObjectHandlesWithRetry(dev *mtp.Device, storageID, objFormatCode, parent
 func FindOrCreateMusicFolder(dev *mtp.Device, storageID uint32) (uint32, error) {
 	PARENT_ROOT := uint32(0)
 
-	// Try to find existing Music folder at root level
 	folderID, err := FindFolder(dev, storageID, PARENT_ROOT, "Music")
 	if err != nil {
 		LogError("Error finding Music folder: %v", err)
-		// If not found, create it
+
 		if err.Error() == "folder not found" {
 			LogInfo("Music folder not found, creating it")
 			folderID, err = CreateFolder(dev, storageID, PARENT_ROOT, "Music")

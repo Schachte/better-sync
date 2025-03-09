@@ -1,5 +1,0 @@
-2025/03/08 12:38:17 --- MTP Music Manager Started ---
-2025/03/08 12:38:17 OS: darwin, Architecture: arm64
-2025/03/08 12:38:17 Verbose logging: false
-2025/03/08 12:38:17 [ERROR] (connect.go:37) MTP initialization failed: no MTP devices found
-2025/03/08 12:38:17 [ERROR] (main.go:31) Failed to initialize device: no MTP devices found

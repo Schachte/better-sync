@@ -1,7 +1,0 @@
-2025-03-08T18:36:20.799Z - info: Starting image background removal and cropping
-2025-03-08T18:36:20.832Z - info: ✅ ImageMagick (convert) is installed
-2025-03-08T18:36:20.832Z - info: Checking for system rembg with: rembg --version
-2025-03-08T18:36:24.129Z - info: rembg version check output: rembg, version 2.0.64
-2025-03-08T18:36:24.129Z - info: ✅ rembg is installed system-wide
-2025-03-08T18:36:24.130Z - error: Script error: ENOENT: no such file or directory, scandir 'garmin_watch_images'
-2025-03-08T18:36:24.130Z - info: Script execution completed
