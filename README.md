@@ -17,9 +17,18 @@ A command-line tool that uses MTP (Media Transport Protocol) to manually manage 
   ```
 
 - `ffmpeg` - Required for audio processing
+
   ```bash
   brew install ffmpeg
   ```
+
+- `pip` - Required for using third-party Python libs (Spotify downloader)
+
+```
+virtualenv venv
+source venv/bin/activate
+pip install spotdl
+```
 
 ### From Source
 
