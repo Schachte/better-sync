@@ -11,13 +11,11 @@ import (
 	"github.com/schachte/better-sync/internal/util"
 )
 
-// StorageInfo represents storage information from an MTP device
 type StorageInfo struct {
 	StorageID          uint32
 	StorageDescription string
 }
 
-// FetchStorages retrieves the storage information from the MTP device with a timeout
 func FetchStorages(dev *mtp.Device, timeout time.Duration) (interface{}, error) {
 	util.LogVerbose("Fetching storages with timeout of %v...", timeout)
 	fmt.Println("Fetching device storage information...")
@@ -77,7 +75,6 @@ func FetchStorages(dev *mtp.Device, timeout time.Duration) (interface{}, error) 
 	}
 }
 
-// SelectStorage shows a list of available storages and lets the user choose one
 func SelectStorage(dev *mtp.Device, storagesRaw interface{}) (uint32, error) {
 	// Convert to slice for easier handling
 	storagesValue := reflect.ValueOf(storagesRaw)
@@ -131,13 +128,11 @@ func SelectStorage(dev *mtp.Device, storagesRaw interface{}) (uint32, error) {
 	return sid, nil
 }
 
-// Constants for MTP operations
 const (
 	PARENT_ROOT     uint32 = 0
 	FILETYPE_FOLDER uint16 = 0x3001
 )
 
-// FetchStoragesWithTimeout fetches storages with a timeout
 func FetchStoragesWithTimeout(dev *mtp.Device, timeout time.Duration) (interface{}, error) {
 	util.LogVerbose("Fetching storages with timeout of %v...", timeout)
 	fmt.Println("Requesting storage information from device...")
@@ -185,7 +180,6 @@ func FetchStoragesWithTimeout(dev *mtp.Device, timeout time.Duration) (interface
 	}
 }
 
-// SelectStorageAndMusicFolder selects a storage and gets/creates a music folder
 func SelectStorageAndMusicFolder(dev *mtp.Device, storagesRaw interface{}) (uint32, uint32, error) {
 	// Convert to slice for easier handling
 	storagesValue := reflect.ValueOf(storagesRaw)
@@ -251,7 +245,6 @@ func SelectStorageAndMusicFolder(dev *mtp.Device, storagesRaw interface{}) (uint
 	return storageID, musicFolderID, nil
 }
 
-// CreateFolder creates a new folder on the device
 func CreateFolder(dev *mtp.Device, storageID, parentID uint32, folderName string) (uint32, error) {
 	info := mtp.ObjectInfo{
 		StorageID:        storageID,
@@ -273,7 +266,6 @@ func CreateFolder(dev *mtp.Device, storageID, parentID uint32, folderName string
 	return newObjectID, nil
 }
 
-// FindOrCreateFolder finds a folder by name or creates it if not found
 func FindOrCreateFolder(dev *mtp.Device, storageID, parentID uint32, folderName string) (uint32, error) {
 	folderName = strings.ToUpper(folderName)
 	// First try to find the folder
@@ -304,7 +296,6 @@ func FindOrCreateFolder(dev *mtp.Device, storageID, parentID uint32, folderName 
 	return folderID, nil
 }
 
-// Helper function to extract uint32 field from a struct using reflection
 func extractUint32Field(obj interface{}, fieldName string) uint32 {
 	val := reflect.ValueOf(obj)
 	field := val.FieldByName(fieldName)
@@ -314,7 +305,6 @@ func extractUint32Field(obj interface{}, fieldName string) uint32 {
 	return uint32(field.Uint())
 }
 
-// Helper function to extract string field from a struct using reflection
 func extractStringField(obj interface{}, fieldName string) string {
 	val := reflect.ValueOf(obj)
 	field := val.FieldByName(fieldName)

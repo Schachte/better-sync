@@ -16,7 +16,6 @@ import (
 	"github.com/schachte/better-sync/internal/util"
 )
 
-// DeletePlaylist handles deleting a playlist from the device
 func DeletePlaylist(dev *mtp.Device, storagesRaw interface{}) {
 	fmt.Println("\n=== Delete Playlist ===")
 	util.LogVerbose("Starting playlist deletion operation")
@@ -124,7 +123,6 @@ func DeletePlaylist(dev *mtp.Device, storagesRaw interface{}) {
 	fmt.Println("Playlist deleted successfully")
 }
 
-// deleteSong deletes a song from the device
 func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 	util.LogInfo("Starting song deletion operation")
 
@@ -319,8 +317,6 @@ func DeleteSong(dev *mtp.Device, storagesRaw interface{}) {
 	fmt.Println("\nNote: If the song was part of any playlists, you may need to update those playlists manually.")
 }
 
-// tryAlternativeDeleteMethod attempts to delete an object using an alternative approach
-// Some devices require different MTP operations for deletion to work
 func tryAlternativeDeleteMethod(dev *mtp.Device, storageID, objectID uint32) error {
 	util.LogInfo("Trying alternative deletion method for object ID %d", objectID)
 
@@ -352,7 +348,6 @@ func tryAlternativeDeleteMethod(dev *mtp.Device, storageID, objectID uint32) err
 	return nil
 }
 
-// findObjectByDirectPath finds an object by its exact path
 func FindObjectByDirectPath(dev *mtp.Device, storageID uint32, path string) (uint32, error) {
 	normalizedPath := normalizePath(path)
 
@@ -384,8 +379,6 @@ func FindObjectByDirectPath(dev *mtp.Device, storageID uint32, path string) (uin
 	return 0, fmt.Errorf("object not found using direct path: %s", path)
 }
 
-// findSongByMixedCaseAndRelativePath finds a song using more flexible matching
-// to handle inconsistencies between upload and playlist paths
 func FindSongByMixedCaseAndRelativePath(dev *mtp.Device, storageID uint32, path string) (uint32, error) {
 	util.LogVerbose("Trying flexible matching for path: %s", path)
 
@@ -469,7 +462,6 @@ func FindSongByMixedCaseAndRelativePath(dev *mtp.Device, storageID uint32, path 
 	return 0, fmt.Errorf("object not found after flexible matching: %s", path)
 }
 
-// stripNumericPrefix removes numeric prefixes like "01 - ", "01_", etc. from filenames
 func stripNumericPrefix(filename string) string {
 	// Remove file extension first
 	baseName := strings.TrimSuffix(filename, filepath.Ext(filename))
@@ -499,7 +491,6 @@ func stripNumericPrefix(filename string) string {
 	return baseName
 }
 
-// normalizePath standardizes a path for consistent comparison
 func normalizePath(path string) string {
 	// Remove common prefixes
 	path = strings.TrimPrefix(path, "0:")
@@ -515,7 +506,6 @@ func normalizePath(path string) string {
 	return path
 }
 
-// extractPlaylistSongPaths extracts song paths from a playlist
 func ExtractPlaylistSongPaths(dev *mtp.Device, storageID, objectID uint32, playlistPath string) ([]string, error) {
 	// Read the playlist content
 	songs, err := ReadPlaylistContent(dev, storageID, objectID)
@@ -526,7 +516,6 @@ func ExtractPlaylistSongPaths(dev *mtp.Device, storageID, objectID uint32, playl
 	return songs, nil
 }
 
-// readPlaylistContent reads the content of a playlist file and extracts song paths
 func ReadPlaylistContent(dev *mtp.Device, storageID, objectID uint32) ([]string, error) {
 	// We'll try to get the playlist content using GetObject
 	var buf bytes.Buffer
@@ -541,7 +530,6 @@ func ReadPlaylistContent(dev *mtp.Device, storageID, objectID uint32) ([]string,
 	return ParsePlaylistContent(content), nil
 }
 
-// parsePlaylistContent parses a playlist file and extracts song paths
 func ParsePlaylistContent(content string) []string {
 	var songs []string
 
@@ -566,50 +554,6 @@ func ParsePlaylistContent(content string) []string {
 	return songs
 }
 
-// findSongsByPlaylistPattern attempts to find songs that might belong to a playlist based on pattern matching
-func FindSongsByPlaylistPattern(dev *mtp.Device, storageID uint32, playlistPath string) []string {
-	// Get all MP3 files
-	mp3Files, err := FindMP3Files(dev, storageID)
-	if err != nil {
-		util.LogError("Error finding MP3 files: %v", err)
-		return []string{}
-	}
-
-	// Extract playlist name and possible patterns
-	playlistName := filepath.Base(playlistPath)
-	playlistNameNoExt := strings.TrimSuffix(playlistName, filepath.Ext(playlistName))
-
-	// Possible patterns to match
-	patterns := []string{
-		playlistNameNoExt,                  // Same name as playlist
-		strings.ToUpper(playlistNameNoExt), // Uppercase version
-		strings.ToLower(playlistNameNoExt), // Lowercase version
-	}
-
-	// Check playlist path for additional patterns
-	pathParts := strings.Split(playlistPath, "/")
-	for _, part := range pathParts {
-		if part != "" && part != playlistName {
-			patterns = append(patterns, part)
-		}
-	}
-
-	// Look for MP3 files that match any of these patterns
-	var matches []string
-	for _, mp3Path := range mp3Files {
-		for _, pattern := range patterns {
-			if strings.Contains(mp3Path, pattern) {
-				matches = append(matches, mp3Path)
-				break
-			}
-		}
-	}
-
-	fmt.Printf("Found %d songs potentially associated with playlist using pattern matching\n", len(matches))
-	return matches
-}
-
-// deletePlaylistOnly deletes just the playlist without touching any songs
 func DeletePlaylistOnly(dev *mtp.Device, playlistObjectID uint32) {
 	fmt.Println("Deleting only the playlist...")
 	err := dev.DeleteObject(playlistObjectID)
@@ -632,8 +576,6 @@ func DeletePlaylistOnly(dev *mtp.Device, playlistObjectID uint32) {
 	}
 }
 
-// tryAlternativeDeleteMethod attempts to delete an object using an alternative approach
-// Some devices require different MTP operations for deletion to work
 func TryAlternativeDeleteMethod(dev *mtp.Device, storageID, objectID uint32) error {
 	util.LogInfo("Trying alternative deletion method for object ID %d", objectID)
 
@@ -665,7 +607,6 @@ func TryAlternativeDeleteMethod(dev *mtp.Device, storageID, objectID uint32) err
 	return nil
 }
 
-// DeleteFolderRecursively deletes a folder and all its contents (subfolders and files) recursively
 func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folderPath string, requireConfirmation bool) error {
 	// Safety check only for root folder
 	if folderPath == "/" {
@@ -838,7 +779,6 @@ func DeleteFolderRecursively(dev *mtp.Device, storageID, folderID uint32, folder
 	return nil
 }
 
-// DeleteFolder provides a user interface for selecting and deleting a folder
 func DeleteFolder(dev *mtp.Device, storagesRaw interface{}) {
 	fmt.Println("\n=== Delete Folder and Contents ===")
 	util.LogInfo("Starting folder deletion operation")

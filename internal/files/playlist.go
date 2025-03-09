@@ -13,7 +13,6 @@ import (
 	"github.com/schachte/better-sync/internal/util"
 )
 
-// CreatePlaylistFile creates an M3U8 playlist file with the given songs
 func CreatePlaylistFile(playlistName string, songs []string, pathStyle int) (string, error) {
 	// Create temporary directory if it doesn't exist
 	tempDir := filepath.Join(os.TempDir(), "mtpmusic")
@@ -44,12 +43,10 @@ func CreatePlaylistFile(playlistName string, songs []string, pathStyle int) (str
 	return tempFilePath, nil
 }
 
-// EmptyProgressFunc is a no-op progress function
 func EmptyProgressFunc(_ int64) error {
 	return nil
 }
 
-// UploadPlaylistToDevice uploads a playlist file to the device
 func UploadPlaylistToDevice(dev *mtp.Device, storageID, parentFolderID uint32, playlistFilePath string) (uint32, error) {
 	// Open the playlist file
 	file, err := os.Open(playlistFilePath)
@@ -98,7 +95,6 @@ func UploadPlaylistToDevice(dev *mtp.Device, storageID, parentFolderID uint32, p
 	return objectID, nil
 }
 
-// RetryUploadPlaylist with improved retry logic
 func RetryUploadPlaylist(dev *mtp.Device, storageID, parentFolderID uint32, playlistName string, songs []string, pathStyle int) error {
 	// Generate playlist content
 	var content strings.Builder
@@ -169,7 +165,6 @@ func RetryUploadPlaylist(dev *mtp.Device, storageID, parentFolderID uint32, play
 	return nil
 }
 
-// TryAlternativeTransferMethod attempts to use an alternative method to send file data
 func TryAlternativeTransferMethod(dev *mtp.Device, data []byte, fileSize int64) bool {
 	// Send object with a bytes reader - SendObject needs a reader, file size, and progress function
 	err := dev.SendObject(bytes.NewReader(data), fileSize, EmptyProgressFunc)

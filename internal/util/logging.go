@@ -15,7 +15,6 @@ var (
 	verboseOutput bool
 )
 
-// SetupLogging configures the logger with optional verbose output
 func SetupLogging(verbose bool) {
 	verboseOutput = verbose
 
@@ -53,7 +52,6 @@ func SetupLogging(verbose bool) {
 	logger.Printf("Verbose logging: %v", verbose)
 }
 
-// LogInfo logs informational messages
 func LogInfo(format string, v ...interface{}) {
 	if logger != nil {
 		_, file, line, _ := runtime.Caller(1)
@@ -61,7 +59,6 @@ func LogInfo(format string, v ...interface{}) {
 	}
 }
 
-// LogError logs error messages and also outputs to standard error
 func LogError(format string, v ...interface{}) {
 	if logger != nil {
 		_, file, line, _ := runtime.Caller(1)
@@ -70,7 +67,6 @@ func LogError(format string, v ...interface{}) {
 	fmt.Fprintf(os.Stderr, "Error: "+format+"\n", v...)
 }
 
-// LogVerbose logs verbose messages only when verbose logging is enabled
 func LogVerbose(format string, v ...interface{}) {
 	if verboseOutput && logger != nil {
 		_, file, line, _ := runtime.Caller(1)

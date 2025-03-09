@@ -11,7 +11,6 @@ import (
 	"github.com/schachte/better-sync/internal/util"
 )
 
-// CleanM3U8Playlist cleans a playlist file to ensure compatibility
 func CleanM3U8Playlist(filePath string) error {
 	// Read the file
 	data, err := os.ReadFile(filePath)
@@ -57,7 +56,6 @@ func CleanM3U8Playlist(filePath string) error {
 	return nil
 }
 
-// SanitizeID3Tags sanitizes the ID3 tags in an MP3 file
 func SanitizeID3Tags(filePath string) error {
 	// Open the MP3 file
 	tag, err := id3v2.Open(filePath, id3v2.Options{Parse: true})
@@ -101,7 +99,6 @@ func SanitizeID3Tags(filePath string) error {
 	return tag.Save()
 }
 
-// Simple function to extract artist from filename (replace with actual ID3 tag reading)
 func GetArtistFromFileName(filename string) string {
 	// This is a simple example - in real world you'd use ID3 tags
 	// Tries to match "Artist - Title.mp3" format
@@ -116,7 +113,6 @@ func GetArtistFromFileName(filename string) string {
 	return "UNKNOWN_ARTIST"
 }
 
-// getAlbumFromFileName attempts to extract album name from the directory name
 func getAlbumFromFileName(filename string) string {
 	// Use parent directory name as album
 	dir := filepath.Dir(filename)

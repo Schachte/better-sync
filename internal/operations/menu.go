@@ -10,7 +10,6 @@ import (
 	"github.com/schachte/better-sync/internal/util"
 )
 
-// ShowMenu displays the main menu and returns the selected option
 func ShowMenu() int {
 	fmt.Println("\n==== MTP Music Manager ====")
 	fmt.Println("1. Show playlists")
@@ -35,7 +34,6 @@ func ShowMenu() int {
 	return option
 }
 
-// Execute runs the specified operation or shows the menu if operation is 0
 func Execute(dev *mtp.Device, storages interface{}, operation int) {
 	for {
 		op := operation

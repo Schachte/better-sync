@@ -16,18 +16,15 @@ import (
 	"github.com/schachte/better-sync/internal/util"
 )
 
-// Constants for MTP operations
 const (
 	PARENT_ROOT     uint32 = 0
 	FILETYPE_FOLDER uint16 = 0x3001
 )
 
-// EmptyProgressFunc is a no-op progress function for MTP operations
 func EmptyProgressFunc(_ int64) error {
 	return nil
 }
 
-// UploadSong handles uploading a single song to the device
 func UploadSong(dev *mtp.Device, storagesRaw interface{}) {
 	// Get storage and music folder
 	storageID, musicFolderID, err := SelectStorageAndMusicFolder(dev, storagesRaw)
@@ -56,7 +53,6 @@ func UploadSong(dev *mtp.Device, storagesRaw interface{}) {
 	}
 }
 
-// uploadSingleFile uploads a single MP3 file to the device
 func uploadSingleFile(dev *mtp.Device, storageID, musicFolderID uint32) {
 	// Ask for file path
 	fmt.Print("Enter path to MP3 file: ")
@@ -81,7 +77,6 @@ func uploadSingleFile(dev *mtp.Device, storageID, musicFolderID uint32) {
 	}
 }
 
-// uploadDirectory uploads all MP3 files from a directory to the device
 func uploadDirectory(dev *mtp.Device, storageID, musicFolderID uint32) {
 	// Ask for directory path
 	fmt.Print("Enter path to directory containing MP3 files: ")
@@ -152,7 +147,6 @@ func uploadDirectory(dev *mtp.Device, storageID, musicFolderID uint32) {
 	fmt.Printf("Upload complete. %d/%d files uploaded successfully.\n", successful, len(mp3Files))
 }
 
-// uploadDirectoryWithPlaylist - modified to add track numbers and ensure all files are included
 func UploadDirectoryWithPlaylist(dev *mtp.Device, storageID, musicFolderID uint32) {
 	// Get directory path
 	fmt.Print("Enter path to directory containing MP3 files: ")
@@ -388,7 +382,6 @@ func UploadDirectoryWithPlaylist(dev *mtp.Device, storageID, musicFolderID uint3
 	}
 }
 
-// createAndUploadPlaylist - modified to add track numbers and ensure all songs are included
 func CreateAndUploadPlaylist(dev *mtp.Device, storagesRaw interface{}) {
 	fmt.Println("\n=== Create and Upload Playlist ===")
 
@@ -607,8 +600,6 @@ func CreateAndUploadPlaylist(dev *mtp.Device, storagesRaw interface{}) {
 	VerifyPlaylistUploaded(dev, storageID, parentFolderID, playlistName)
 }
 
-// verifyPlaylistUploaded attempts to verify a playlist was successfully uploaded
-// This enhanced version tries multiple strategies for verification
 func VerifyPlaylistUploaded(dev *mtp.Device, storageID uint32, parentID uint32, playlistName string) {
 	util.LogInfo("Verifying playlist upload for %s", playlistName)
 	fmt.Printf("Verifying playlist was successfully uploaded...\n")
@@ -688,8 +679,6 @@ func VerifyPlaylistUploaded(dev *mtp.Device, storageID uint32, parentID uint32, 
 	}
 }
 
-// tryReadPlaylistContent attempts to read the content of a playlist file
-// This helps verify if the playlist was correctly uploaded
 func tryReadPlaylistContent(dev *mtp.Device, objectID uint32, playlistName string) {
 	util.LogInfo("Attempting to read content of playlist %s (ID: %d)", playlistName, objectID)
 	fmt.Println("Attempting to read playlist content to verify transfer...")
@@ -711,7 +700,6 @@ func tryReadPlaylistContent(dev *mtp.Device, objectID uint32, playlistName strin
 	fmt.Println("Full content verification not supported, but playlist appears to exist on device")
 }
 
-// ProcessAndUploadFile processes and uploads a single MP3 file, returning true if successful
 func ProcessAndUploadFile(dev *mtp.Device, storageID, musicFolderID uint32, filePath string) bool {
 	// Size limit for this implementation
 	fileInfo, _ := os.Stat(filePath)
@@ -860,7 +848,6 @@ func ProcessAndUploadFile(dev *mtp.Device, storageID, musicFolderID uint32, file
 	return true
 }
 
-// ProcessAndUploadFileWithPath - modified to add track numbers and ensure uppercase paths
 func ProcessAndUploadFileWithPath(dev *mtp.Device, storageID, musicFolderID uint32, filePath string, trackNumber int) string {
 	// Size limit check
 	fileInfo, _ := os.Stat(filePath)
@@ -1014,7 +1001,6 @@ func ProcessAndUploadFileWithPath(dev *mtp.Device, storageID, musicFolderID uint
 	return "0:" + devicePath
 }
 
-// verifyFileUploaded verifies that a file was successfully uploaded to the device
 func verifyFileUploaded(dev *mtp.Device, objectID, storageID, parentID uint32, fileName string, expectedSize int64) bool {
 	util.LogInfo("Verifying file upload for %s (ID: %d)", fileName, objectID)
 	fmt.Printf("Verifying file was successfully uploaded...\n")
@@ -1089,7 +1075,6 @@ func verifyFileUploaded(dev *mtp.Device, objectID, storageID, parentID uint32, f
 	return false
 }
 
-// getAlbumFromFileName attempts to extract album name from the directory name
 func GetAlbumFromFileName(filename string) string {
 	// Use parent directory name as album
 	dir := filepath.Dir(filename)
@@ -1099,7 +1084,6 @@ func GetAlbumFromFileName(filename string) string {
 	return ""
 }
 
-// findOrCreateFolder finds a folder by name or creates it if not found
 func findOrCreateFolder(dev *mtp.Device, storageID, parentID uint32, folderName string) (uint32, error) {
 	// First try to find the folder
 	folderID, err := util.FindFolder(dev, storageID, parentID, folderName)
@@ -1129,7 +1113,6 @@ func findOrCreateFolder(dev *mtp.Device, storageID, parentID uint32, folderName 
 	return folderID, nil
 }
 
-// Helper function to extract uint32 field from a struct using reflection
 func extractUint32Field(obj interface{}, fieldName string) uint32 {
 	val := reflect.ValueOf(obj)
 	field := val.FieldByName(fieldName)
@@ -1139,7 +1122,6 @@ func extractUint32Field(obj interface{}, fieldName string) uint32 {
 	return uint32(field.Uint())
 }
 
-// Helper function to extract string field from a struct using reflection
 func extractStringField(obj interface{}, fieldName string) string {
 	val := reflect.ValueOf(obj)
 	field := val.FieldByName(fieldName)
@@ -1149,7 +1131,6 @@ func extractStringField(obj interface{}, fieldName string) string {
 	return field.String()
 }
 
-// SelectStorageAndMusicFolder selects a storage and gets/creates a music folder
 func SelectStorageAndMusicFolder(dev *mtp.Device, storagesRaw interface{}) (uint32, uint32, error) {
 	// Convert to slice for easier handling
 	storagesValue := reflect.ValueOf(storagesRaw)
@@ -1174,7 +1155,6 @@ func SelectStorageAndMusicFolder(dev *mtp.Device, storagesRaw interface{}) (uint
 	return storageID, musicFolderID, nil
 }
 
-// tryAlternativeDataTransfer attempts several different methods to transfer file data to the device
 func tryAlternativeDataTransfer(dev *mtp.Device, objectID uint32, data []byte, fileSize int64) error {
 	util.LogInfo("Trying alternative data transfer methods for object ID %d", objectID)
 

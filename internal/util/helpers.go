@@ -10,7 +10,6 @@ import (
 	"github.com/ganeshrvel/go-mtpfs/mtp"
 )
 
-// ExtractUint32Field extracts a uint32 field from a struct using reflection
 func ExtractUint32Field(obj interface{}, fieldName string) uint32 {
 	if obj == nil {
 		return 0
@@ -38,7 +37,6 @@ func ExtractUint32Field(obj interface{}, fieldName string) uint32 {
 	return uint32(field.Uint())
 }
 
-// ExtractStringField extracts a string field from a struct using reflection
 func ExtractStringField(obj interface{}, fieldName string) string {
 	if obj == nil {
 		return ""
@@ -66,7 +64,6 @@ func ExtractStringField(obj interface{}, fieldName string) string {
 	return field.String()
 }
 
-// WrapError wraps an error with context
 func WrapError(err error, format string, args ...interface{}) error {
 	if err == nil {
 		return nil
@@ -74,8 +71,6 @@ func WrapError(err error, format string, args ...interface{}) error {
 	return fmt.Errorf(format+": %w", append(args, err)...)
 }
 
-// ExtractTrackInfo - updated for consistent case handling
-// extractTrackInfo - updated for consistent case handling
 func ExtractTrackInfo(path string) string {
 	// Extract filename from path
 	filename := filepath.Base(path)
@@ -154,7 +149,6 @@ func GetObjectHandlesWithRetry(dev *mtp.Device, storageID, objFormatCode, parent
 	return handles, fmt.Errorf("failed after %d retries", maxRetries)
 }
 
-// findOrCreateMusicFolder finds or creates a "Music" folder on the device
 func FindOrCreateMusicFolder(dev *mtp.Device, storageID uint32) (uint32, error) {
 	PARENT_ROOT := uint32(0)
 
@@ -179,7 +173,6 @@ func FindOrCreateMusicFolder(dev *mtp.Device, storageID uint32) (uint32, error) 
 	return folderID, nil
 }
 
-// findFolder finds a folder by name within a parent folder
 func FindFolder(dev *mtp.Device, storageID, parentID uint32, folderName string) (uint32, error) {
 	FILETYPE_FOLDER := uint16(0x3001)
 
@@ -205,7 +198,6 @@ func FindFolder(dev *mtp.Device, storageID, parentID uint32, folderName string) 
 	return 0, fmt.Errorf("folder not found")
 }
 
-// CreateFolder creates a new folder on the device
 func CreateFolder(dev *mtp.Device, storageID, parentID uint32, folderName string) (uint32, error) {
 	FILETYPE_FOLDER := uint16(0x3001)
 

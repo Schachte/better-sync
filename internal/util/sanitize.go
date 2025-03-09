@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// Updated sanitizeFolderName to preserve special characters in the examples
 func SanitizeFolderName(name string) string {
 	// For exact matching with the playlist paths, we need to preserve
 	// characters like ! and _ that appear in the examples
@@ -146,7 +145,6 @@ func SanitizeFileName(name string) string {
 	return sanitized + ext
 }
 
-// NormalizePathForDevice normalizes a path for MTP devices
 func NormalizePathForDevice(path string) string {
 	// Remove any common protocol or drive prefixes
 	path = stripPlaylistPathPrefixes(path)
@@ -159,7 +157,6 @@ func NormalizePathForDevice(path string) string {
 	return path
 }
 
-// Updated stripPlaylistPathPrefixes to handle the exact format in examples
 func stripPlaylistPathPrefixes(path string) string {
 	// Normalize path
 	path = strings.TrimSpace(path)
@@ -185,7 +182,6 @@ func stripPlaylistPathPrefixes(path string) string {
 	return path
 }
 
-// Sanitize text for use in path
 func SanitizeForPath(text string) string {
 	// Remove invalid path characters
 	text = strings.TrimSpace(text)
@@ -200,7 +196,6 @@ func SanitizeForPath(text string) string {
 	return text
 }
 
-// formatPlaylistPath function updated to match exact path style in examples
 func FormatPlaylistPath(path string, devicePathStyle int) string {
 	// First normalize the path by removing any prefix and ensuring consistency
 	path = NormalizePathForDevice(path)

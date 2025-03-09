@@ -12,7 +12,6 @@ import (
 	"github.com/schachte/better-sync/internal/util"
 )
 
-// PlaylistInfo represents information about a playlist
 type PlaylistInfo struct {
 	Name      string
 	Path      string
@@ -21,7 +20,6 @@ type PlaylistInfo struct {
 	Storage   string
 }
 
-// showSongs displays all MP3 files found on the device
 func ShowSongs(dev *mtp.Device, storagesRaw interface{}) {
 	fmt.Println("\n=== Songs ===")
 	util.LogInfo("Searching for MP3 files...")
@@ -66,7 +64,6 @@ func ShowSongs(dev *mtp.Device, storagesRaw interface{}) {
 	util.LogInfo("Total MP3 files found across all storages: %d", totalMP3Count)
 }
 
-// ShowPlaylistsAndSongs shows all playlists and their songs
 func ShowPlaylistsAndSongs(dev *mtp.Device, storagesRaw interface{}) {
 	// Use reflection to handle the storages
 	storagesValue := reflect.ValueOf(storagesRaw)
@@ -160,7 +157,6 @@ func FindOrCreateMusicFolder(dev *mtp.Device, storageID uint32) (uint32, error) 
 	return folderID, nil
 }
 
-// findObjectByPath looks up an object by its path
 func FindObjectByPath(dev *mtp.Device, storageID uint32, path string) (uint32, error) {
 	// Normalize path
 	path = strings.TrimSpace(path)
@@ -258,13 +254,11 @@ func FindObjectByPath(dev *mtp.Device, storageID uint32, path string) (uint32, e
 	return 0, fmt.Errorf("could not find object with path: %s", path)
 }
 
-// Helper function to check if a string is numeric
 func isNumeric(s string) bool {
 	_, err := strconv.Atoi(s)
 	return err == nil
 }
 
-// Helper function to extract the base name without numbers and extension
 func extractBaseName(filename string) string {
 	// Remove extension
 	baseName := strings.TrimSuffix(filename, filepath.Ext(filename))
@@ -279,7 +273,6 @@ func extractBaseName(filename string) string {
 	return strings.ToUpper(baseName)
 }
 
-// findObjectByPathManual finds an object by manually traversing the path components
 func FindObjectByPathManual(dev *mtp.Device, storageID uint32, path string) (uint32, error) {
 	// Normalize the path: remove leading/trailing whitespace and ensure it starts with /
 	path = strings.TrimSpace(path)
@@ -353,7 +346,6 @@ func FindObjectByPathManual(dev *mtp.Device, storageID uint32, path string) (uin
 	return 0, fmt.Errorf("could not find object with path: %s", path)
 }
 
-// generatePathVariations generates different variations of a path to try
 func GeneratePathVariations(path string) []string {
 	// Normalize path
 	path = strings.TrimSpace(path)
@@ -419,7 +411,6 @@ func GetFolderIDByPath(dev *mtp.Device, storageID uint32, path string) (uint32, 
 	return currentFolderID, nil
 }
 
-// Helper function to find playlists in a specific folder
 func FindPlaylistsInFolder(dev *mtp.Device, storageID, folderID uint32, folderPath string) ([]string, error) {
 	var playlists []string
 
@@ -462,7 +453,6 @@ func FindPlaylistsInFolder(dev *mtp.Device, storageID, folderID uint32, folderPa
 	return playlists, nil
 }
 
-// findPlaylists - fixed to address unused variable warnings
 func FindPlaylists(dev *mtp.Device, storageID uint32) ([]string, error) {
 	var playlists []string
 	util.LogInfo("Searching for playlists in both /MUSIC and /Music directories")
@@ -516,7 +506,6 @@ func FindPlaylists(dev *mtp.Device, storageID uint32) ([]string, error) {
 	return playlists, nil
 }
 
-// EnhancedDeletePlaylistAndAllSongs deletes a playlist and all songs referenced in it
 func EnhancedDeletePlaylistAndAllSongs(dev *mtp.Device, storagesRaw interface{}, playlistName string) error {
 	fmt.Println("\n=== Delete Playlist ===")
 	util.LogVerbose("Starting playlist deletion operation for %s", playlistName)
@@ -602,7 +591,6 @@ func EnhancedDeletePlaylistAndAllSongs(dev *mtp.Device, storagesRaw interface{},
 	return nil
 }
 
-// findMP3Files - updated to maintain uppercase paths
 func FindMP3Files(dev *mtp.Device, storageID uint32) ([]string, error) {
 	var mp3Files []string
 	var emptyFiles []string
@@ -674,7 +662,6 @@ func FindMP3Files(dev *mtp.Device, storageID uint32) ([]string, error) {
 	return mp3Files, nil
 }
 
-// showPlaylists displays all playlists found on the device
 func ShowPlaylists(dev *mtp.Device, storagesRaw interface{}) []PlaylistInfo {
 	fmt.Println("\n=== Playlists ===")
 	util.LogInfo("Searching for playlists...")

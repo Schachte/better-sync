@@ -10,12 +10,10 @@ import (
 	"github.com/schachte/better-sync/internal/util"
 )
 
-// Initialize initializes the MTP device with a timeout
 func Initialize(timeout time.Duration) (*mtp.Device, error) {
 	util.LogVerbose("Initializing device with timeout of %v...", timeout)
 	fmt.Println("Looking for MTP devices...")
 
-	// Create channels for communicating results
 	type initResult struct {
 		dev *mtp.Device
 		err error
@@ -27,7 +25,6 @@ func Initialize(timeout time.Duration) (*mtp.Device, error) {
 		fmt.Println("Starting MTP device detection...")
 		util.LogVerbose("Starting MTP device detection in background goroutine")
 
-		// Create initialization options
 		initOptions := mtpx.Init{}
 
 		fmt.Println("Calling mtpx.Initialize...")
@@ -44,7 +41,6 @@ func Initialize(timeout time.Duration) (*mtp.Device, error) {
 		initCh <- initResult{dev, err}
 	}()
 
-	// Wait for initialization with timeout
 	fmt.Printf("Waiting for device initialization (timeout: %v)...\n", timeout)
 	select {
 	case result := <-initCh:
@@ -64,7 +60,6 @@ func Initialize(timeout time.Duration) (*mtp.Device, error) {
 	}
 }
 
-// CheckForCommonMTPConflicts provides helpful suggestions when MTP connection fails
 func CheckForCommonMTPConflicts(err error) {
 	if err == nil {
 		return
@@ -72,7 +67,6 @@ func CheckForCommonMTPConflicts(err error) {
 
 	errMsg := err.Error()
 
-	// Common error messages that might indicate conflicts with other applications
 	if strings.Contains(errMsg, "access denied") ||
 		strings.Contains(errMsg, "busy") ||
 		strings.Contains(errMsg, "in use") ||
@@ -96,12 +90,10 @@ func CheckForCommonMTPConflicts(err error) {
 	}
 }
 
-// InitializeDeviceWithTimeout initializes the MTP device with a timeout
 func InitializeDeviceWithTimeout(timeout time.Duration) (*mtp.Device, error) {
 	util.LogVerbose("Initializing device with timeout of %v...", timeout)
 	fmt.Println("Looking for MTP devices...")
 
-	// Create channels for communicating results
 	type initResult struct {
 		dev *mtp.Device
 		err error
@@ -113,7 +105,6 @@ func InitializeDeviceWithTimeout(timeout time.Duration) (*mtp.Device, error) {
 		fmt.Println("Starting MTP device detection...")
 		util.LogVerbose("Starting MTP device detection in background goroutine")
 
-		// Create initialization options
 		initOptions := mtpx.Init{}
 
 		fmt.Println("Calling mtpx.Initialize...")
@@ -131,7 +122,6 @@ func InitializeDeviceWithTimeout(timeout time.Duration) (*mtp.Device, error) {
 		initCh <- initResult{dev, err}
 	}()
 
-	// Wait for initialization with timeout
 	fmt.Printf("Waiting for device initialization (timeout: %v)...\n", timeout)
 	select {
 	case result := <-initCh:
@@ -152,11 +142,9 @@ func InitializeDeviceWithTimeout(timeout time.Duration) (*mtp.Device, error) {
 	}
 }
 
-// checkForCommonMTPConflicts provides helpful suggestions when MTP connection fails
 func checkForCommonMTPConflicts(err error) {
 	errMsg := err.Error()
 
-	// Common error messages that might indicate conflicts with other applications
 	if strings.Contains(errMsg, "access denied") ||
 		strings.Contains(errMsg, "busy") ||
 		strings.Contains(errMsg, "in use") ||
