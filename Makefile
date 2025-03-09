@@ -123,3 +123,11 @@ build-darwin-amd64-cli: copy-dylibs
 .PHONY: build-darwin-arm64-cli
 build-darwin-arm64-cli: copy-dylibs
 	CGO_ENABLED=1 GOOS=darwin GOARCH=arm64 $(GO) build $(BUILDFLAGS) $(LDFLAGS) -o $(BUILD_DIR)/$(BINARY_NAME)-darwin-arm64 ./cmd/better-sync
+
+# Wails development target
+app-dev:
+	cd app && DYLD_LIBRARY_PATH=.. wails dev
+
+# Run Wails with dylib path set
+app-build:
+	cd app && DYLD_LIBRARY_PATH=.. wails build

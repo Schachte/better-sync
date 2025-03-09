@@ -7,9 +7,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/schachte/better-sync/internal/device"
-	"github.com/schachte/better-sync/internal/operations"
-	"github.com/schachte/better-sync/internal/util"
+	"github.com/schachte/better-sync/pkg/device"
+	"github.com/schachte/better-sync/pkg/operations"
+	"github.com/schachte/better-sync/pkg/util"
 )
 
 func main() {
