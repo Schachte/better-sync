@@ -390,8 +390,19 @@ func DownloadSpotifyPlaylist() {
 		return
 	}
 
-	promptColor.Print("\n📝 Enter playlist name: ")
-	playlistName, err := reader.ReadString('\n')
+	playlistName, err := util.GetSpotifyPlaylistName(playlistURL)
+	if err != nil {
+		errorColor.Printf("\n❌ Error getting playlist name: %v\n", err)
+		promptColor.Print("\n📝 Enter playlist name: ")
+		playlistName, err = reader.ReadString('\n')
+		playlistName = strings.TrimSpace(playlistName)
+		if err != nil || playlistName == "" {
+			errorColor.Println("\n❌ Invalid input. Operation cancelled.")
+			return
+		}
+		return
+	}
+
 	playlistName = strings.TrimSpace(playlistName)
 	if err != nil || playlistName == "" {
 		errorColor.Println("\n❌ Invalid input. Operation cancelled.")
@@ -419,10 +430,13 @@ func DownloadSpotifyPlaylist() {
 	destDir := filepath.Join(downloadPath, playlistName)
 	os.MkdirAll(destDir, 0755)
 
-	infoColor.Println("\n🔍 Configuration:")
-	infoColor.Printf("  - Playlist URL: %s\n", playlistURL)
-	infoColor.Printf("  - Playlist Name: %s\n", playlistName)
-	infoColor.Printf("  - Destination: %s\n", destDir)
+	headerColor.Println("\n📋 Configuration Summary:")
+	infoColor.Printf("  🔗 Playlist URL: ")
+	successColor.Printf("%s\n", playlistURL)
+	infoColor.Printf("  📝 Playlist Name: ")
+	successColor.Printf("%s\n", playlistName)
+	infoColor.Printf("  📂 Destination: ")
+	successColor.Printf("%s\n", destDir)
 
 	promptColor.Print("\n⚠️  Proceed with download? (y/n): ")
 	confirm, _ := reader.ReadString('\n')

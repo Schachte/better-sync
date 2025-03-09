@@ -52,3 +52,11 @@ otool -L libusb.dylib
 # the output should look: libusb.dylib: @executable_path/libusb.dylib
 git add libusb.dylib
 ```
+
+## Environment Variables
+
+```
+# Optional for various Spotify API calls
+SPOTIFY_CLIENT_ID=<redacted>
+SPOTIFY_CLIENT_SECRET=<redacted>
+```
