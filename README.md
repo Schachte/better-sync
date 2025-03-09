@@ -1,6 +1,8 @@
-# MTP Music Manager
+# Garmin Better Sync
 
-A command-line tool for managing music files and playlists on MTP devices like Garmin watches, smartphones, and other portable media players.
+A command-line tool that uses MTP (Media Transport Protocol) to manually manage Spotify playlists and music on your Garmin device. This is a replacement option to Garmin Express.
+
+![main](./assets/readme.png)
 
 ## Installation
 
