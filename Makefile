@@ -12,8 +12,19 @@ LDFLAGS := -ldflags "-X main.version=$(VERSION) -X main.gitCommit=$(GIT_COMMIT) 
 
 BUILDFLAGS := -trimpath
 
-LIBUSB_PATH := /opt/homebrew/Cellar/libusb/1.0.27/lib
-LIBUSB_INCLUDE := /opt/homebrew/Cellar/libusb/1.0.27/include
+# Detect architecture
+UNAME_MACHINE := $(shell uname -m)
+ifeq ($(UNAME_MACHINE),arm64)
+    # Apple Silicon
+    GOARCH := arm64
+    LIBUSB_PATH := /opt/homebrew/Cellar/libusb/1.0.27/lib
+    LIBUSB_INCLUDE := /opt/homebrew/Cellar/libusb/1.0.27/include
+else
+    # Intel Mac
+    GOARCH := amd64
+    LIBUSB_PATH := /usr/local/opt/libusb/lib
+    LIBUSB_INCLUDE := /usr/local/opt/libusb/include
+endif
 
 $(shell mkdir -p $(BUILD_DIR))
 
@@ -27,12 +38,22 @@ all: build
 copy-dylibs:
 	@echo "Copying dynamic libraries to build directory..."
 	@mkdir -p $(BUILD_DIR)
-	@if [ -f "$(LIBUSB_PATH)/libusb-1.0.0.dylib" ]; then \
-		cp -f "$(LIBUSB_PATH)/libusb-1.0.0.dylib" $(BUILD_DIR)/libusb.dylib; \
-		chmod 755 $(BUILD_DIR)/libusb.dylib; \
-		echo "  Copied libusb-1.0.0.dylib to $(BUILD_DIR)/libusb.dylib"; \
+	@if [ "$(GOARCH)" = "arm64" ]; then \
+		if [ -f "$(LIBUSB_PATH)/libusb-1.0.0.dylib" ]; then \
+			cp -f "$(LIBUSB_PATH)/libusb-1.0.0.dylib" $(BUILD_DIR)/libusb.dylib; \
+			chmod 755 $(BUILD_DIR)/libusb.dylib; \
+			echo "  Copied libusb-1.0.0.dylib (arm64) to $(BUILD_DIR)/libusb.dylib"; \
+		else \
+			echo "  Warning: libusb-1.0.0.dylib not found at $(LIBUSB_PATH)"; \
+		fi; \
 	else \
-		echo "  Warning: libusb-1.0.0.dylib not found"; \
+		if [ -f "$(LIBUSB_PATH)/libusb-1.0.0.dylib" ]; then \
+			cp -f "$(LIBUSB_PATH)/libusb-1.0.0.dylib" $(BUILD_DIR)/libusb.dylib; \
+			chmod 755 $(BUILD_DIR)/libusb.dylib; \
+			echo "  Copied libusb-1.0.0.dylib (amd64) to $(BUILD_DIR)/libusb.dylib"; \
+		else \
+			echo "  Warning: libusb-1.0.0.dylib not found at $(LIBUSB_PATH)"; \
+		fi; \
 	fi
 
 .PHONY: fix-library-paths
@@ -47,7 +68,11 @@ fix-library-paths:
 		echo "  Fixed paths in $(BUILD_DIR)/$(BINARY_NAME)-darwin-amd64"; \
 	fi
 	@if [ -f "$(BUILD_DIR)/$(BINARY_NAME)" ]; then \
-		install_name_tool -change /opt/homebrew/Cellar/libusb/1.0.27/lib/libusb-1.0.0.dylib @executable_path/libusb.dylib $(BUILD_DIR)/$(BINARY_NAME) || true; \
+		if [ "$(GOARCH)" = "arm64" ]; then \
+			install_name_tool -change /opt/homebrew/Cellar/libusb/1.0.27/lib/libusb-1.0.0.dylib @executable_path/libusb.dylib $(BUILD_DIR)/$(BINARY_NAME) || true; \
+		else \
+			install_name_tool -change /usr/local/opt/libusb/lib/libusb-1.0.0.dylib @executable_path/libusb.dylib $(BUILD_DIR)/$(BINARY_NAME) || true; \
+		fi; \
 		echo "  Fixed paths in $(BUILD_DIR)/$(BINARY_NAME)"; \
 	fi
 
@@ -73,7 +98,7 @@ sign-binaries:
 
 .PHONY: build
 build: copy-dylibs
-	GOARCH=arm64 CGO_ENABLED=1 CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" $(GO) build $(BUILDFLAGS) $(LDFLAGS) -o $(BUILD_DIR)/$(BINARY_NAME) ./cmd/better-sync
+	CGO_ENABLED=1 GOARCH=$(GOARCH) CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" $(GO) build $(BUILDFLAGS) $(LDFLAGS) -o $(BUILD_DIR)/$(BINARY_NAME) ./cmd/better-sync
 	$(MAKE) fix-library-paths
 	$(MAKE) sign-binaries
 
@@ -116,7 +141,7 @@ test:
 
 .PHONY: dev
 dev:
-	GOARCH=arm64 CGO_ENABLED=1 CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" $(GO) run ./cmd/better-sync
+	CGO_ENABLED=1 GOARCH=$(GOARCH) CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" $(GO) run ./cmd/better-sync
 
 .PHONY: release
 release: build-all
@@ -197,10 +222,16 @@ sign-wails-app:
 	fi
 
 # Wails development target
-app-dev:
-	cd app && DYLD_LIBRARY_PATH=../$(BUILD_DIR) wails dev
+app-dev: copy-dylibs
+	CGO_ENABLED=1 GOARCH=$(GOARCH) CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" $(GO) build $(BUILDFLAGS) $(LDFLAGS) -o $(BUILD_DIR)/$(BINARY_NAME) ./cmd/better-sync
+	$(MAKE) fix-library-paths
+	$(MAKE) sign-binaries
+	cd app && GOOS=darwin GOARCH=$(GOARCH) CGO_ENABLED=1 CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" DYLD_LIBRARY_PATH=../$(BUILD_DIR) wails dev
 
 # Run Wails with dylib path set and sign the result
-app-build:
-	cd app && DYLD_LIBRARY_PATH=../$(BUILD_DIR) wails build
+app-build: copy-dylibs
+	CGO_ENABLED=1 GOARCH=$(GOARCH) CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" $(GO) build $(BUILDFLAGS) $(LDFLAGS) -o $(BUILD_DIR)/$(BINARY_NAME) ./cmd/better-sync
+	$(MAKE) fix-library-paths
+	$(MAKE) sign-binaries
+	cd app && GOOS=darwin GOARCH=$(GOARCH) CGO_ENABLED=1 CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" DYLD_LIBRARY_PATH=../$(BUILD_DIR) wails build
 	$(MAKE) sign-wails-app
