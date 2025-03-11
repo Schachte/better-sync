@@ -42,6 +42,10 @@ fix-library-paths:
 		install_name_tool -change /opt/homebrew/Cellar/libusb/1.0.27/lib/libusb-1.0.0.dylib @executable_path/libusb.dylib $(BUILD_DIR)/$(BINARY_NAME)-darwin-arm64 || true; \
 		echo "  Fixed paths in $(BUILD_DIR)/$(BINARY_NAME)-darwin-arm64"; \
 	fi
+	@if [ -f "$(BUILD_DIR)/$(BINARY_NAME)-darwin-amd64" ]; then \
+		install_name_tool -change /usr/local/opt/libusb/lib/libusb-1.0.0.dylib @executable_path/libusb.dylib $(BUILD_DIR)/$(BINARY_NAME)-darwin-amd64 || true; \
+		echo "  Fixed paths in $(BUILD_DIR)/$(BINARY_NAME)-darwin-amd64"; \
+	fi
 	@if [ -f "$(BUILD_DIR)/$(BINARY_NAME)" ]; then \
 		install_name_tool -change /opt/homebrew/Cellar/libusb/1.0.27/lib/libusb-1.0.0.dylib @executable_path/libusb.dylib $(BUILD_DIR)/$(BINARY_NAME) || true; \
 		echo "  Fixed paths in $(BUILD_DIR)/$(BINARY_NAME)"; \
@@ -57,6 +61,10 @@ sign-binaries:
 	@if [ -f "$(BUILD_DIR)/$(BINARY_NAME)-darwin-arm64" ]; then \
 		codesign --force --sign - $(BUILD_DIR)/$(BINARY_NAME)-darwin-arm64; \
 		echo "  Signed $(BUILD_DIR)/$(BINARY_NAME)-darwin-arm64"; \
+	fi
+	@if [ -f "$(BUILD_DIR)/$(BINARY_NAME)-darwin-amd64" ]; then \
+		codesign --force --sign - $(BUILD_DIR)/$(BINARY_NAME)-darwin-amd64; \
+		echo "  Signed $(BUILD_DIR)/$(BINARY_NAME)-darwin-amd64"; \
 	fi
 	@if [ -f "$(BUILD_DIR)/$(BINARY_NAME)" ]; then \
 		codesign --force --sign - $(BUILD_DIR)/$(BINARY_NAME); \
@@ -106,6 +114,10 @@ deps:
 test:
 	$(GO) test -v ./...
 
+.PHONY: dev
+dev:
+	GOARCH=arm64 CGO_ENABLED=1 CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" $(GO) run ./cmd/better-sync
+
 .PHONY: release
 release: build-all
 	mkdir -p $(BUILD_DIR)/release
@@ -114,10 +126,7 @@ release: build-all
 	tar -czf $(BUILD_DIR)/release/$(BINARY_NAME)-$(VERSION)-darwin-amd64.tar.gz -C $(BUILD_DIR) $(BINARY_NAME)-darwin-amd64 libusb.dylib
 	tar -czf $(BUILD_DIR)/release/$(BINARY_NAME)-$(VERSION)-darwin-arm64.tar.gz -C $(BUILD_DIR) $(BINARY_NAME)-darwin-arm64 libusb.dylib
 
-.PHONY: dev
-dev: copy-dylibs sign-binaries
-	CGO_LDFLAGS="-L$(LIBUSB_PATH) -lusb-1.0" CGO_CFLAGS="-I$(LIBUSB_INCLUDE)" DYLD_LIBRARY_PATH=$(BUILD_DIR):$$DYLD_LIBRARY_PATH $(GO) run $(LDFLAGS) ./cmd/better-sync \
-		$(if $(VERBOSE),--verbose,) \
+\
 		$(if $(OP),-op $(OP),) \
 		$(if $(SCAN),-scan,) \
 		$(if $(TIMEOUT),-timeout $(TIMEOUT),)
@@ -139,6 +148,7 @@ help:
 	@echo "  copy-dylibs        Copy dynamic libraries to build directory"
 	@echo "  fix-library-paths  Fix library paths in executables"
 	@echo "  sign-binaries      Code sign the binaries for macOS"
+	@echo "  sign-wails-app     Code sign the Wails app bundle"
 
 .PHONY: build-cli
 build-cli: copy-dylibs
@@ -169,10 +179,28 @@ build-darwin-arm64-cli: copy-dylibs
 	$(MAKE) fix-library-paths
 	$(MAKE) sign-binaries
 
+# Add a new target specifically for signing the Wails app
+.PHONY: sign-wails-app
+sign-wails-app:
+	@echo "Code signing Wails app..."
+	@if [ -d "app/build/bin" ]; then \
+		find app/build/bin -type f -name "*.app" -o -name "*.framework" -o -name "*.dylib" -o -perm +111 -type f | while read file; do \
+			codesign --force --sign - "$$file"; \
+			echo "  Signed $$file"; \
+		done; \
+	fi
+	@if [ -d "app/build/bin" ]; then \
+		find app/build/bin -name "*.app" -type d | while read appbundle; do \
+			codesign --force --deep --sign - "$$appbundle"; \
+			echo "  Deep signed app bundle $$appbundle"; \
+		done; \
+	fi
+
 # Wails development target
 app-dev:
 	cd app && DYLD_LIBRARY_PATH=../$(BUILD_DIR) wails dev
 
-# Run Wails with dylib path set
+# Run Wails with dylib path set and sign the result
 app-build:
 	cd app && DYLD_LIBRARY_PATH=../$(BUILD_DIR) wails build
+	$(MAKE) sign-wails-app
