@@ -2,6 +2,9 @@ package device
 
 import (
 	"fmt"
+	"io"
+	"log"
+	"os"
 	"strings"
 	"time"
 
@@ -25,20 +28,48 @@ func Initialize(timeout time.Duration) (*mtp.Device, error) {
 
 		var dev *mtp.Device
 		var err error
-		attempts := 0
-		maxAttempts := 40 // 2 minutes with 3 second intervals
 
-		for attempts < maxAttempts {
+		// Save original stdout, stderr, and logger
+		oldStdout := os.Stdout
+		oldStderr := os.Stderr
+		oldLogger := log.Default()
+
+		// Create pipes to capture output
+		rOut, wOut, _ := os.Pipe()
+		rErr, wErr, _ := os.Pipe()
+
+		// Redirect stdout and stderr
+		os.Stdout = wOut
+		os.Stderr = wErr
+
+		// Set a null logger to suppress standard Go logs
+		log.SetOutput(io.Discard)
+		log.SetFlags(0)
+		log.SetPrefix("")
+
+		for {
 			initOptions := mtpx.Init{DebugMode: false}
 			dev, err = mtpx.Initialize(initOptions)
 			if err == nil {
 				break
 			}
-			attempts++
-			if attempts < maxAttempts {
-				time.Sleep(3 * time.Second)
-			}
+			time.Sleep(1 * time.Second)
 		}
+
+		// Restore stdout, stderr, and logger
+		wOut.Close()
+		wErr.Close()
+		os.Stdout = oldStdout
+		os.Stderr = oldStderr
+		log.SetOutput(oldLogger.Writer())
+		log.SetFlags(oldLogger.Flags())
+		log.SetPrefix(oldLogger.Prefix())
+
+		// Discard captured output
+		go io.Copy(io.Discard, rOut)
+		go io.Copy(io.Discard, rErr)
+		rOut.Close()
+		rErr.Close()
 
 		if err != nil {
 			util.LogError("MTP initialization failed: %v", err)
@@ -75,9 +106,41 @@ func InitializeDeviceWithTimeout(timeout time.Duration) (*mtp.Device, error) {
 	go func() {
 		util.LogVerbose("Starting MTP device detection in background goroutine")
 
-		initOptions := mtpx.Init{DebugMode: false}
+		// Save original stdout, stderr, and logger
+		oldStdout := os.Stdout
+		oldStderr := os.Stderr
+		oldLogger := log.Default()
 
+		// Create pipes to capture output
+		rOut, wOut, _ := os.Pipe()
+		rErr, wErr, _ := os.Pipe()
+
+		// Redirect stdout and stderr
+		os.Stdout = wOut
+		os.Stderr = wErr
+
+		// Set a null logger to suppress standard Go logs
+		log.SetOutput(io.Discard)
+		log.SetFlags(0)
+		log.SetPrefix("")
+
+		initOptions := mtpx.Init{DebugMode: false}
 		dev, err := mtpx.Initialize(initOptions)
+
+		// Restore stdout, stderr, and logger
+		wOut.Close()
+		wErr.Close()
+		os.Stdout = oldStdout
+		os.Stderr = oldStderr
+		log.SetOutput(oldLogger.Writer())
+		log.SetFlags(oldLogger.Flags())
+		log.SetPrefix(oldLogger.Prefix())
+
+		// Discard captured output
+		go io.Copy(io.Discard, rOut)
+		go io.Copy(io.Discard, rErr)
+		rOut.Close()
+		rErr.Close()
 
 		if err != nil {
 			util.LogError("MTP initialization failed: %v", err)

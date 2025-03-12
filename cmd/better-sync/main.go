@@ -37,7 +37,8 @@ func main() {
 
 	util.LogVerbose("Starting MTP Music Manager")
 
-	timeout := time.Duration(*timeoutSecFlag) * time.Second
+	timeout := time.Duration(*timeoutSecFlag) * time.Hour
+
 	dev, err := device.Initialize(timeout)
 	if err != nil {
 		util.LogError("Failed to initialize device: %v", err)
