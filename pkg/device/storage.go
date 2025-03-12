@@ -71,7 +71,6 @@ func FetchStorages(dev *mtp.Device, timeout time.Duration) (interface{}, error) 
 }
 
 func SelectStorage(dev *mtp.Device, storagesRaw interface{}) (uint32, error) {
-
 	storagesValue := reflect.ValueOf(storagesRaw)
 	if storagesValue.Kind() != reflect.Slice || storagesValue.Len() == 0 {
 		return 0, fmt.Errorf("no storage found on device")

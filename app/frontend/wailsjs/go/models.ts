@@ -1,6 +1,6 @@
 export namespace model {
 	
-	export class Song {
+	export class PlaylistInfo {
 	    Name: string;
 	    Path: string;
 	    ObjectID: number;
@@ -8,7 +8,7 @@ export namespace model {
 	    Storage: string;
 	
 	    static createFrom(source: any = {}) {
-	        return new Song(source);
+	        return new PlaylistInfo(source);
 	    }
 	
 	    constructor(source: any = {}) {

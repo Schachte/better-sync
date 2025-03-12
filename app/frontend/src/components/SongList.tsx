@@ -1,25 +1,25 @@
 import { useState, useEffect } from "react";
-import { GetSongs } from "../../wailsjs/go/main/App";
+import { GetPlaylists } from "../../wailsjs/go/main/App";
 import { EventsOn } from "../../wailsjs/runtime/runtime";
 
 // Define the Song interface based on your Go struct
-interface Song {
+interface Playlist {
   Name: string;
   Path: string;
   // Add any other properties that your Song struct has
 }
 
 const SongList = () => {
-  const [songs, setSongs] = useState<Song[]>([]);
+  const [playlists, setPlaylists] = useState<Playlist[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     // Load initial songs if available
     const loadSongs = async () => {
       try {
-        const songList = await GetSongs();
-        console.log("Loaded songs:", songList);
-        setSongs(songList || []);
+        const playlistList = await GetPlaylists();
+        console.log("Loaded playlists:", playlistList);
+        setPlaylists(playlistList || []);
         setLoading(false);
       } catch (error) {
         console.error("Error loading songs:", error);
@@ -28,9 +28,9 @@ const SongList = () => {
     };
 
     // Listen for new songs from the backend
-    EventsOn("songs-loaded", (newSongs: Song[]) => {
-      console.log("Received songs from event:", newSongs);
-      setSongs(newSongs || []);
+    EventsOn("playlists-loaded", (newPlaylists: Playlist[]) => {
+      console.log("Received playlists from event:", newPlaylists);
+      setPlaylists(newPlaylists || []);
       setLoading(false);
     });
 
@@ -45,7 +45,7 @@ const SongList = () => {
     );
   }
 
-  if (!songs || songs.length === 0) {
+  if (!playlists || playlists.length === 0) {
     return (
       <div className="p-4 text-center">
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
@@ -76,16 +76,18 @@ const SongList = () => {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">Your Songs ({songs.length})</h2>
+      <h2 className="text-2xl font-bold mb-4">
+        Your Playlists ({playlists.length})
+      </h2>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {songs.map((song, index) => (
+        {playlists.map((playlist, index) => (
           <div
             key={index}
             className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 hover:shadow-lg transition-shadow duration-200"
           >
-            <h3 className="font-semibold text-lg mb-2">{song.Name}</h3>
+            <h3 className="font-semibold text-lg mb-2">{playlist.Name}</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400 truncate">
-              {song.Path}
+              {playlist.Path}
             </p>
           </div>
         ))}

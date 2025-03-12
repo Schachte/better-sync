@@ -18,15 +18,15 @@ import (
 
 var assets embed.FS
 
-func (a *App) GetSongs() []model.Song {
-	return a.Songs
+func (a *App) GetPlaylists() []model.PlaylistInfo {
+	return a.Playlists
 }
 
 func main() {
 	afterBuild()
 	app := NewApp()
 
-	timeout := time.Duration(10) * time.Second
+	timeout := time.Duration(30) * time.Second
 	go func() {
 		for {
 			util.LogError("Attempting to connect to device...")
@@ -46,17 +46,17 @@ func main() {
 				continue
 			}
 
-			songs, err := operations.GetSongs(dev, storages)
+			playlists, err := operations.GetPlaylists(dev, storages)
 			if err != nil {
-				util.LogError("Failed to get songs: %v", err)
+				util.LogError("Failed to get playlists: %v", err)
 				dev.Close()
 				time.Sleep(timeout)
 				continue
 			}
 
-			app.Songs = songs
+			app.Playlists = playlists
 
-			runtime.EventsEmit(app.ctx, "songs-loaded", songs)
+			runtime.EventsEmit(app.ctx, "playlists-loaded", playlists)
 			dev.Close()
 			time.Sleep(timeout)
 		}

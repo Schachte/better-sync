@@ -9,8 +9,8 @@ import (
 
 // App struct
 type App struct {
-	ctx   context.Context
-	Songs []model.Song
+	ctx       context.Context
+	Playlists []model.PlaylistInfo
 }
 
 // NewApp creates a new App application struct

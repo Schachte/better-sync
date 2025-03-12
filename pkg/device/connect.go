@@ -23,8 +23,22 @@ func Initialize(timeout time.Duration) (*mtp.Device, error) {
 	go func() {
 		util.LogVerbose("Starting MTP device detection in background goroutine")
 
-		initOptions := mtpx.Init{}
-		dev, err := mtpx.Initialize(initOptions)
+		var dev *mtp.Device
+		var err error
+		attempts := 0
+		maxAttempts := 40 // 2 minutes with 3 second intervals
+
+		for attempts < maxAttempts {
+			initOptions := mtpx.Init{DebugMode: false}
+			dev, err = mtpx.Initialize(initOptions)
+			if err == nil {
+				break
+			}
+			attempts++
+			if attempts < maxAttempts {
+				time.Sleep(3 * time.Second)
+			}
+		}
 
 		if err != nil {
 			util.LogError("MTP initialization failed: %v", err)
